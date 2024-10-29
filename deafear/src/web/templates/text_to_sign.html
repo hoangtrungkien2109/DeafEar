@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Sign</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='texttosign_style.css') }}">
+</head>
+<body>
+    <div class="background-layer">
+        <div class="container">
+            <!-- Logo and navigation buttons -->
+            <nav class="navbar">
+                <img src="{{ url_for('static', filename='logo32x28.png') }}" alt="Logo" class="logo">
+                <div class="navbar-links">
+                    {% if session.get('username') %}
+                        <a href="/logout" class="navbar-btn" id="logout-btn">Đăng xuất</a>
+                        <a href="/view" class="navbar-btn" id="history-btn">Xem lịch sử</a>
+                    {% else %}
+                        <a href="/login" class="navbar-btn" id="login-btn">Đăng nhập</a>
+                    {% endif %}
+                </div>
+            </nav>
+            <h1><center>Text To Sign</center></h1>
+            <div class="toolbar">
+                <button class="toolbar-btn" id="sound-btn">Sound</button>
+            </div>
+
+            <div class="translate-section">
+                <div>
+                    <input type="file" name="file" id="file-input" accept=".txt, .mp3" />
+                </div>
+
+                <div class="input-area">
+                    <textarea class="input-text" id="input-text" placeholder="Nhập văn bản"></textarea>
+                    <div class="translation-result">Bản dịch</div>
+                </div>
+            </div>
+            <div class="fps-container">
+                <input type="range" min="20" max="60" value="30" class="fps-slider" id="fps-slider">
+                <div class="fps-value" id="fps-value">FPS: 30</div>
+            </div>
+            <div>
+                <button class="convert-btn">Convert</button>
+                <a href="/sign_to_text" class="convert-btn">Switch</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='texttosign_script.js') }}"></script>
+</body>
+</html>
