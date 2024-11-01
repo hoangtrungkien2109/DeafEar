@@ -1,6 +1,22 @@
 const fpsSlider = document.getElementById('fps-slider');
         const fpsValue = document.getElementById('fps-value');
-
+        function slideImages(container) {
+            const images = container.querySelectorAll('.slide-img');
+            let index = 0;
+        
+            setInterval(() => {
+                images.forEach((img, i) => {
+                    img.classList.toggle('active', i === index);
+                });
+                index = (index + 1) % images.length;
+            }, 3000); // Thay đổi sau mỗi 3 giây
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            slideImages(document.querySelector('.left-side'));
+            slideImages(document.querySelector('.right-side'));
+        });
+        
         fpsSlider.addEventListener('input', function() {
             fpsValue.textContent = `FPS: ${fpsSlider.value}`;
         });

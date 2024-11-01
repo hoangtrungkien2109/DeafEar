@@ -7,6 +7,15 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
+    <div class="background-container">
+        <!-- Hình ảnh bên trái -->
+        <div class="side-image left-side">
+            <img src="{{ url_for('static', filename='left1.png') }}" class="slide-img active" alt="Left Image 1">
+            <img src="{{ url_for('static', filename='left2.png') }}" class="slide-img" alt="Left Image 2">
+        </div>
+
+        
     <div class="container">
         <h1><center>Sign to Text</center></h1>
         
@@ -31,6 +40,16 @@
             <a href="/" class="convert-btn">Switch</a>
         </div>
     </div>
+
+
+
+    <div class="side-image right-side">
+        <img src="{{ url_for('static', filename='right1.png') }}" class="slide-img active" alt="Right Image 1">
+        <img src="{{ url_for('static', filename='right2.png') }}" class="slide-img" alt="Right Image 2">
+    </div>
+</div>
+
+
 
     <script>
         const video = document.getElementById('video');
