@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign to Text</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="background-container">
+        <!-- Hình ảnh bên trái -->
+        <div class="side-image left-side">
+            <img src="{{ url_for('static', filename='left1.png') }}" class="slide-img active" alt="Left Image 1">
+            <img src="{{ url_for('static', filename='left2.png') }}" class="slide-img" alt="Left Image 2">
+        </div>
+
+        
+    <div class="container">
+        <h1><center>Sign to Text</center></h1>
+        
+        <div class="content">
+            <!-- Nửa bên trái truy cập camera -->
+            <div class="left-panel">
+                <h3>Camera</h3>
+                <video id="video" autoplay></video>
+                <canvas id="canvas" style="display:none;"></canvas>
+            </div>
+
+            <!-- Nửa bên phải hiển thị kết quả -->
+            <div class="right-panel">
+                <h3>Result</h3>
+                <textarea class="result-area" id="result-text" placeholder="The sign-to-text result will appear here..." readonly></textarea>
+            </div>
+        </div>
+        
+        <!-- Các nút thao tác -->
+        <div class="button-container">
+            <button class="convert-btn" id="convert-btn">Convert</button>
+            <a href="/" class="convert-btn">Switch</a>
+        </div>
+    </div>
+
+
+
+    <div class="side-image right-side">
+        <img src="{{ url_for('static', filename='right1.png') }}" class="slide-img active" alt="Right Image 1">
+        <img src="{{ url_for('static', filename='right2.png') }}" class="slide-img" alt="Right Image 2">
+    </div>
+</div>
+
+
+
+    <script>
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const resultText = document.getElementById('result-text');
+        const context = canvas.getContext('2d');
+
+        // Truy cập camera
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    video.srcObject = stream;
+                })
+                .catch(function(err) {
+                    alert("Camera access is not supported or blocked by the browser.");
+                });
+        } else {
+            alert("Your browser does not support accessing the camera.");
+        }
+
+        // Xử lý nút Convert
+        document.getElementById('convert-btn').addEventListener('click', function() {
+            // Vẽ video lên canvas
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // Lấy dữ liệu ảnh từ canvas (Base64)
+            const imageData = canvas.toDataURL('image/png');
+
+            // Gửi hình ảnh đến server
+            fetch('/convert_sign_to_text', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ image: imageData })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hiển thị kết quả chuyển đổi
+                resultText.value = data.text;
+            })
+            .catch(error => {
+                console.error('Error during conversion:', error);
+            });
+        });
+    </script>
+</body>
+</html>
