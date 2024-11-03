@@ -7,9 +7,15 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='texttosign_style.css') }}">
 </head>
 <body>
-    <div class="background-layer">
+    <div class="background-container">
+        <!-- Hình ảnh bên trái -->
+        <div class="side-image left-side">
+            <img src="{{ url_for('static', filename='left1.png') }}" class="slide-img active" alt="Left Image 1"> <!-- Thêm lớp active -->
+            <img src="{{ url_for('static', filename='left2.png') }}" class="slide-img" alt="Left Image 2">
+        </div>
+
+        <!-- Phần nội dung chính -->
         <div class="container">
-            <!-- Logo and navigation buttons -->
             <nav class="navbar">
                 <img src="{{ url_for('static', filename='logo32x28.png') }}" alt="Logo" class="logo">
                 <div class="navbar-links">
@@ -22,31 +28,36 @@
                 </div>
             </nav>
             <h1><center>Text To Sign</center></h1>
+
             <div class="toolbar">
                 <button class="toolbar-btn" id="sound-btn">Sound</button>
             </div>
 
             <div class="translate-section">
-                <div>
-                    <input type="file" name="file" id="file-input" accept=".txt, .mp3" />
-                </div>
-
+                <input type="file" name="file" id="file-input" accept=".txt, .mp3" />
                 <div class="input-area">
                     <textarea class="input-text" id="input-text" placeholder="Nhập văn bản"></textarea>
                     <div class="translation-result">Bản dịch</div>
                 </div>
             </div>
+
             <div class="fps-container">
                 <input type="range" min="20" max="60" value="30" class="fps-slider" id="fps-slider">
                 <div class="fps-value" id="fps-value">FPS: 30</div>
             </div>
-            <div>
-                <button class="convert-btn">Convert</button>
-                <a href="/sign_to_text" class="convert-btn">Switch</a>
-            </div>
-        </div>
-    </div>
 
+            <button class="convert-btn">Convert</button>
+            <a href="/sign_to_text" class="convert-btn">Switch</a>
+        </div>
+
+        <!-- Hình ảnh bên phải -->
+        <div class="side-image right-side">
+            <img src="{{ url_for('static', filename='right1.png') }}" class="slide-img active" alt="Right Image 1"> <!-- Thêm lớp active -->
+            <img src="{{ url_for('static', filename='right2.png') }}" class="slide-img" alt="Right Image 2">
+        </div>
+        
+    </div>
     <script src="{{ url_for('static', filename='texttosign_script.js') }}"></script>
 </body>
+
 </html>
