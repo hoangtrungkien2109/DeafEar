@@ -1,14 +1,29 @@
 import re
 import time
+import json
+import orjson
+import torch
 from pyvi import ViTokenizer
 from loguru import logger
+from transformers import AutoTokenizer, AutoModelForTokenClassification
+from transformers import pipeline
 from sentence_transformers import SentenceTransformer
 from deafear.src.models.model_utils.similar_sentence.elastic_search import es
 
 
-start = time.time()
-model = SentenceTransformer("dangvantuan/vietnamese-embedding")
-logger.warning(f"EMBEDDING LOADING TIME: {time.time()-start}")
+def remove_accents(old: str):
+    """
+    Removes common accent characters, lower form.
+    Uses: regex.
+    """
+    new = old.lower()
+    new = re.sub(r'[àáảãạằắẳẵặăầấẩẫậâ]', 'a', new)
+    new = re.sub(r'[èéẻẽẹềếểễệê]', 'e', new)
+    new = re.sub(r'[ìíỉĩị]', 'i', new)
+    new = re.sub(r'[òóỏõọồốổỗộôờớởỡợơ]', 'o', new)
+    new = re.sub(r'[ừứửữựưùúủũụ]', 'u', new)
+    return new
+
 
 class SimilaritySentence():
     """Class for Elastic Search"""
@@ -19,29 +34,63 @@ class SimilaritySentence():
             cls._instance = super(SimilaritySentence, cls).__new__(cls, *args, **kwargs)
         return cls._instance
 
-    def __init__(self):
+    def __init__(self, embed_model_name: str = "keepitreal/vietnamese-sbert",
+                 ner_model_name: str = "NlpHUST/ner-vietnamese-electra-base",
+                 character_dict_path: str = "character_dict.json"):
+        self.embed_model = SentenceTransformer(embed_model_name)
+        self.tokenizer = AutoTokenizer.from_pretrained(ner_model_name)
+        self.ner_model = AutoModelForTokenClassification.from_pretrained(ner_model_name)
+        self.ner = pipeline("ner", model=self.ner_model, tokenizer=self.tokenizer,
+                       device='cuda' if torch.cuda.is_available() else 'cpu')
         self.es = es
+        try:
+            with open(character_dict_path, 'r') as f:
+                self.character_dict = json.load(f)
+        except Exception as e:
+            logger.error(e)
 
-    def pre_process_text(self, text: str) -> str:
+    def clean_text(self, text: str) -> str:
         """Clean raw text"""
         text = re.sub(r"[-()\"#/@;:<>{}=~|.?,]", "", text)
+        return text
+
+    def _tokenize_text(self, text: str) -> str:
+        """Tokenize text"""
         segment = ViTokenizer.tokenize(text)
         return segment
 
+
     def convert_sentence_to_words(self, sentence: str) -> list[str]:
         """Convert raw sentence into words from database"""
-        
-        pre_embedding = model.encode([sentence])
+        SPECIAL_TOKEN = "SPECIAL_TOKEN"
+        named_sentence = sentence.split(" ")
+        _, name_indices = self._detect_name(sentence)
+        names = []
+        for idx, word in enumerate(named_sentence):
+            if name_indices[idx] == 1:
+                names.append(remove_accents(word).upper())
+                named_sentence[idx] = SPECIAL_TOKEN
+        pre_embedding = self.embed_model.encode([sentence])
         words_to_search = []
-        segment_sentence = self.pre_process_text(sentence)
+        segment_sentence = self._tokenize_text(self.clean_text(" ".join(named_sentence)))
+        logger.info(f"Segment: {segment_sentence}")
         word_list = segment_sentence.split(" ")
-        for text in word_list:
-            words_to_search.append(" ".join(text.split("_")) if "_" in text else text)
+        cnt = 0
+        for idx, word in enumerate(word_list):
+            if word == SPECIAL_TOKEN:
+                words_to_search.append(names[cnt])
+                cnt+=1
+            else:
+                words_to_search.append(" ".join(word.split("_")) if "_" in word else word)
+        logger.info(f"Word Search: {words_to_search}")
         result_sentence = []
         existing_words = []
         scores = []
         max_similarity_score = 0
         for word in words_to_search:
+            if word in names:
+                scores.append(20)
+                existing_words.append(word)
             searching_result = es.search(word)
             if len(searching_result) > 0:
                 scores.append(searching_result[0]["_score"])
@@ -52,11 +101,40 @@ class SimilaritySentence():
                 if score > base_score:
                     current_words.append(existing_words[idx])
             current_sentence = " ".join(current_words)
-            post_embedding = model.encode([current_sentence])
-            similarity = model.similarity(pre_embedding, post_embedding)
+            post_embedding = self.embed_model.encode([current_sentence])
+            similarity = self.embed_model.similarity(pre_embedding, post_embedding)
             if similarity > max_similarity_score:
                 max_similarity_score = similarity
                 result_sentence = current_words.copy()
+        for idx, word in enumerate(result_sentence):
+            if word in names:
+                result_sentence.pop(idx)
+                for char in reversed(self._process_name(word)):
+                    result_sentence.insert(idx, char)
         return result_sentence
+
+    def _detect_name(self, sentence: str) -> dict:
+        """Detect all entity in sentence"""
+        masked_index = [0] * len(self.clean_text(sentence).split(" "))
+        entities = self.ner(sentence)
+        sentence = list(sentence)
+        logger.info(entities)
+        for entity in reversed(entities):
+            if "PERSON" in entity['entity']:
+                masked_index[entity['index'] - 1] = 1
+                logger.info(entity['word'])
+                for idx in range(entity['end'] - 1, entity['start'], -1):
+                    sentence[idx] = remove_accents(sentence[idx]).upper()
+                    sentence.insert(idx, ' ')
+        result = ''.join(sentence)
+        logger.info(f"Detected: {result}")
+        return result, masked_index
+    
+    def _process_name(self, name: str) -> str:
+        """Split an uppercased name into a list of character"""
+        return [char for char in list(name)]
+
+    def _search_character(self, character: str) -> list:
+        return self.character_dict[character]
 
 ss = SimilaritySentence()
