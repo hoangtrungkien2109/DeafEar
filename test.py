@@ -1,52 +1,62 @@
 """File used for testing features"""
 
-import time
-# import pandas as pd
+# import time
+# # import pandas as pd
+# import numpy as np
 from loguru import logger
 from deafear.src.models.model_utils.similar_sentence.similarity_sentence import ss
 # from deafear.src.models.model_utils.similar_sentence.elastic_search import es
 
-text = "Cô giáo của em là một người rất hiền dịu và tận tâm. Mái tóc đen dài của cô lúc nào cũng được buộc gọn gàng, khuôn mặt cô luôn rạng rỡ với nụ cười ấm áp, khiến cho học sinh cảm thấy gần gũi và thoải mái. Cô có giọng nói trầm ấm, rõ ràng, mỗi khi giảng bài, cô đều giải thích cẩn thận từng chi tiết, giúp học sinh dễ hiểu và nắm chắc kiến thức hơn. Mỗi khi học sinh mắc lỗi, cô không la mắng mà nhẹ nhàng hướng dẫn để chúng em biết cách sửa"
+sentence = "Xin chào mọi người tôi tên là Kiên tôi cùng với Hiển Tùng Châu Sang đang làm dự án khi tôi đến đại học Duy Tân Nam đã chào đón tôi nồng nhiệt"
+temp, mask = ss._detect_name(sentence)
+logger.info(ss.convert_sentence_to_words(sentence))
+# logger.warning(mask)
+# logger.info(ss._process_name("Kien"))
+# frames = np.load('D:\\NCKH\\Text_to_Sign\\DeafEar\\deafear\\src\\models\\model_utils\\similar_sentence\\data\\frames\\landmarks_D0125.npy')
+# logger.warning(f"Frame size: {np.shape(frames)}")
+# es.upload_to_es("D:\\NCKH\\Text_to_Sign\\DeafEar\\deafear\\src\\models\\model_utils\\similar_sentence\\data\\modal_data.csv",
+#                 "D:\\NCKH\\Text_to_Sign\\DeafEar\\deafear\\src\\models\\model_utils\\similar_sentence\\data\\frames")
+# logger.info(es._decode_frame(es.search("chào")[0]["_source"]["frame"]))
+# array = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]], [[1, 2, 3], [4, 5, 6]]])
+# logger.info(array)
+# logger.info(array.reshape(-1))
+# hits = es.search("")
+# logger.info(hits[0]["_source"]["word"] if len(hits)>0 else "NO DATA")
+# es.clear_data_es()
+# ds = pd.read_csv('deafear\\src\\models\\model_utils\\similar_sentence\\data\\modal_data.csv')
+# filenames = ds.ID.values
+# words = ds.Word.values
+# processed_words = []
+# processed_files = []
+# for word, _file in zip(words, filenames):
+#     new_word = word.lower()
+#     new_word = new_word.split("(")[0]
+#     new_word = new_word.strip()
+#     if new_word in processed_words:
+#         continue
+#     else:
+#         processed_words.append(new_word)
+#         processed_files.append(_file)
+# logger.info(processed_words[:50])
+# es.clear_data_es()
+# es.upload_to_es(words, ["this is frame" for _ in range(len(words))], filenames)
 
-start = time.time()
-print(f"RAW: {text}")
-print(f"CONVERT: {' '.join(ss.convert_sentence_to_words(text))}")
-logger.warning(f"TIME: {time.time()-start}")
+# import nltk
+# from nltk.tokenize import word_tokenize
+# # nltk.download('punkt_tab')
+# # Load Vietnamese stopwords (use your local file or list here)
+# vietnamese_stopwords = set()
+# with open('stopwords-vi.txt', 'r', encoding='utf-8') as f:
+#     vietnamese_stopwords = set(f.read().splitlines())
 
+# # Example text in Vietnamese
+# text = "Xin chào tôi tên là Kiên tôi cùng với Hiển Tùng Châu Sang đang làm dự án khi tôi đến đại học Duy Tân Nam đã chào đón tôi nồng nhiệt"
 
+# # Tokenize text
+# words = word_tokenize(text)
 
+# # Remove stopwords
+# filtered_words = [word for word in words if word.lower() not in vietnamese_stopwords]
 
-
-
-
-
-
-# print(
-# """
-# Cô giáo của em là một người rất hiền dịu và tận tâm. Mái tóc đen dài của cô lúc nào cũng được buộc gọn gàng, 
-# khuôn mặt cô luôn rạng rỡ với nụ cười ấm áp, khiến cho học sinh cảm thấy gần gũi và thoải mái. 
-# Cô có giọng nói trầm ấm, rõ ràng, mỗi khi giảng bài, cô đều giải thích cẩn thận từng chi tiết, 
-# giúp học sinh dễ hiểu và nắm chắc kiến thức hơn. Mỗi khi học sinh mắc lỗi, cô không la mắng mà 
-# nhẹ nhàng hướng dẫn để chúng em biết cách sửa"
-# """
-# )
-# print(
-# """
-# cô giáo ngày của Mẹ em họ hay là (hoặc là) một ít/ một chút cao (người)  
-# dịu dàng luyện từ và câu tận số mái tóc đen đủi dài ngày của Mẹ cô dâu lúc nào cũng 
-# vậy/cũng thế làm được buộc dây gọn gàng khuôn hình cô dâu  rực rỡ cùng / với (giới từ)  
-# tươi cười ấm áp  ai cho bảng học sinh ác cảm gần gũi luyện từ và câu gà mái cô dâu có … không? 
-# giọng ca giọng nói trầm trồ áo ấm rõ ràng mỗi  lễ bế giảng bài báo cô dâu chia đều giải thích thận  
-# chi tiết giúp đỡ bảng học sinh dễ chịu hiểu luyện từ và câu  vững chắc kiến thức bé hơn mỗi  
-# bảng học sinh mắc áo lỗi lầm cô dâu không cho bao la mắng  nhẹ nhàng hướng dẫn để (đặt) 
-# chúng tôi (đại từ) em họ  cách ly 
-# chỉnh sửa
-# """
-# )
-# print(
-# """
-# cô giáo dịu dàng mái tóc dài lúc nào cũng vậy/cũng thế làm được gọn gàng khuôn hình 
-# rực rỡ ấm áp bảng học sinh gần gũi trầm trồ rõ ràng mỗi giải thích thận chi tiết bảng học sinh 
-# vững chắc kiến thức mỗi bảng học sinh mắng nhẹ nhàng hướng dẫn để (đặt)
-# """
-# )
+# print("Original text:", text)
+# print("Text without stopwords:", " ".join(filtered_words))
