@@ -1,7 +1,7 @@
 import re
-import time
+# import time
 import json
-import orjson
+# import orjson
 import torch
 from pyvi import ViTokenizer
 from loguru import logger
@@ -129,7 +129,7 @@ class SimilaritySentence():
         result = ''.join(sentence)
         logger.info(f"Detected: {result}")
         return result, masked_index
-    
+
     def _process_name(self, name: str) -> str:
         """Split an uppercased name into a list of character"""
         return [char for char in list(name)]
