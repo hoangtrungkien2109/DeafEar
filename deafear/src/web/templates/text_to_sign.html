@@ -37,7 +37,10 @@
                 <input type="file" name="file" id="file-input" accept=".txt, .mp3" />
                 <div class="input-area">
                     <textarea class="input-text" id="input-text" placeholder="Nhập văn bản"></textarea>
-                    <div class="translation-result">Bản dịch</div>
+                    <video controls autoplay width="640" class="translation-result" id="video-container">
+                        <source id="video-source" src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
 
@@ -46,7 +49,7 @@
                 <div class="fps-value" id="fps-value">FPS: 30</div>
             </div>
 
-            <button class="convert-btn">Convert</button>
+            <button class="convert-btn" onclick="convertText()">Convert</button>
             <a href="/sign_to_text" class="convert-btn">Switch</a>
         </div>
 

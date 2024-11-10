@@ -2,4 +2,5 @@ test.py
 data
 log
 __pycache__
+data_processed
 elastic_data
