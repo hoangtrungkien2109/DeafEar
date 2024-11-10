@@ -1,15 +1,19 @@
 import cv2
 import numpy as np
 from model import load_model, predict
+import glob
+import os
+from loguru import logger
+
 # Correct connections for pose landmarks in MediaPipe (total 33 landmarks)
 POSE_CONNECTIONS = [
-    (0, 1), (1, 2), (2, 3), (3, 7),          # Right eye to ear
-    (0, 4), (4, 5), (5, 6), (6, 8),          # Left eye to ear
-    (9, 10), (11, 12),                       # Shoulders
-    (11, 13), (13, 15), (15, 17),            # Left arm
-    (12, 14), (14, 16), (16, 18),            # Right arm
-    (23, 24),                                # Hips
-    (24, 26), (26, 28), (28, 32),            # Right leg
+    (0, 1), (1, 2), (2, 3), (3, 7),  # Right eye to ear
+    (0, 4), (4, 5), (5, 6), (6, 8),  # Left eye to ear
+    (9, 10), (11, 12),                # Shoulders
+    (11, 13), (13, 15), (15, 17),     # Left arm
+    (12, 14), (14, 16), (16, 18),     # Right arm
+    (23, 24),                         # Hips
+    (24, 26), (26, 28), (28, 32),     # Right leg
     (23, 25), (25, 27), (27, 29), (29, 31),  # Left leg
 ]
 
@@ -80,30 +84,53 @@ def draw_landmarks(image, frame_landmarks,line_thickness=2):
 
     return image
 
-
-
-def load_and_concatenate_npy_files(model,npy_files):
+def load_and_concatenate_npy_file(model, npy_files):
     all_landmarks = []
-    prediction = []
     for npy_file in npy_files:
+        # logger.info(npy_file) 
         landmarks_data = np.load(npy_file)
         
-        all_landmarks.append(landmarks_data)
+        landmarks_data = landmarks_data[~np.any(landmarks_data == 0, axis=(1, 2))]
+        # logger.info(landmarks_data.shape)
 
-        p = predict(model,landmarks_data)
-        prediction.append(p)
-
+        if len(landmarks_data) >= 300:
+            landmarks_data = landmarks_data[:300]
+        
+        if len(landmarks_data) == 0:
+            continue
     
-    concatenated_landmarks = np.concatenate(all_landmarks, axis=0)
-    concatenated_prediction = np.concatenate(prediction, axis=0)
-    print("c1",concatenated_landmarks.shape)
-    print("c2",concatenated_prediction.shape)
-    return concatenated_landmarks, concatenated_prediction
+        
+        p = predict(model,landmarks_data)
+        
+        landmarks_data = landmarks_data[p.flatten() == 1]
+        
+        if len(landmarks_data) == 0:
+            continue
+        
+        if len(all_landmarks) == 0:
+            all_landmarks.append(landmarks_data)
+        else:
+            # logger.info("Hello")
+            logger.info(np.linalg.norm(all_landmarks[-1][-1] - landmarks_data[0]))
+            if np.linalg.norm(all_landmarks[-1][-1] - landmarks_data[0]) <= 1:
+                middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=5)
+            elif np.linalg.norm(all_landmarks[-1][-1] - landmarks_data[0]) <= 2:
+                middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=7)
+            else:
+                middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=10)
+            all_landmarks.append(middle)
+            all_landmarks.append(landmarks_data)
+        
+        concatenated_landmarks = np.concatenate(all_landmarks,axis=0)
+    return concatenated_landmarks
+        
+        
+    
 
 def is_similar_frame(frame1, frame2, threshold=0.05):
     if frame1 is None:
         return False
-    distance = np.linalg.norm(frame1 - frame2)
+    distance = np.linalg.norm(frame1[33:,:] - frame2[33:])
     return distance < threshold
 
 def defineSE(arr):
@@ -119,36 +146,37 @@ def defineSE(arr):
             break
     return s,e
     
+    
 
-# Get the list of .npy files to load
-import glob
-import os
- # load model
-model = load_model("model_final.pth")
+# load model
+model = load_model("../cut/cut.pth")
 
-npy_folder = './temp'
-npy_files = glob.glob(os.path.join(npy_folder, '*'))
+npy_files = glob.glob(os.path.join("./test_landmarks", '*.npy'))
 
-concatenated_landmarks_array, concatenated_prediction_array = load_and_concatenate_npy_files(model, npy_files)
+
+   
+npy_files = sorted(npy_files)
+concatenated_landmarks_array= load_and_concatenate_npy_file(model, npy_files)
 
 frame_index = 0
 num_frames = len(concatenated_landmarks_array)
 
 image_height, image_width = 720, 1280
 
-start, end = defineSE(concatenated_prediction_array[:,0])
+# start, end = defineSE(concatenated_prediction_array)
+start, end = 0, len(concatenated_landmarks_array)
+print("Len", len(concatenated_landmarks_array))
 print("start", start)
 print("end", end)
+
+
 last_frame_landmarks = None
 while frame_index < num_frames:
     image = np.ones((image_height, image_width, 3), dtype=np.uint8) * 255
     frame_landmarks = concatenated_landmarks_array[frame_index]
 
     result_image = draw_landmarks(image, frame_landmarks)
-    if (frame_index >= start and frame_index <= end) and concatenated_prediction_array[frame_index][0] == 0:
-        frame_index += 1
-        continue
-    
+
     if result_image is None or is_similar_frame(last_frame_landmarks, frame_landmarks):
         frame_index += 1
         continue
@@ -158,7 +186,7 @@ while frame_index < num_frames:
     cv2.imshow('Landmarks Visualization', result_image)
     frame_index += 1
 
-    if cv2.waitKey(1) & 0xFF == ord('q'):  
+    if cv2.waitKey(20) & 0xFF == ord('q'):  
         break
 
 
