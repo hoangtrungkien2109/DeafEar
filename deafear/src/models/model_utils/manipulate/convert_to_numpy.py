@@ -1,5 +1,5 @@
 import cv2
-# import mediapipe as mp
+import mediapipe as mp
 import numpy as np
 import glob
 import os
@@ -14,12 +14,15 @@ def file_exists(folder_path, file_name):
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename='convert_data.log',level=logging.DEBUG)
 
-video_folder = '/Users/trHien/PycharmProjects/ScrapeASLData/data'
+video_folder = 'E:\Dowload\Data\data'
 destiny_folder = "./data_processed"
 
 mp_holistic = mp.solutions.holistic
 
-video_files = glob.glob(os.path.join(video_folder, '*[0-9].mp4'))[:200]
+video_files = glob.glob(os.path.join(video_folder, '*[0-9].mp4'))[1550:1600]
+
+if not os.path.exists(destiny_folder):
+    os.makedirs(destiny_folder)
 
 for video_file in video_files:
     file_name_with_ext = os.path.basename(video_file)
