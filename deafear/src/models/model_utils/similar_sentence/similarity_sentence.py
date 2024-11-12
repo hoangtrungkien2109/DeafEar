@@ -9,6 +9,7 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
 from sentence_transformers import SentenceTransformer
 from deafear.src.models.model_utils.similar_sentence.elastic_search import es
+from deafear.src.models.model_utils.processing_time import processing_time
 
 
 def remove_accents(old: str):
@@ -34,7 +35,7 @@ class SimilaritySentence():
             cls._instance = super(SimilaritySentence, cls).__new__(cls, *args, **kwargs)
         return cls._instance
 
-    def __init__(self, embed_model_name: str = "keepitreal/vietnamese-sbert",
+    def __init__(self, embed_model_name: str = "dangvantuan/vietnamese-embedding",
                  ner_model_name: str = "NlpHUST/ner-vietnamese-electra-base",
                  character_dict_path: str = "character_dict.json"):
         self.embed_model = SentenceTransformer(embed_model_name)
@@ -59,10 +60,11 @@ class SimilaritySentence():
         segment = ViTokenizer.tokenize(text)
         return segment
 
-
+    @processing_time
     def convert_sentence_to_words(self, sentence: str) -> list[str]:
         """Convert raw sentence into words from database"""
         SPECIAL_TOKEN = "SPECIAL_TOKEN"
+        map_word_to_frame = {}
         named_sentence = sentence.split(" ")
         _, name_indices = self._detect_name(sentence)
         names = []
@@ -91,10 +93,13 @@ class SimilaritySentence():
             if word in names:
                 scores.append(20)
                 existing_words.append(word)
+                map_word_to_frame[word] = self._search_name(word)
+                continue
             searching_result = es.search(word)
             if len(searching_result) > 0:
                 scores.append(searching_result[0]["_score"])
                 existing_words.append(searching_result[0]["_source"]["word"])
+                map_word_to_frame[existing_words[-1]] = self.es.decode_frame(searching_result[0]["_source"]["frame"])
         for base_score in range(5, int(max(scores))):
             current_words = []
             for idx, score in enumerate(scores):
@@ -106,12 +111,20 @@ class SimilaritySentence():
             if similarity > max_similarity_score:
                 max_similarity_score = similarity
                 result_sentence = current_words.copy()
-        for idx, word in enumerate(result_sentence):
+
+        # for idx, word in enumerate(result_sentence):
+        #     if word in names:
+        #         result_sentence.pop(idx)
+        #         for char in reversed(self._process_name(word)):
+        #             result_sentence.insert(idx, char)
+        result_frames = []
+        logger.info(map_word_to_frame.keys())
+        for word in result_sentence:
             if word in names:
-                result_sentence.pop(idx)
-                for char in reversed(self._process_name(word)):
-                    result_sentence.insert(idx, char)
-        return result_sentence
+                result_frames.extend(map_word_to_frame[word])
+            else:
+                result_frames.append(map_word_to_frame[word])
+        return result_frames
 
     def _detect_name(self, sentence: str) -> dict:
         """Detect all entity in sentence"""
@@ -134,7 +147,8 @@ class SimilaritySentence():
         """Split an uppercased name into a list of character"""
         return [char for char in list(name)]
 
-    def _search_character(self, character: str) -> list:
-        return self.character_dict[character]
+    def _search_name(self, name: str) -> list:
+        """Convert from name to list of frames of characters"""
+        return [self.character_dict[char] for char in self._process_name(name)]
 
 ss = SimilaritySentence()
