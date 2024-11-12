@@ -79,10 +79,11 @@ def convert_text():
 
 
 def text_to_sign_video(text):
-    # Thực hiện chuyển đổi text thành video sign language
-    # Ở đây chỉ là ví dụ - bạn cần sử dụng thư viện hoặc API chuyển đổi thực tế
+    """Convert from raw text to a video file and return its path"""
+    # 1. Convert from raw text to frames
 
-    # Ví dụ: tạo một video mẫu và trả về đường dẫn của nó
+    # 2. Convert from frames to video
+    
     sample_video_path = url_for('static',filename = "output_video2.mp4")
     return sample_video_path
 

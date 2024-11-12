@@ -40,7 +40,7 @@ class ESEngine():
             frame_list.append(POINT_JOINER.join(point_list))
         return FRAME_JOINER.join(frame_list)
 
-    def _decode_frame(self, str_frame: str) -> list:
+    def decode_frame(self, str_frame: str) -> list:
         """Convert a encoded frame string into a frame list"""
         frame_list = []
         str_frame_list = str_frame.split(FRAME_JOINER)
