@@ -113,9 +113,9 @@ function convertText() {
             if (data.video_url) {
                 // Tìm phần tử <source> và cập nhật src của nó
                 const videoSource = document.getElementById("video-source");
-                // videoSource.src = `http://127.0.0.1:5000${data.video_url}`;
+                // videoSource.src = `http://127.0.0.1:5000/${data.video_url}`;
                 videoSource.src = data.video_url;
-
+                console.log(data.video_url);
                 // Tìm phần tử <video> và tải lại video
                 const videoElement = document.getElementById("video-container");
                 videoElement.addEventListener("canplay", function() {

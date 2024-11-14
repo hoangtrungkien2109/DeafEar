@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
-    <!-- Liên kết tới file CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andev Web</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_style.css') }}">
 </head>
+
 <body>
-    <form method="POST" action="/login">
-        <label for="username">Tên đăng nhập:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Mật khẩu:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button id="login-btn" name="login-btn" type="submit">Đăng nhập</button>
-        <button id="signup-btn" name="signup-btn" type="submit">Đăng ký</button>
-        <p>{{ message }}</p>
-        <a href="/">Quay lại</a>
+  <div class="wrapper">
+    <form action="#">
+      <h2>Login Form</h2>
+      <div class="input-field">
+        <input type="text" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required>
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
     </form>
+  </div>
 </body>
-</html>
+
+</html>                        

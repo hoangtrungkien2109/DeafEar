@@ -3,8 +3,11 @@ import os
 from pymongo import MongoClient
 import speech_recognition as sr
 from pydub import AudioSegment
+from flask_cors import CORS
+
 
 app = Flask(__name__,static_folder='static')
+CORS(app)
 app.secret_key = os.urandom(24)
 
 uri = "mongodb+srv://hoangtrungkien4:R22QsguGNpBfTHlw@billreader.kc3jt.mongodb.net/?retryWrites=true&w=majority&appName=BillReader"
@@ -21,6 +24,9 @@ if not os.path.exists(UPLOAD_FOLDER):
 def download_file(filename):
     return send_from_directory('static', filename)
 
+@app.route('/get-video')
+def get_video():
+    return send_from_directory('static', 'output_video2.mp4')
 
 @app.route('/', methods=['POST','GET'])
 def home():
@@ -61,7 +67,7 @@ def logout():
     return render_template('login.html', message='Đăng xuất thành công!')
 
 
-@app.route('/convert_text', methods=['POST'])
+@app.route('/convert_text', methods=['POST','GET'])
 def convert_text():
     data = request.get_json()
     if not data:
@@ -83,7 +89,8 @@ def text_to_sign_video(text):
     # Ở đây chỉ là ví dụ - bạn cần sử dụng thư viện hoặc API chuyển đổi thực tế
 
     # Ví dụ: tạo một video mẫu và trả về đường dẫn của nó
-    sample_video_path = url_for('static',filename = "output_video2.mp4")
+    sample_video_path = url_for('static',filename = "output_video3.mp4")
+    # sample_video_path = 'E:\\tnchau\\Projects\\DeafEar\\deafear\\src\\web\\static\\output_video.mp4'
     return sample_video_path
 
 
