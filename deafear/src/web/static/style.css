@@ -163,7 +163,7 @@ h1 {
 }
 
 .left-panel video {
-    width: 100%;
+    width: 50%;
     height: auto;
     border: 1px solid #ccc;
     border-radius: 4px;

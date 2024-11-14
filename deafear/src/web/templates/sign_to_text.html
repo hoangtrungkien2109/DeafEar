@@ -23,8 +23,7 @@
             <!-- Nửa bên trái truy cập camera -->
             <div class="left-panel">
                 <h3>Camera</h3>
-                <video id="video" autoplay></video>
-                <canvas id="canvas" style="display:none;"></canvas>
+                <img src="{{ url_for('video_feed') }}" id="video-stream" alt="Video stream">
             </div>
 
             <!-- Nửa bên phải hiển thị kết quả -->
@@ -51,52 +50,69 @@
 
 
 
-    <script>
-        const video = document.getElementById('video');
-        const canvas = document.getElementById('canvas');
-        const resultText = document.getElementById('result-text');
-        const context = canvas.getContext('2d');
+{#    <script>#}
+{#        const video = document.getElementById('video');#}
+{#        const canvas = document.getElementById('canvas');#}
+{#        const resultText = document.getElementById('result-text');#}
+{#        const context = canvas.getContext('2d');#}
+{##}
+{#        // Truy cập camera#}
+{#        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {#}
+{#            navigator.mediaDevices.getUserMedia({ video: true })#}
+{#                .then(function(stream) {#}
+{#                    video.srcObject = stream;#}
+{#                })#}
+{#                .catch(function(err) {#}
+{#                    alert("Camera access is not supported or blocked by the browser.");#}
+{#                });#}
+{#        } else {#}
+{#            alert("Your browser does not support accessing the camera.");#}
+{#        }#}
+{##}
+{#        // Xử lý nút Convert#}
+{#        document.getElementById('convert-btn').addEventListener('click', function() {#}
+{#            // Vẽ video lên canvas#}
+{#            canvas.width = video.videoWidth;#}
+{#            canvas.height = video.videoHeight;#}
+{#            context.drawImage(video, 0, 0, canvas.width, canvas.height);#}
+{##}
+{#            // Lấy dữ liệu ảnh từ canvas (Base64)#}
+{#            const imageData = canvas.toDataURL('image/png');#}
+{##}
+{#            // Gửi hình ảnh đến server#}
+{#            fetch('/convert_sign_to_text', {#}
+{#                method: 'POST',#}
+{#                headers: {#}
+{#                    'Content-Type': 'application/json'#}
+{#                },#}
+{#                body: JSON.stringify({ image: imageData })#}
+{#            })#}
+{#            .then(response => response.json())#}
+{#            .then(data => {#}
+{#                // Hiển thị kết quả chuyển đổi#}
+{#                resultText.value = data.text;#}
+{#            })#}
+{#            .catch(error => {#}
+{#                console.error('Error during conversion:', error);#}
+{#            });#}
+{#        });#}
+{#    </script>#}
 
-        // Truy cập camera
-        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({ video: true })
-                .then(function(stream) {
-                    video.srcObject = stream;
-                })
-                .catch(function(err) {
-                    alert("Camera access is not supported or blocked by the browser.");
-                });
-        } else {
-            alert("Your browser does not support accessing the camera.");
-        }
-
-        // Xử lý nút Convert
-        document.getElementById('convert-btn').addEventListener('click', function() {
-            // Vẽ video lên canvas
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            context.drawImage(video, 0, 0, canvas.width, canvas.height);
-
-            // Lấy dữ liệu ảnh từ canvas (Base64)
-            const imageData = canvas.toDataURL('image/png');
-
-            // Gửi hình ảnh đến server
-            fetch('/convert_sign_to_text', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ image: imageData })
-            })
+<script>
+    // Function to fetch action from the server periodically
+    function fetchAction() {
+        fetch('/get_action')
             .then(response => response.json())
             .then(data => {
-                // Hiển thị kết quả chuyển đổi
-                resultText.value = data.text;
+                console.log('Fetched action:', data.action);
+                // Update the result area with the fetched action
+                document.getElementById('result-text').innerText = data.action;
             })
-            .catch(error => {
-                console.error('Error during conversion:', error);
-            });
-        });
-    </script>
+            .catch(error => console.error('Error fetching action:', error));
+    }
+
+    // Fetch the action every 2 seconds
+    setInterval(fetchAction, 2000);
+</script>
 </body>
 </html>
