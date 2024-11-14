@@ -3,10 +3,11 @@ import os
 from pymongo import MongoClient
 import speech_recognition as sr
 from pydub import AudioSegment
-from model.tool import *
-from model.shape import HandAnalyzer
+from models.components.tool import *
+from models.components.shape import *
 import tensorflow as tf
 from scipy.signal import savgol_filter
+
 app = Flask(__name__,static_folder='static')
 app.secret_key = os.urandom(24)
 
@@ -46,10 +47,8 @@ def generate_frames():
     if not cap.isOpened():
         raise RuntimeError("Could not start the camera.")
     try:
-        interpreter = tf.lite.Interpreter(model_path="model/model.tflite")
+        interpreter = tf.lite.Interpreter(model_path="/DeafEar/deafear/src/models/model_utils/detect/model.tflite")
         interpreter.allocate_tensors()
-        window_length = 5
-        polyorder = 2
         input_details = interpreter.get_input_details()
         output_details = interpreter.get_output_details()
     except Exception as e:
@@ -75,7 +74,7 @@ def generate_frames():
                 if len(sequence) == 30:
                     # Prepare input data for the model
                     sequence_np = np.array(sequence)
-                    smoothed_sequence = savgol_filter(sequence_np, window_length=window_length, polyorder=polyorder,
+                    smoothed_sequence = savgol_filter(sequence_np, window_length=5, polyorder=2,
                                                       axis=0)
                     input_data = np.expand_dims(smoothed_sequence, axis=0).astype(np.float32)
                     interpreter.set_tensor(input_details[0]['index'], input_data)
