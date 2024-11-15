@@ -86,11 +86,11 @@ def draw_landmarks(image, frame_landmarks, line_thickness=2):
         return None  # Return None if no hands are detected
 
     return image
-def load_and_concatenate_npy_files(model, npy_files):
+def load_and_concatenate_npy_files(model, list_of_landmarks_data):
     all_landmarks = []
-    for npy_file in npy_files:
+    for landmarks_data in list_of_landmarks_data:
         # logger.info(npy_file) 
-        landmarks_data = np.load(npy_file)
+        # landmarks_data = np.load(npy_file)
         
         landmarks_data = landmarks_data[~np.any(landmarks_data == 0, axis=(1, 2))]
         # logger.info(landmarks_data.shape)
@@ -153,6 +153,7 @@ model = load_model("model_final.pth")
 
 npy_folder = './temp'
 npy_files = glob.glob(os.path.join(npy_folder, '*.npy'))
+
 
 concatenated_landmarks_array = load_and_concatenate_npy_files(model, npy_files)
 
