@@ -3,17 +3,21 @@ import numpy as np
 from model import load_model, predict
 import glob
 import os
+import cv2
+import numpy as np
 from loguru import logger
+import ffmpeg
+import numpy as np
 
 # Correct connections for pose landmarks in MediaPipe (total 33 landmarks)
 POSE_CONNECTIONS = [
-    (0, 1), (1, 2), (2, 3), (3, 7),  # Right eye to ear
-    (0, 4), (4, 5), (5, 6), (6, 8),  # Left eye to ear
-    (9, 10), (11, 12),                # Shoulders
-    (11, 13), (13, 15), (15, 17),     # Left arm
-    (12, 14), (14, 16), (16, 18),     # Right arm
-    (23, 24),                         # Hips
-    (24, 26), (26, 28), (28, 32),     # Right leg
+    (0, 1), (1, 2), (2, 3), (3, 7),          # Right eye to ear
+    (0, 4), (4, 5), (5, 6), (6, 8),          # Left eye to ear
+    (9, 10), (11, 12),                       # Shoulders
+    (11, 13), (13, 15), (15, 17),            # Left arm
+    (12, 14), (14, 16), (16, 18),            # Right arm
+    (23, 24),                                # Hips
+    (24, 26), (26, 28), (28, 32),            # Right leg
     (23, 25), (25, 27), (27, 29), (29, 31),  # Left leg
 ]
 
@@ -25,7 +29,7 @@ HAND_CONNECTIONS = [
     (17, 18), (18, 19), (19, 20)     # Pinky finger
 ]
 
-def draw_landmarks(image, frame_landmarks,line_thickness=2):
+def draw_landmarks(image, frame_landmarks, line_thickness=2):
     pose_landmarks = frame_landmarks[:33]
     for lm in pose_landmarks:
         if not np.isnan(lm[0]) and not np.isnan(lm[1]) and not np.isnan(lm[2]):  # Check for NaN values
@@ -42,7 +46,6 @@ def draw_landmarks(image, frame_landmarks,line_thickness=2):
             end_x, end_y = int(end_point[0] * image.shape[1]), int(end_point[1] * image.shape[0])
             cv2.line(image, (start_x, start_y), (end_x, end_y), (0, 255, 0), line_thickness)
 
-            
     right_hand_landmarks = frame_landmarks[33:33 + 21]
     right_hand_present = False
     for lm in right_hand_landmarks:
@@ -83,12 +86,11 @@ def draw_landmarks(image, frame_landmarks,line_thickness=2):
         return None  # Return None if no hands are detected
 
     return image
-
-def load_and_concatenate_npy_file(model, npy_files):
+def load_and_concatenate_npy_files(model, list_landmarks_data):
     all_landmarks = []
-    for npy_file in npy_files:
+    for landmarks_data in list_landmarks_data:
         # logger.info(npy_file) 
-        landmarks_data = np.load(npy_file)
+        # landmarks_data = np.load(npy_file)
         
         landmarks_data = landmarks_data[~np.any(landmarks_data == 0, axis=(1, 2))]
         # logger.info(landmarks_data.shape)
@@ -122,73 +124,97 @@ def load_and_concatenate_npy_file(model, npy_files):
             all_landmarks.append(landmarks_data)
         
         concatenated_landmarks = np.concatenate(all_landmarks,axis=0)
+        
     return concatenated_landmarks
-        
-        
-    
 
 def is_similar_frame(frame1, frame2, threshold=0.05):
     if frame1 is None:
         return False
-    distance = np.linalg.norm(frame1[33:,:] - frame2[33:])
+    distance = np.linalg.norm(frame1 - frame2)
     return distance < threshold
 
 def defineSE(arr):
-    s,e = 0, len(arr)-1
-    for i in range(len(arr)-1):
-        if arr[i] != arr[i+1]:
+    s, e = 0, len(arr) - 1
+    for i in range(len(arr) - 1):
+        if arr[i] != arr[i + 1]:
             s = i + 1
             break
             
-    for i in range(len(arr)-1,0,-1):
-        if arr[i] != arr[i-1]:
+    for i in range(len(arr) - 1, 0, -1):
+        if arr[i] != arr[i - 1]:
             e = i
             break
-    return s,e
+    return s, e
     
+
+
+# Load model
+model = load_model("model_final.pth")
+
+# npy_folder = './temp'
+# npy_files = glob.glob(os.path.join(npy_folder, '*.npy'))
+
+# concatenated_landmarks_array = load_and_concatenate_npy_files(model, npy_files)
+
+# frame_index = 0
+# num_frames = len(concatenated_landmarks_array)
+
+def save_frames_to_output(landmarks_array, num_frames, return_format='video'):
     
+    concatenated_landmarks_array = load_and_concatenate_npy_files(model, landmarks_array)
 
-# load model
-model = load_model("../cut/cut.pth")
+    frame_index = 0
+    num_frames = len(concatenated_landmarks_array)
+    
+    image_height, image_width = 720, 1280
+    frame_index = 0
 
-npy_files = glob.glob(os.path.join("./test_landmarks", '*.npy'))
+    # Initialize a list to store the frames
+    frames = []
 
+    # start, end = defineSE(concatenated_prediction_array[:, 0])
+    last_frame_landmarks = None
 
-   
-npy_files = sorted(npy_files)
-concatenated_landmarks_array= load_and_concatenate_npy_file(model, npy_files)
+    while frame_index < num_frames:
+        image = np.ones((image_height, image_width, 3), dtype=np.uint8) * 255
+        frame_landmarks = concatenated_landmarks_array[frame_index]
 
-frame_index = 0
-num_frames = len(concatenated_landmarks_array)
+        result_image = draw_landmarks(image, frame_landmarks)
+        # if (frame_index >= start and frame_index <= end) and concatenated_prediction_array[frame_index][0] == 0:
+        #     frame_index += 1
+        #     continue
 
-image_height, image_width = 720, 1280
+        if result_image is None or is_similar_frame(last_frame_landmarks, frame_landmarks):
+            frame_index += 1
+            continue
 
-# start, end = defineSE(concatenated_prediction_array)
-start, end = 0, len(concatenated_landmarks_array)
-print("Len", len(concatenated_landmarks_array))
-print("start", start)
-print("end", end)
+        last_frame_landmarks = frame_landmarks
 
-
-last_frame_landmarks = None
-while frame_index < num_frames:
-    image = np.ones((image_height, image_width, 3), dtype=np.uint8) * 255
-    frame_landmarks = concatenated_landmarks_array[frame_index]
-
-    result_image = draw_landmarks(image, frame_landmarks)
-
-    if result_image is None or is_similar_frame(last_frame_landmarks, frame_landmarks):
+        # Append the frame to the list
+        frames.append(result_image)
+        
         frame_index += 1
-        continue
-    
-    last_frame_landmarks = frame_landmarks
 
-    cv2.imshow('Landmarks Visualization', result_image)
-    frame_index += 1
+    # Use ffmpeg to create a video from the frames
+    if frames:
+        out_file = "output_video.mp4"
+        # Convert list of frames to a numpy array (height, width, channels, num_frames)
+        frames_array = np.array(frames)
+        
+        # Create a video using ffmpeg
+        ffmpeg.input('pipe:0', format='rawvideo', pix_fmt='rgb24', s='{}x{}'.format(image_width, image_height), r=60).output(out_file, vcodec='libx264').run(input=frames_array.tobytes())
 
-    if cv2.waitKey(20) & 0xFF == ord('q'):  
-        break
+        print(f"Video saved to {out_file}")
+
+    if return_format == 'video':
+        return 'output_video.mp4'  # Path to the video file
+    else:
+        raise ValueError("Invalid return format. Choose 'npy' or 'video'.")
 
 
-# Clean up
-cv2.destroyAllWindows()
+
+if __name__ == '__main__':
+    # Example usage
+    # output_file = save_frames_to_output(concatenated_landmarks_array, num_frames, return_format='video')
+    # print("Output file:", output_file)
+    pass
