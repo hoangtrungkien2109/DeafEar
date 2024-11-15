@@ -86,9 +86,9 @@ def draw_landmarks(image, frame_landmarks, line_thickness=2):
         return None  # Return None if no hands are detected
 
     return image
-def load_and_concatenate_npy_files(model, list_of_landmarks_data):
+def load_and_concatenate_npy_files(model, list_landmarks_data):
     all_landmarks = []
-    for landmarks_data in list_of_landmarks_data:
+    for landmarks_data in list_landmarks_data:
         # logger.info(npy_file) 
         # landmarks_data = np.load(npy_file)
         
@@ -151,19 +151,25 @@ def defineSE(arr):
 # Load model
 model = load_model("model_final.pth")
 
-npy_folder = './temp'
-npy_files = glob.glob(os.path.join(npy_folder, '*.npy'))
+# npy_folder = './temp'
+# npy_files = glob.glob(os.path.join(npy_folder, '*.npy'))
 
+# concatenated_landmarks_array = load_and_concatenate_npy_files(model, npy_files)
 
-concatenated_landmarks_array = load_and_concatenate_npy_files(model, npy_files)
+# frame_index = 0
+# num_frames = len(concatenated_landmarks_array)
 
-frame_index = 0
-num_frames = len(concatenated_landmarks_array)
+def save_frames_to_output(landmarks_array, num_frames, return_format='video'):
+    
+    concatenated_landmarks_array = load_and_concatenate_npy_files(model, landmarks_array)
 
-def save_frames_to_output(concatenated_landmarks_array, num_frames, return_format='video'):
+    frame_index = 0
+    num_frames = len(concatenated_landmarks_array)
+    
     image_height, image_width = 720, 1280
     frame_index = 0
 
+    # Initialize a list to store the frames
     frames = []
 
     # start, end = defineSE(concatenated_prediction_array[:, 0])
@@ -184,6 +190,7 @@ def save_frames_to_output(concatenated_landmarks_array, num_frames, return_forma
 
         last_frame_landmarks = frame_landmarks
 
+        # Append the frame to the list
         frames.append(result_image)
         
         frame_index += 1
@@ -191,7 +198,7 @@ def save_frames_to_output(concatenated_landmarks_array, num_frames, return_forma
     # Use ffmpeg to create a video from the frames
     if frames:
         out_file = "output_video.mp4"
-        
+        # Convert list of frames to a numpy array (height, width, channels, num_frames)
         frames_array = np.array(frames)
         
         # Create a video using ffmpeg
@@ -200,7 +207,7 @@ def save_frames_to_output(concatenated_landmarks_array, num_frames, return_forma
         print(f"Video saved to {out_file}")
 
     if return_format == 'video':
-        return 'output_video.mp4'  
+        return 'output_video.mp4'  # Path to the video file
     else:
         raise ValueError("Invalid return format. Choose 'npy' or 'video'.")
 
@@ -208,5 +215,6 @@ def save_frames_to_output(concatenated_landmarks_array, num_frames, return_forma
 
 if __name__ == '__main__':
     # Example usage
-    output_file = save_frames_to_output(concatenated_landmarks_array, num_frames, return_format='video')
-    print("Output file:", output_file)
+    # output_file = save_frames_to_output(concatenated_landmarks_array, num_frames, return_format='video')
+    # print("Output file:", output_file)
+    pass
