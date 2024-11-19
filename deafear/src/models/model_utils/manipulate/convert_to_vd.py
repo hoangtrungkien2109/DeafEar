@@ -7,9 +7,18 @@ import cv2
 import numpy as np
 from .model import load_model, predict
 from loguru import logger
+import ffmpeg
+import numpy as np
 
 # Correct connections for pose landmarks in MediaPipe (total 33 landmarks)
 POSE_CONNECTIONS = [
+    (0, 1), (1, 2), (2, 3), (3, 7),          # Right eye to ear
+    (0, 4), (4, 5), (5, 6), (6, 8),          # Left eye to ear
+    (9, 10), (11, 12),                       # Shoulders
+    (11, 13), (13, 15), (15, 17),            # Left arm
+    (12, 14), (14, 16), (16, 18),            # Right arm
+    (23, 24),                                # Hips
+    (24, 26), (26, 28), (28, 32),            # Right leg
     (0, 1), (1, 2), (2, 3), (3, 7),          # Right eye to ear
     (0, 4), (4, 5), (5, 6), (6, 8),          # Left eye to ear
     (9, 10), (11, 12),                       # Shoulders
@@ -152,8 +161,8 @@ def defineSE(arr):
     
 
 
-# Load model
-model = load_model("D:\\NCKH\\Text_to_Sign\\DeafEar\\deafear\\src\\models\\model_utils\\cut\\cut.pth")
+# load model
+model = load_model("../cut/cut.pth")
 
 # npy_folder = './temp'
 # npy_files = glob.glob(os.path.join(npy_folder, '*.npy'))
@@ -194,6 +203,10 @@ def save_frames_to_output(landmarks_array, return_format='video'):
 
         last_frame_landmarks = frame_landmarks
 
+        # Append the frame to the list
+        frames.append(result_image)
+        
+        frame_index += 1
         # Append the frame to the list
         frames.append(result_image)
         
