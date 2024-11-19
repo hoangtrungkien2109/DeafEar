@@ -24,7 +24,7 @@ class ESEngine():
 
     def __init__(self, index_name: str = "frame"):
         self.index_name = index_name
-        self.es = Elasticsearch("http://localhost:9200")
+        self.es = Elasticsearch("http://localhost:9200", timeout=60)
         if not self.es.indices.exists(index=self.index_name):
             self.es.indices.create(index=self.index_name)
             logger.warning("INDEX CREATED")
@@ -100,10 +100,12 @@ class ESEngine():
                      json_path: str | None = None):
         """Upload words and their frames into elasticsearch database"""
         words, file_names = self._process_data(mapping_path)
-        temp_file_name = 'D0125'
         frame_chunks = []
         for file_name in file_names:
-            frame_chunks.append(np.load(data_path + f'/landmarks_{temp_file_name}.npy').tolist())  # Must be changed temp_file_name to file_name
+            try:
+                frame_chunks.append(np.load(data_path + f'/landmarks_{file_name}.npy').tolist())
+            except FileNotFoundError:
+                logger.error(file_name)
         data = []
         logger.info(f"Length of frame_chunks: {len(frame_chunks)}")
         for word, frame, file_name in zip(words, frame_chunks, file_names):
@@ -131,6 +133,7 @@ class ESEngine():
             #     logger.warning(f"Word: {word}, File: {file_name}")
         logger.warning("Starting to upload to elasticsearch")
         helpers.bulk(self.es, data)
+        logger.info("Data pushed to elastic successfully")
         if json_path is not None:
             with open(json_path, "a") as f:
                 for doc in data:

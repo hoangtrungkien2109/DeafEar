@@ -1,8 +1,14 @@
+"""
+File contains function and class related to similarity sentence
+Aim to convert from a paragraph of raw text to a list of existing words from database
+"""
+
 import re
 # import time
 import json
 # import orjson
 import torch
+import numpy as np
 from pyvi import ViTokenizer
 from loguru import logger
 from transformers import AutoTokenizer, AutoModelForTokenClassification
@@ -47,7 +53,7 @@ class SimilaritySentence():
         try:
             with open(character_dict_path, 'r') as f:
                 self.character_dict = json.load(f)
-        except Exception as e:
+        except FileNotFoundError as e:
             logger.error(e)
 
     def clean_text(self, text: str) -> str:
@@ -121,10 +127,11 @@ class SimilaritySentence():
         logger.info(map_word_to_frame.keys())
         for word in result_sentence:
             if word in names:
-                result_frames.extend(map_word_to_frame[word])
+                result_frames.extend(map_word_to_frame[word])  # FIX
             else:
                 result_frames.append(map_word_to_frame[word])
-        return result_frames
+        logger.warning(f"{len(result_frames)}, {len(result_frames[0])}, {len(result_frames[1])}")
+        return np.array(result_frames)
 
     def _detect_name(self, sentence: str) -> dict:
         """Detect all entity in sentence"""
