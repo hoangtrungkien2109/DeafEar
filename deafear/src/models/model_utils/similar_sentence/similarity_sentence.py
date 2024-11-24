@@ -130,7 +130,7 @@ class SimilaritySentence():
                 result_frames.extend(map_word_to_frame[word])  # FIX
             else:
                 result_frames.append(map_word_to_frame[word])
-        logger.warning(f"{len(result_frames)}, {len(result_frames[0])}, {len(result_frames[1])}")
+        logger.warning(f"{len(result_frames)}, {len(result_frames[0])}, {len(result_frames[1])},   {len(result_frames[2])}")
         return np.array(result_frames)
 
     def _detect_name(self, sentence: str) -> dict:
