@@ -17,7 +17,7 @@ class Text2SignProcess():
         self.similar_sentence = ss
         self.convert_video = save_frames_to_output
 
-    def convert(self, text: str) -> str:
+    def convert(self, text: str, fps: int) -> str:
         """Function convert from text to sign
 
         Args:
@@ -27,7 +27,7 @@ class Text2SignProcess():
             str: path to result video file
         """
         list_of_frames = self.similar_sentence.convert_sentence_to_words(text)
-        return self.convert_video(list_of_frames)
+        return self.convert_video(landmarks_array=list_of_frames, fps=fps)
 
 
 class Sign2TextProcess:

@@ -106,7 +106,7 @@ function convertText() {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ input_text: textInput })
+        body: JSON.stringify({ input_text: textInput, fps: fpsSlider.value })
     })
         .then(response => response.json())
         .then(data => {

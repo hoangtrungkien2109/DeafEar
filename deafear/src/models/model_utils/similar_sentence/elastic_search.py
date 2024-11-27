@@ -162,12 +162,12 @@ es = ESEngine()
 
 
 if __name__ == "__main__":
-    pass
-#    ds = pd.read_csv('deafear\\src\\models\\model_utils\\similar_sentence\\data\\modal_data.csv')
+    ds = pd.read_csv('modal_data.csv')
 
-#     filenames = ds.ID
-#     words = ds.Word
-#     word_to_file = {}
-#     file_to_word = {}
-#     # es.clear_data_es()
-#     es.upload_to_es(words, ["this is frame" for _ in range(len(words))], filenames)
+    filenames = ds.ID
+    words = ds.Word
+    word_to_file = {}
+    file_to_word = {}
+    # es.clear_data_es()
+    es.upload_to_es('modal_data.csv',
+                    "src/models/model_utils/manipulate/data_convert")
