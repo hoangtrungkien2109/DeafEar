@@ -110,7 +110,8 @@ def load_and_concatenate_npy_files(model, list_landmarks_data):
         # logger.error(len(list_landmarks_data[0][0][0]))
         # logger.error(len(list_landmarks_data[1]))
         landmarks_data = np.array(landmarks_data)
-        landmarks_data = landmarks_data[~np.any(landmarks_data == 0, axis=(1,2))]
+        # landmarks_data = landmarks_data[~np.any(landmarks_data == 0, axis=(1,2))]
+
         # logger.info(landmarks_data.shape)
 
         if len(landmarks_data) >= 300:
@@ -138,15 +139,14 @@ def load_and_concatenate_npy_files(model, list_landmarks_data):
             elif np.linalg.norm(all_landmarks[-1][-1] - landmarks_data[0]) <= 2:
                 middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=10)
             else:
-                middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=13)
+                middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=15)
             all_landmarks.append(middle)
             all_landmarks.append(landmarks_data)
         
     concatenated_landmarks = np.concatenate(all_landmarks,axis=0)
-        
     return concatenated_landmarks
 
-def is_similar_frame(frame1, frame2, threshold=0.01):
+def is_similar_frame(frame1, frame2, threshold=0.05):
     if frame1 is None:
         return False
     distance = np.linalg.norm(frame1 - frame2)
@@ -183,7 +183,7 @@ def save_frames_to_output(landmarks_array, return_format='video', fps = 30):
     concatenated_landmarks_array = load_and_concatenate_npy_files(model, landmarks_array)
     frame_index = 0
     num_frames = len(concatenated_landmarks_array)
-    logger.warning(f"Num frame: {num_frames}")    
+    logger.warning(f"Num frame: {num_frames}")
     image_height, image_width = 720, 1280
     frame_index = 0
 

@@ -41,17 +41,40 @@ class ESEngine():
         return FRAME_JOINER.join(frame_list)
 
     def decode_frame(self, str_frame: str) -> list:
-        """Convert a encoded frame string into a frame list"""
+        if not str_frame or not isinstance(str_frame, str):
+            return []
+            
         frame_list = []
         str_frame_list = str_frame.split(FRAME_JOINER)
+        
         for frame in str_frame_list:
+            if not frame:  # Skip empty frames
+                continue
+                
             point_list = []
             str_point_list = frame.split(POINT_JOINER)
+            
             for point in str_point_list:
+                if not point:  # Skip empty points
+                    continue
+                    
                 str_coord_list = point.split(COORD_JOINER)
-                coord_list = [float(coord) for coord in str_coord_list]
-                point_list.append(coord_list)
-            frame_list.append(point_list)
+                coord_list = []
+                
+                for coord in str_coord_list:
+                    try:
+                        if coord.strip():  # Only convert non-empty strings
+                            coord_list.append(float(coord.strip()))
+                    except ValueError as e:
+                        logger.warning(f"Invalid coordinate value: {coord}")
+                        continue
+                        
+                if coord_list:  # Only add points that have valid coordinates
+                    point_list.append(coord_list)
+                    
+            if point_list:  # Only add frames that have valid points
+                frame_list.append(point_list)
+                
         return frame_list
 
     def _process_data(self, file_path: str) -> None:

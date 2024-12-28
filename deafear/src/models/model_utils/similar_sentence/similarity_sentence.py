@@ -102,14 +102,14 @@ class SimilaritySentence():
                 scores.append(20)
                 existing_words.append(word)
                 map_word_to_frame[word] = self._search_name(word)
-                logger.info(len(map_word_to_frame[word]))
+                logger.info("Chars: ",len(map_word_to_frame[word]))
                 continue
             searching_result = es.search(word)
             if len(searching_result) > 0:
                 scores.append(searching_result[0]["_score"])
                 existing_words.append(searching_result[0]["_source"]["word"])
                 map_word_to_frame[existing_words[-1]] = self.es.decode_frame(searching_result[0]["_source"]["frame"])
-        # logger.warning(f"map keys: {map_word_to_frame.keys()}")
+        logger.warning(f"map keys: {map_word_to_frame.keys()}")
         for base_score in range(5, int(max(scores))):
             current_words = []
             for idx, score in enumerate(scores):
