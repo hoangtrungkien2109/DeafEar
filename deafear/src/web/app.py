@@ -92,8 +92,7 @@ def generate_frames():
                 if len(sequence) == 30:
                     # Prepare input data for the model
                     sequence_np = np.array(sequence)
-                    smoothed_sequence = savgol_filter(sequence_np, window_length=window_length, polyorder=polyorder,
-                                                      axis=0)
+                    smoothed_sequence = savgol_filter(sequence_np, window_length=window_length, polyorder=polyorder, axis=0)
                     input_data = np.expand_dims(smoothed_sequence, axis=0).astype(np.float32)
                     interpreter.set_tensor(input_details[0]['index'], input_data)
                     interpreter.invoke()
