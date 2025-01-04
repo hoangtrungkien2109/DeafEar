@@ -1,17 +1,31 @@
-from flask import Flask, jsonify, request, render_template, session,redirect,send_from_directory, url_for, Response
+"""
+Flask
+"""
+from loguru import logger
 import os
+from flask import (Flask, jsonify, request, render_template,
+                   session, redirect, send_from_directory, url_for, Response)
 from pymongo import MongoClient
 import speech_recognition as sr
 from pydub import AudioSegment
-from models.components.tool import *
-from models.components.shape import *
+from src.web.model.tool import *
+from src.web.model.shape import HandAnalyzer
 import tensorflow as tf
 from scipy.signal import savgol_filter
+from deafear.src.models.components.function import Text2SignProcess
+import os
+
+# Get the base path dynamically
+base_path = os.path.dirname(os.path.abspath(__file__))  # This gives the directory of the current script
+
+# Construct the full path to the model
+MODEL_PATH = os.path.join(base_path, 'model', 'model.tflite')
+
 
 app = Flask(__name__,static_folder='static')
 app.secret_key = os.urandom(24)
 
-
+text2sign = Text2SignProcess()
 
 uri = "mongodb+srv://hoangtrungkien4:R22QsguGNpBfTHlw@billreader.kc3jt.mongodb.net/?retryWrites=true&w=majority&appName=BillReader"
 client = MongoClient(uri)
@@ -44,11 +58,15 @@ def generate_frames():
     # Access the webcam
     global sequence, sentence, predictions
     cap = cv2.VideoCapture(0)
+    window_length = 5
+    polyorder = 2
     if not cap.isOpened():
         raise RuntimeError("Could not start the camera.")
     try:
-        interpreter = tf.lite.Interpreter(model_path="/DeafEar/deafear/src/models/model_utils/detect/model.tflite")
+        interpreter = tf.lite.Interpreter(model_path=MODEL_PATH)
         interpreter.allocate_tensors()
+        window_length = 5
+        polyorder = 2
         input_details = interpreter.get_input_details()
         output_details = interpreter.get_output_details()
     except Exception as e:
@@ -74,8 +92,7 @@ def generate_frames():
                 if len(sequence) == 30:
                     # Prepare input data for the model
                     sequence_np = np.array(sequence)
-                    smoothed_sequence = savgol_filter(sequence_np, window_length=5, polyorder=2,
-                                                      axis=0)
+                    smoothed_sequence = savgol_filter(sequence_np, window_length=window_length, polyorder=polyorder, axis=0)
                     input_data = np.expand_dims(smoothed_sequence, axis=0).astype(np.float32)
                     interpreter.set_tensor(input_details[0]['index'], input_data)
                     interpreter.invoke()
@@ -161,23 +178,22 @@ def convert_text():
         return jsonify({"error": "No JSON data found"}), 400
 
     text_input = data.get('input_text')
+    fps = int(data.get("fps"))
     if text_input is None:
         return jsonify({"error": "No text input provided"}), 400
 
     # Lưu dữ liệu vào session để sử dụng ở các route khác
-    video_path = text_to_sign_video(text_input)
+    video_path = text_to_sign_video(text_input,fps)
 
     # Trả về đường dẫn hoặc URL của video cho client
+    
     return jsonify({"video_url": video_path})
 
 
-def text_to_sign_video(text):
+def text_to_sign_video(text, fps):
     """Convert from raw text to a video file and return its path"""
-    # 1. Convert from raw text to frames
-
-    # 2. Convert from frames to video
-    
-    sample_video_path = url_for('static',filename = "output_video2.mp4")
+    file_path = os.path.basename(text2sign.convert(text,fps))
+    sample_video_path = url_for('static',filename = file_path)
     return sample_video_path
 
 

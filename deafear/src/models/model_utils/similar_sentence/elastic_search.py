@@ -24,7 +24,7 @@ class ESEngine():
 
     def __init__(self, index_name: str = "frame"):
         self.index_name = index_name
-        self.es = Elasticsearch("http://localhost:9200")
+        self.es = Elasticsearch("http://localhost:9200", timeout=60)
         if not self.es.indices.exists(index=self.index_name):
             self.es.indices.create(index=self.index_name)
             logger.warning("INDEX CREATED")
@@ -41,17 +41,40 @@ class ESEngine():
         return FRAME_JOINER.join(frame_list)
 
     def decode_frame(self, str_frame: str) -> list:
-        """Convert a encoded frame string into a frame list"""
+        if not str_frame or not isinstance(str_frame, str):
+            return []
+            
         frame_list = []
         str_frame_list = str_frame.split(FRAME_JOINER)
+        
         for frame in str_frame_list:
+            if not frame:  # Skip empty frames
+                continue
+                
             point_list = []
             str_point_list = frame.split(POINT_JOINER)
+            
             for point in str_point_list:
+                if not point:  # Skip empty points
+                    continue
+                    
                 str_coord_list = point.split(COORD_JOINER)
-                coord_list = [float(coord) for coord in str_coord_list]
-                point_list.append(coord_list)
-            frame_list.append(point_list)
+                coord_list = []
+                
+                for coord in str_coord_list:
+                    try:
+                        if coord.strip():  # Only convert non-empty strings
+                            coord_list.append(float(coord.strip()))
+                    except ValueError as e:
+                        logger.warning(f"Invalid coordinate value: {coord}")
+                        continue
+                        
+                if coord_list:  # Only add points that have valid coordinates
+                    point_list.append(coord_list)
+                    
+            if point_list:  # Only add frames that have valid points
+                frame_list.append(point_list)
+                
         return frame_list
 
     def _process_data(self, file_path: str) -> None:
@@ -100,10 +123,12 @@ class ESEngine():
                      json_path: str | None = None):
         """Upload words and their frames into elasticsearch database"""
         words, file_names = self._process_data(mapping_path)
-        temp_file_name = 'D0125'
         frame_chunks = []
         for file_name in file_names:
-            frame_chunks.append(np.load(data_path + f'/landmarks_{temp_file_name}.npy').tolist())  # Must be changed temp_file_name to file_name
+            try:
+                frame_chunks.append(np.load(data_path + f'/landmarks_{file_name}.npy').tolist())
+            except FileNotFoundError:
+                logger.error(file_name)
         data = []
         logger.info(f"Length of frame_chunks: {len(frame_chunks)}")
         for word, frame, file_name in zip(words, frame_chunks, file_names):
@@ -131,6 +156,7 @@ class ESEngine():
             #     logger.warning(f"Word: {word}, File: {file_name}")
         logger.warning("Starting to upload to elasticsearch")
         helpers.bulk(self.es, data)
+        logger.info("Data pushed to elastic successfully")
         if json_path is not None:
             with open(json_path, "a") as f:
                 for doc in data:
@@ -159,12 +185,12 @@ es = ESEngine()
 
 
 if __name__ == "__main__":
-    pass
-#    ds = pd.read_csv('deafear\\src\\models\\model_utils\\similar_sentence\\data\\modal_data.csv')
+    ds = pd.read_csv('modal_data.csv')
 
-#     filenames = ds.ID
-#     words = ds.Word
-#     word_to_file = {}
-#     file_to_word = {}
-#     # es.clear_data_es()
-#     es.upload_to_es(words, ["this is frame" for _ in range(len(words))], filenames)
+    filenames = ds.ID
+    words = ds.Word
+    word_to_file = {}
+    file_to_word = {}
+    # es.clear_data_es()
+    es.upload_to_es('modal_data.csv',
+                    "src/models/model_utils/manipulate/data_convert")

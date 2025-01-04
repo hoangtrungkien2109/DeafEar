@@ -1,13 +1,25 @@
 import cv2
-import numpy as np
-from model import load_model, predict
+import ffmpeg
 import glob
+import shutil
 import os
 import cv2
 import numpy as np
+from .model import load_model, predict
 from loguru import logger
 import ffmpeg
 import numpy as np
+from time import time
+
+# Get the base path dynamically
+base_path = os.path.dirname(os.path.abspath(__file__))  # This gives the directory of the current script
+
+# Construct the full path to the model
+# MODEL_PATH = os.path.join(base_path, 'cut', 'cut.pth')
+MODEL_PATH = "src/models/model_utils/manipulate/cut/cut.pth"
+
+VIDEO_PATH = "src/web/static"
+
 
 # Correct connections for pose landmarks in MediaPipe (total 33 landmarks)
 POSE_CONNECTIONS = [
@@ -86,26 +98,34 @@ def draw_landmarks(image, frame_landmarks, line_thickness=2):
         return None  # Return None if no hands are detected
 
     return image
-def load_and_concatenate_npy_files(model, npy_files):
+def load_and_concatenate_npy_files(model, list_landmarks_data):
     all_landmarks = []
-    for npy_file in npy_files:
+    for idx, landmarks_data in enumerate(list_landmarks_data):
         # logger.info(npy_file) 
-        landmarks_data = np.load(npy_file)
-        
-        landmarks_data = landmarks_data[~np.any(landmarks_data == 0, axis=(1, 2))]
+        # landmarks_data = np.load(npy_file)
+        # logger.debug(landmarks_data.shape)
+        # logger.error(len(list_landmarks_data))
+        # logger.error(len(list_landmarks_data[0]))
+        # logger.error(len(list_landmarks_data[0][0]))
+        # logger.error(len(list_landmarks_data[0][0][0]))
+        # logger.error(len(list_landmarks_data[1]))
+        landmarks_data = np.array(landmarks_data)
+        # landmarks_data = landmarks_data[~np.any(landmarks_data == 0, axis=(1,2))]
+
         # logger.info(landmarks_data.shape)
 
         if len(landmarks_data) >= 300:
             landmarks_data = landmarks_data[:300]
-        
+
         if len(landmarks_data) == 0:
+            logger.error("CO")
             continue
-    
+        logger.info(landmarks_data.shape)
         
         p = predict(model,landmarks_data)
-        
+
         landmarks_data = landmarks_data[p.flatten() == 1]
-        
+
         if len(landmarks_data) == 0:
             continue
         
@@ -115,16 +135,15 @@ def load_and_concatenate_npy_files(model, npy_files):
             # logger.info("Hello")
             logger.info(np.linalg.norm(all_landmarks[-1][-1] - landmarks_data[0]))
             if np.linalg.norm(all_landmarks[-1][-1] - landmarks_data[0]) <= 1:
-                middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=5)
-            elif np.linalg.norm(all_landmarks[-1][-1] - landmarks_data[0]) <= 2:
                 middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=7)
-            else:
+            elif np.linalg.norm(all_landmarks[-1][-1] - landmarks_data[0]) <= 2:
                 middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=10)
+            else:
+                middle = np.linspace(all_landmarks[-1][-1], landmarks_data[0], num=15)
             all_landmarks.append(middle)
             all_landmarks.append(landmarks_data)
         
-        concatenated_landmarks = np.concatenate(all_landmarks,axis=0)
-        
+    concatenated_landmarks = np.concatenate(all_landmarks,axis=0)
     return concatenated_landmarks
 
 def is_similar_frame(frame1, frame2, threshold=0.05):
@@ -148,21 +167,27 @@ def defineSE(arr):
     
 
 
-# Load model
-model = load_model("model_final.pth")
+# load model
+model = load_model(MODEL_PATH)
 
-npy_folder = './temp'
-npy_files = glob.glob(os.path.join(npy_folder, '*.npy'))
+# npy_folder = './temp'
+# npy_files = glob.glob(os.path.join(npy_folder, '*.npy'))
 
-concatenated_landmarks_array = load_and_concatenate_npy_files(model, npy_files)
+# concatenated_landmarks_array = load_and_concatenate_npy_files(model, npy_files)
 
-frame_index = 0
-num_frames = len(concatenated_landmarks_array)
+# frame_index = 0
+# num_frames = len(concatenated_landmarks_array)
 
-def save_frames_to_output(concatenated_landmarks_array, num_frames, return_format='video'):
+def save_frames_to_output(landmarks_array, return_format='video', fps = 30):
+    # logger.warning(landmarks_array.shape)
+    concatenated_landmarks_array = load_and_concatenate_npy_files(model, landmarks_array)
+    frame_index = 0
+    num_frames = len(concatenated_landmarks_array)
+    logger.warning(f"Num frame: {num_frames}")
     image_height, image_width = 720, 1280
     frame_index = 0
 
+    # Initialize a list to store the frames
     frames = []
 
     # start, end = defineSE(concatenated_prediction_array[:, 0])
@@ -183,23 +208,32 @@ def save_frames_to_output(concatenated_landmarks_array, num_frames, return_forma
 
         last_frame_landmarks = frame_landmarks
 
+        # Append the frame to the list
+        frames.append(result_image)
+        
+        frame_index += 1
+        # Append the frame to the list
         frames.append(result_image)
         
         frame_index += 1
 
+
     # Use ffmpeg to create a video from the frames
     if frames:
-        out_file = "output_video.mp4"
-        
+        name = int(time())
+        out_file = f"{VIDEO_PATH}/{name}.mp4"
+        # Convert list of frames to a numpy array (height, width, channels, num_frames)
         frames_array = np.array(frames)
         
         # Create a video using ffmpeg
-        ffmpeg.input('pipe:0', format='rawvideo', pix_fmt='rgb24', s='{}x{}'.format(image_width, image_height), r=60).output(out_file, vcodec='libx264').run(input=frames_array.tobytes())
+        if os.path.exists(out_file):
+            shutil.rmtree(out_file)
 
+        ffmpeg.input('pipe:0', format='rawvideo', pix_fmt='rgb24', s='{}x{}'.format(image_width, image_height), r=fps).output(out_file, vcodec='libx264').run(input=frames_array.tobytes())
         print(f"Video saved to {out_file}")
 
     if return_format == 'video':
-        return 'output_video.mp4'  
+        return f'{name}.mp4'  # Path to the video file
     else:
         raise ValueError("Invalid return format. Choose 'npy' or 'video'.")
 
@@ -207,5 +241,6 @@ def save_frames_to_output(concatenated_landmarks_array, num_frames, return_forma
 
 if __name__ == '__main__':
     # Example usage
-    output_file = save_frames_to_output(concatenated_landmarks_array, num_frames, return_format='video')
-    print("Output file:", output_file)
+    # output_file = save_frames_to_output(concatenated_landmarks_array, num_frames, return_format='video')
+    # print("Output file:", output_file)
+    pass

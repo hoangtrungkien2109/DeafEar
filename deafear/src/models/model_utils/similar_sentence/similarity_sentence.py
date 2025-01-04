@@ -1,8 +1,14 @@
+"""
+File contains function and class related to similarity sentence
+Aim to convert from a paragraph of raw text to a list of existing words from database
+"""
+
 import re
 # import time
 import json
 # import orjson
 import torch
+import numpy as np
 from pyvi import ViTokenizer
 from loguru import logger
 from transformers import AutoTokenizer, AutoModelForTokenClassification
@@ -44,10 +50,12 @@ class SimilaritySentence():
         self.ner = pipeline("ner", model=self.ner_model, tokenizer=self.tokenizer,
                        device='cuda' if torch.cuda.is_available() else 'cpu')
         self.es = es
+        self.character_dict = {}
         try:
             with open(character_dict_path, 'r') as f:
                 self.character_dict = json.load(f)
-        except Exception as e:
+
+        except FileNotFoundError as e:
             logger.error(e)
 
     def clean_text(self, text: str) -> str:
@@ -94,12 +102,14 @@ class SimilaritySentence():
                 scores.append(20)
                 existing_words.append(word)
                 map_word_to_frame[word] = self._search_name(word)
+                logger.info("Chars: ",len(map_word_to_frame[word]))
                 continue
             searching_result = es.search(word)
             if len(searching_result) > 0:
                 scores.append(searching_result[0]["_score"])
                 existing_words.append(searching_result[0]["_source"]["word"])
                 map_word_to_frame[existing_words[-1]] = self.es.decode_frame(searching_result[0]["_source"]["frame"])
+        logger.warning(f"map keys: {map_word_to_frame.keys()}")
         for base_score in range(5, int(max(scores))):
             current_words = []
             for idx, score in enumerate(scores):
@@ -118,12 +128,15 @@ class SimilaritySentence():
         #         for char in reversed(self._process_name(word)):
         #             result_sentence.insert(idx, char)
         result_frames = []
-        logger.info(map_word_to_frame.keys())
+        # logger.info(len(map_word_to_frame["chúng tôi"]))
+        # logger.info(len(map_word_to_frame["HOANG"]))
         for word in result_sentence:
             if word in names:
-                result_frames.extend(map_word_to_frame[word])
+                result_frames.extend(map_word_to_frame[word])  # FIX
             else:
                 result_frames.append(map_word_to_frame[word])
+                
+        # logger.warning(f"{len(result_frames)}, {len(result_frames[0])}, {len(result_frames[1])},   {len(result_frames[2])}")
         return result_frames
 
     def _detect_name(self, sentence: str) -> dict:
@@ -149,6 +162,14 @@ class SimilaritySentence():
 
     def _search_name(self, name: str) -> list:
         """Convert from name to list of frames of characters"""
-        return [self.character_dict[char] for char in self._process_name(name)]
+        result = []
+        for char in self._process_name(name):
+            # logger.warning(f"char: {char}")
+            if char.lower() in self.character_dict:
+                result.append(
+                    self.character_dict[char.lower()]
+                    )
+        
+        return result
 
 ss = SimilaritySentence()
