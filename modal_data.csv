@@ -1,0 +1,2241 @@
+ID,Word,Description,Has Video
+D0001B,địa chỉ,"Những thông tin cụ thể về chỗ ở, nơi làm việc của một người, một cơ quan, v.v.",false
+D0002,tỉnh,"Đơn vị hành chính, gồm nhiều huyện và thị xã, thị trấn.",false
+D0003,tiếp tân,Đón tiếp khách.,true
+D0004,nhân viên,"Người làm việc trong một cơ quan, tổ chức, trong quan hệ với thủ trưởng, lãnh đạo của cơ quan, tổ chức đó.",true
+D0009,phương Tây,,false
+D0010,phương Đông,,false
+D0013,người nước ngoài,,true
+D0014,nhập khẩu,Đưa hàng hoá hay tư bản của nước ngoài vào nước mình.,true
+D0017,hấp dẫn,"Có sức lôi cuốn, làm cho người ta ham thích.",false
+D0018,nổi da gà,,true
+D0019B,ghen tị,"So bì và khó chịu, bực bội khi thấy người khác được hơn mình.",false
+D0020B,lung tung,Hoàn toàn không có một trật tự nào cả.,false
+D0021,hói đầu,"Tình trạng bị rụng nhiều hoặc gần hết tóc, làm vùng trên trán và đỉnh đầu trơn nhẵn.",true
+D0022,cười nhếch mép,,false
+D0023,cười vỡ bụng,"Cười to và thành tràng dài mãi không thôi, đến mức như không thể nín nhịn được.",true
+D0024B,tham ăn,,false
+D0026,thèm,"Tha thiết mong muốn được hưởng, được có, hay được làm một cái gì đó.",false
+D0028,đứng đầu,,true
+D0029B,thói quen,"Lối sống, cách sống hay hoạt động do lặp đi lặp lại lâu ngày thành quen, khó thay đổi.",false
+D0030,khuyến khích,"Tác động đến tinh thần để gây phấn khởi, tin tưởng mà cố gắng hơn.",false
+D0031B,không nghe lời,,false
+D0032,ai cho,,false
+D0033B,không cho,,false
+D0034,không cần,,false
+D0035B,không nên,,false
+D0036,bực mình,"Bực trong lòng, khó chịu trong lòng.",false
+D0037,tự giác,"Tự mình hiểu mà làm, không cần nhắc nhở, đốc thúc.",false
+D0038,mù chữ,"Không biết đọc, biết viết (tuy ở tuổi đáng lẽ đã được học).",false
+D0039,vô tình,"Không có tình nghĩa, không có tình cảm.",false
+D0041,giỗ,"Lễ tưởng nhớ người đã chết đúng vào ngày chết, hằng năm, thường có cúng lễ theo phong tục.",true
+D0059,cá sấu,,true
+D0060B,nhầm,"Nhận thức cái nọ ra cái kia, do sơ ý hay không biết.",false
+D0064,buồn thảm,Buồn đến mức thảm đạm.,true
+D0065B,mách,"Nói cho người khác biết điều đối với người đó là cần thiết, có lợi.",false
+D0066B,vô duyên,"Không có duyên, thiếu những gì tế nhị đáng yêu, làm cho không có gì hấp dẫn.",false
+D0067,ti hí mắt,,false
+D0068,kịp thời,"Đúng lúc, không để chậm trễ.",false
+D0069,bối rối,"Lúng túng, mất bình tĩnh, không biết nên xử trí thế nào.",true
+D0070,hú vía,Sợ hoảng hồn trước một nguy hiểm bất ngờ (nhưng nay đã thoát khỏi).,false
+D0071,suỵt,Tiếng gió thốt ra khe khẽ để nhắc người khác giữ im lặng.,true
+D0072B,suýt,Chỉ còn thiếu chút nữa là đã xảy ra (thường là điều không hay).,false
+D0073,cá voi,,true
+D0074,cá kiếm,"Cá biển cỡ lớn, có hàm trên kéo rất dài ra phía trước thành mũi nhọn như lưỡi kiếm.",true
+D0075,đuôi cá,,true
+D0076,đuôi chuột,,true
+D0077B,bít tết (bò),"Món ăn kiểu Âu, làm bằng thịt bò rán cả miếng.",false
+D0078,súp,,true
+D0079,súp lơ,"Cải có hoa non mọc tập trung thành một khối nạc, dùng làm rau ăn.",true
+D0080B,mỳ tôm,,false
+D0082B,mỳ ý,,false
+D0083,bún mắm,,true
+D0084,bún chả,"Món ăn gồm bún với thịt nướng, ăn kèm với rau sống và nước chấm.",true
+D0085,bún ngan,,true
+D0086,bún ốc,,true
+D0087B,bún đậu,,false
+D0088,xôi gấc,"Xôi nấu trộn với ruột gấc, có màu đỏ, vị hơi ngọt.",true
+D0089,xôi gà,,true
+D0090,cháo sườn,,true
+D0091,cơm rang,"Cơm để nguội rồi rang lên với dầu hoặc mỡ, có thể cho thêm một số thứ khác như giò, lạp xường, dưa muối.",true
+D0092,nhấn mạnh,,false
+D0093,đạo diễn,Người làm việc đạo diễn.,true
+D0094,thí nghiệm,"Gây ra một hiện tượng, một sự biến đổi nào đó trong điều kiện xác định để tìm hiểu, nghiên cứu, kiểm tra hay chứng minh.",true
+D0095,cắm trại,,true
+D0096,khả năng,"Cái có thể xuất hiện, có thể xảy ra trong điều kiện nhất định.",false
+D0097,kỹ năng,Khả năng vận dụng những kiến thức đã thu nhận được trong một lĩnh vực nào đó áp dụng vào thực tế.,false
+D0099,cung cấp,Làm cho có thứ cần để sử dụng.,false
+D0100,khờ dại,"Kém trí khôn, kém tinh nhanh.",false
+D0101,cực khổ,Cực và khổ (nói khái quát).,false
+D0102,may mắn,May (nói khái quát).,false
+D0103B,từ chối,Không chịu nhận cái được dành cho hoặc được yêu cầu.,false
+D0104,nấu nướng,Nấu thức ăn (nói khái quát).,true
+D0105,xoa đầu ,,true
+D0107,rực rỡ,"Có màu sắc tươi sáng đẹp đẽ và nổi bật hẳn lên, làm cho ai cũng phải chú ý.",false
+D0108B,thiệp sinh nhật,,false
+D0109B,không quen,,false
+D0110,bánh tráng,"Bánh làm bằng bột gạo tẻ hay sắn, khoai, v.v. xay ướt, tráng thành tấm mỏng hình tròn hoặc vuông, dùng để gói nem hay cuốn ăn gỏi sống.",true
+D0111B,tương ớt,"Là thứ nước chấm cay có dạng đặc sệt như nước sốt và có màu cam, được làm từ nguyên liệu chính là ớt xay nhuyễn kết hợp với một số gia vị khác.",false
+D0112,không có,,false
+D0113,không có chi,,false
+D0114,dân chủ,Chế độ dân chủ hoặc quyền dân chủ (nói tắt).,false
+D0115,xử lý,Xem xét và giải quyết về mặt tổ chức một vụ phạm lỗi nào đó.,false
+D0116,đất ruộng,,true
+D0117,tinh mắt,,false
+D0118,cũng vậy/cũng thế,,false
+D0124,kia,"Từ dùng để chỉ một sự vật, địa điểm, hiện tượng ở xa vị trí của người nói, nhưng trong phạm vi có thể nhìn thấy cụ thể.",false
+D0125,nóng tính,Có tính dễ nổi nóng.,false
+D0127,căm thù,Căm giận đến mức thôi thúc phải trả thù.,false
+D0129B,không đẹp,,false
+D0134,chúng tôi,Tổ hợp dùng để nhân danh một số người mà tự xưng.,false
+D0135,các bạn,,true
+D0137,họ,,false
+D0138,bạn yêu tôi,,false
+D0139,tôi yêu bạn ấy,,false
+D0143B,anh hai,,false
+D0144B,chị hai,,false
+D0146,một là,,false
+D0147,hai là,,false
+D0148,ba là,,false
+D0149,bốn là,,false
+D0150,năm là,,false
+D0151B,ông bà,Là người sinh ra bố mẹ của một người.,false
+D0152B,chị họ,,false
+D0153B,em họ,,false
+D0154B,cháu họ,,false
+D0155B,sống sót,"Còn sống sau một biến cố, một tai nạn lớn, trong khi những người cùng hoàn cảnh hầu như đã chết.",false
+D0156,thường xuyên,"Đều đặn và liên tục, không gián đoạn.",false
+D0157B,đi dạo,,false
+D0158B,về,"Di chuyển trở lại chỗ của mình, nơi ở, nơi quê hương của mình.",false
+D0160,đi về,"Di chuyển đến nơi mình có quan hệ gắn bó coi như nhà mình, quê hương mình, hoặc nơi mình được mọi người đối xử thân mật, coi như người nhà, người cùng quê.",false
+D0162,về nhà,Di chuyển trở lại nơi mình ở.,false
+D0163B,hẹn,Nói với ai rằng sẽ làm việc gì trong một thời gian cụ thể sắp tới.,false
+D0164,quyến luyến,"Biểu thị tình cảm gắn bó, không muốn rời xa.",false
+D0165B,hứa,Nhận lời với ai đó một cách chắc chắn là sẽ làm việc gì đó.,false
+D0166,cùng / với,,false
+D0167,lâu,"Có thời gian kéo dài, chỉ một khoảng thời gian được coi là dài mới kết thúc.",false
+D0168B,vẫn,"Từ biểu thị ý khẳng định về điều xảy ra, diễn ra như bình thường, cho dù điều kiện là không bình thường.",false
+D0169B,mỗi ngày,,false
+D0170B,hàng ngày,,false
+D0173,hôi,"Có mùi khó ngửi như mùi bọ xít, chuột chù.",false
+D0174,trông nhà,,false
+D0175,chạy,"Động vật di chuyển thân thể bằng những bước nhanh, mạnh và liên tiếp.",true
+D0176,xe container,,true
+D0177,bay nhanh,,true
+D0178,chậm chạp,Chậm (nói khái quát).,true
+D0179,ngừng lại,"Không tiếp tục hoạt động, phát triển.",false
+D0182B,cung điện,Nhà ở và làm việc của vua chúa.,false
+D0183,dừng lại,,true
+D0184,một ít/ một chút,"Một phần nào đó, thường là rất nhỏ.",false
+D0185,kẹt xe/tắc đường,,true
+D0186,suy ra,,false
+D0187,thì thầm,"Nói thầm với nhau, không để người ngoài nghe thấy.",true
+D0188B,hoặc,"Từ biểu thị quan hệ giữa nhiều (thường là hai) khả năng khác nhau, không khả năng này thì khả năng kia, ít nhất có một khả năng được thực hiện.",false
+D0190B,không muốn,,false
+D0191,sa mạc,"Vùng rộng lớn có khí hậu rất khô, không có nước, hầu như không có cây cối và động vật sinh sống, trừ ở một số ốc đảo.",true
+D0192B,xem,Nhận biết bằng mắt.,false
+D0193,núi cao,,true
+D0194,núi thấp,,true
+D0196,xem đã,,false
+D0197,mồ hôi nhễ nhại,,true
+D0198,không ngon,,false
+D0199,hài lòng,Cảm thấy hợp ý vì đáp ứng được đầy đủ những đòi hỏi đã đặt ra.,false
+D0200,má hồng,"Má đỏ hồng, dùng để chỉ ngưởi con gái đẹp.",true
+D0201,ngập ngừng,"Tỏ ra do dự, rụt rè, vừa muốn lại vừa e ngại, không quả quyết.",false
+D0204,mít tinh,"Cuộc tụ tập quần chúng đông đảo để tham dự một sự kiện chính trị, xã hội quan trọng nào đó.",true
+D0205,sụp đổ,"Đổ sập xuống, đổ hẳn xuống.",true
+D0206B,thiếu thốn,Thiếu nhiều so với nhu cầu.,false
+D0208,khổ công,"Vất vả, phải bỏ ra quá nhiều sức lực, tâm trí vào công việc nào đó.",false
+D0209B,dám làm,,false
+D0210B,không dám,,false
+D0211,phiền hà,"Làm rầy rà, rắc rối, gây khó dễ cho người khác.",true
+D0212,đèn ông sao,,true
+D0213B,ung thư,"U ác tính, thường có di căn, dễ gây tử vong.",false
+D0214B,phó hiệu trưởng,,false
+D0216,nguyệt quế,"Dùng để tặng thưởng cho những người chiến thắng, cả trong những cuộc thi đấu thể thao, bao gồm cả Olympic cổ đại cũng như các cuộc thi.",true
+D0217,hữu nghị,"Thân thiện, có tính chất bè bạn (thường nói về quan hệ giữa các nước).",false
+D0218,bắn cung tên,,true
+D0219,mũi tên,"Tên bắn đi bằng cung, nỏ.",true
+D0220,cung tên,,true
+D0221,tận số,"Chấm dứt, kết thúc số phận, coi như hết đời.",false
+D0222,nứt nẻ,Nứt thành nhiều đường ngang dọc chằng chịt.,true
+D0223B,Mã Lai,,false
+D0226,đàng hoàng,"Có đời sống vật chất đầy đủ, theo mức yêu cầu chung của xã hội.",false
+D0227,phân vân,"Ở trong trạng thái đang phải nghĩ ngợi, chưa biết nên quyết định như thế nào cho phải.",false
+D0228,lau miệng,,true
+D0229,chó cắn,,true
+D0230,mèo cào,,true
+D0231,quan hệ từ,,false
+D0232,yêu nước Việt Nam,,true
+D0233,quan,"Viên chức có quyền hành trong bộ máy nhà nước phong kiến, thực dân.",true
+D0234,đi tuần,,true
+D0235,vỗ về,"Vỗ nhẹ vào người, để tỏ tình cảm âu yếm, nâng niu làm cho có được cảm giác êm dịu.",false
+D0236,hốt hoảng,"Hoảng, biểu hiện ra trong cử chỉ, lời nói, v.v.",true
+D0237,chuyện nhỏ,,false
+D0238,chuyện lớn,,false
+D0239,cái gùi,,true
+D0240,hùng vĩ,"Rộng lớn và gây được ấn tượng của cái mạnh, cái đẹp (thường nói về cảnh vật).",false
+D0241,bất khuất,Không chịu khuất phục.,false
+D0242B,nhưng,Từ biểu thị điều sắp nêu ra ngược lại với điều vừa nói.,false
+D0243B,hay là (hoặc là),"Từ biểu thị điều sắp nêu ra là một khả năng mà người nói thấy chưa thể khẳng định, đang còn hồ nghi.",false
+D0246,quanh năm,Suốt từ đầu năm đến cuối năm.,false
+D0247,gấp đôi,,false
+D0248,gấp ba,,false
+D0249B,chia đôi,,false
+D0250B,chia ba,,false
+D0251,"đi lạc",,true
+D0252,mất (chết),Không còn sống nữa.,false
+D0253,đại sứ,Đại sứ đặc mệnh toàn quyền (nói tắt).,false
+D0254,cảnh giác,Chú ý đề phòng và có cảm giác nhạy bén trước sự biến đổi xấu đi của tình hình hoặc trước mối nguy hiểm có thể xảy ra.,false
+D0255,giám sát,Theo dõi và kiểm tra việc thực hiện những điều đã quy định.,true
+D0256,quan sát,"Nhìn, xem xét để thấy, để biết rõ sự vật, hiện tượng nào đó.",false
+D0257,ăn vụng,"Ăn lén lút, vụng trộm.",true
+D0258,xảy ra,,false
+D0259,dự án,Bản dự thảo một văn kiện về luật pháp hay về một kế hoạch cụ thể nào đó.,true
+D0260,đầu tư,"Bỏ nhân lực, vật lực, tài lực vào công việc gì sao cho có hiệu quả kinh tế, xã hội.",false
+D0261,năn nỉ,Nói khẩn khoản để nài xin.,false
+D0262,háo hức,"Ở trạng thái phấn khởi nghĩ đến và nóng lòng chờ đợi một điều hay, điều vui biết là sắp tới.",false
+D0263,rắc rối,"Có mối quan hệ phức tạp giữa nhiều yếu tố, khiến cho trở nên khó hiểu, khó giải quyết.",false
+D0264,tải về,,false
+D0265,nhõng nhẽo,Làm ra vẻ không bằng lòng để đòi hỏi người khác phải chiều theo ý mình.,false
+D0266,hên/gặp may,,false
+D0267B,đen đủi,"Không gặp điều tốt lành, may mắn.",false
+D0268B,xui xẻo,"Đen đủi, không gặp may.",false
+D0269,long lanh,"Có ánh sáng phản chiếu trên vật trong suốt, tạo vẻ trong sáng, sinh động.",false
+D0270B,lạnh lùng,"Không hề biểu hiện một chút tình cảm trong quan hệ tiếp xúc với người, với việc.",false
+D0271B,dỗi,"Tỏ thái độ giận, không bằng lòng bằng cách làm như không cần đến nữa, không thiết nữa.",false
+D0272B,liếc nhìn,Đưa mắt nhìn chếch và nhanh sang một bên.,false
+D0273,nhổ tóc,,true
+D0274,nhổ râu,,true
+D0275,nhổ lông mày,,true
+D0276,cắt lông mũi,,true
+D0277,nhổ răng,,true
+D0278,răng hô,,true
+D0279,răng khểnh,,true
+D0280,kháu khỉnh,Kháu (nói khái quát).,false
+D0286,cách ly,"Không để cho tiếp xúc với những người hoặc vật khác, nhằm ngừa trước điều gì (thường là nhằm tránh lây bệnh).",true
+D0287,giãn cách,,true
+D0288,tương lai,"Thời gian về sau này, thời gian sắp tới.",false
+D0289,ria mép,Râu mọc ở mép.,true
+D0290,trong khoảng,,false
+D0291,trốn tìm,,true
+D0292,nhảy bao bố,,true
+D0293,nhảy lò cò,,true
+D0294,kéo co,"Trò chơi tập thể, người chơi chia làm hai tốp, mỗi tốp nắm một đầu sợi dây, bên nào kéo được về phía mình là thắng.",true
+D0295,hội thoại,Sử dụng một ngôn ngữ để nói chuyện với nhau.,false
+D0296,lý do,Điều làm căn cứ được dùng để giải thích một việc nào đó.,false
+D0300,tỉnh táo,"Ở trạng thái tỉnh, không buồn ngủ; ở trạng thái vẫn minh mẫn, không để cho tình hình rắc rối, phức tạp tác động đến tư tưởng, tình cảm.",false
+D0301,nhộn nhịp,"Từ gợi tả không khí đông vui, tập nập, do có nhiều người qua lại hoặc cùng tham gia hoạt động.",true
+D0302,áo kẻ sọc,,true
+D0304,thống nhất,,true
+D0305,khoáng sản,"Khoáng vật và đá trong vỏ Trái Đất, có thể khai thác để trở thành các nguồn lợi kinh tế.",true
+D0306,thương mại,Ngành kinh tế thực hiện việc lưu thông hàng hoá bằng mua bán.,false
+D0307B,công nghiệp,"Ngành chủ đạo của nền kinh tế đất nước, bao gồm các xí nghiệp khai thác và chế biến nguyên vật liệu, nhiên liệu (rừng, biển, mỏ, v.v.), chế tạo công cụ lao động và hàng tiêu dùng (máy móc, động cơ, v.v.), chế biến sản phẩm của các ngành nông nghiệp, lâm nghiệp, ngư nghiệp, v.v.",false
+D0313,nhà rông,"Nhà công cộng của buôn làng ở một số vùng dân tộc thiểu số Tây Nguyên, dùng làm nơi tiếp khách và hội họp, vui chơi chung.",true
+D0314,lãng phí,"Làm tốn kém, hao tổn một cách vô ích.",true
+D0315,tiến bộ,"Trở nên giỏi, tốt hơn trước.",false
+D0317,cứu sống,,true
+D0318,máy xúc,"Máy chạy bằng động cơ, có lắp gàu ngoạm để đào bốc đất đá, thường dùng trong xây dựng và trong khai thác mỏ lộ thiên.",true
+D0321,kim cương,"Carbon ở dạng tinh thể óng ánh, rất cứng, dùng để cắt kính, làm đồ trang sức.",true
+D0322,phân biệt,"Nhận biết được sự khác nhau, căn cứ vào đặc điểm, tính chất.",false
+D0323,không bình đẳng,,false
+D0324,đùm bọc,Giúp đỡ và che chở lẫn nhau trong cuộc sống.,false
+D0325,khởi nghiệp,Bắt đầu sự nghiệp.,false
+D0326B,vải lụa,,false
+D0329,rau diếp cá,,true
+D0330,rau ngò/rau mùi,,true
+D0331,thao thức,"Trằn trọc, trăn trở không sao ngủ được vì có điều phải suy nghĩ, không yên.",false
+D0332,thâm quầng mắt,,true
+D0333,tự hào,"Lấy làm hài lòng, hãnh diện về cái tốt đẹp mà mình có.",false
+D0334,quyên góp,Góp tiền của để làm việc có ích.,true
+D0335,chia rẽ,"Làm cho mâu thuẫn với nhau, khiến cho mất đoàn kết, mất đi sự thống nhất.",true
+D0336,tự trọng,"Coi trọng và giữ gìn phẩm cách, danh dự của mình.",false
+D0337,gian dối,"Có ý lừa lọc, không thật thà ngay thẳng.",false
+D0338,ăn bám,Sống nhờ vào lao động của người khác (nói về người có khả năng lao động mà không chịu làm ăn gì).,false
+D0339,tuyên truyền,"Giải thích rộng rãi để thuyết phục mọi người tán thành, ủng hộ, làm theo.",true
+D0340,thịnh vượng,"Ở trạng thái đang phát đạt, giàu có lên.",false
+D0341,lấm lem,Bị dính bẩn nhiều chỗ.,true
+D0342B,ham chơi,,false
+D0343,đánh cầu lông,,true
+D0344,cánh buồm,,true
+D0346B,da trắng,,false
+D0347B,da ngăm đen,,false
+D0348,tuần trăng mật,Chuyến du lịch mà đôi vợ chồng mới kết hôn dành cho nhau ngay sau lễ cưới của mình trong sự thân mật và riêng tư.,true
+D0349,năm tới,,false
+D0350,hoãn,"Chuyển thời điểm định làm việc gì đó sang thời điểm khác, muộn hơn.",false
+D0351,huỷ,Làm cho không còn tồn tại hoặc không còn giá trị nữa.,false
+D0352,phụ thuộc,"Chịu sự ràng buộc, chi phối của cái khác, không thể tồn tại, phát triển nếu thiếu tác động nhất định của cái khác.",false
+D0353,thuộc địa,Nước hoặc vùng lãnh thổ bị một nước đế quốc thực dân xâm chiếm và đô hộ.,false
+D0354,tẩy chay,"Không hưởng ứng, không tham gia, không có quan hệ nữa, để tỏ thái độ phản đối.",true
+D0366,bệnh phong/cùi,,true
+D0367,hội chứng Đao,,true
+D03671,bệnh Đao,,false
+D0369,mệt mỏi,"Mệt đến mức không còn muốn làm gì nữa, thường do kiệt sức.",true
+D0370,mệt không?,,false
+D0371,đói không?,,false
+D0372,cả ngày,,false
+D0373,chiên/rán,"Làm cho chín thức ăn trong dầu, mỡ đun sôi.",true
+D0374,nướng,Làm cho chín bằng cách đặt trực tiếp trên than hồng hoặc lửa.,true
+D0375,luộc,Làm chín thực phẩm bằng cách đun trong nước.,true
+D0376,xào,Làm chín thức ăn bằng cách đảo đều với dầu mỡ và mắm muối trên bếp.,true
+D0377,lẩu,"Món ăn gồm nhiều thứ thịt, tôm, cá, rau, v.v. thả vào nồi nước dùng đang sôi để ăn nóng.",true
+D0378,gỏi/nộm,,true
+D0379,nhà kho,Nhà chuyên dùng để làm kho.,true
+D0380,hấp,Làm cho chín thức ăn bằng hơi nóng của nước.,true
+D0381,thối,Có mùi khó ngửi.,true
+D0382,thiu,Thức ăn đã nấu chín bị biến chất và có mùi khó chịu.,true
+D0383,nguội,"Không còn nóng nữa, trở thành có nhiệt độ bình thường.",true
+D0384,ngán,,true
+D0385,tôm hùm,"Tôm biển to có đôi càng rất lớn, râu rất dài, đầu có gai.",true
+D0386,cua đồng,"Cua nhỏ sống ở nước ngọt, thường đào hang ở bờ ruộng.",true
+D0387,con hàu,,true
+D0388,hải sản,"Sản phẩm thực vật, động vật khai thác từ biển (nói khái quát).",true
+D0389,vịt quay,,true
+D0390,gà nướng lu,,true
+D0393,bánh canh,"Thức ăn làm bằng bột nhào kĩ rồi cắt thành sợi, nấu với tôm, cua, thịt.",true
+D0394,miến,"Thức ăn làm bằng tinh bột, chế biến thành sợi dài, nhỏ và khô, nấu chín có màu trong và dai.",true
+D0396B,nước ép,,false
+D0397,"sinh tố (bơ, dâu,..)","Chỉ thức uống được chế biến từ các loại hoa quả tươi bằng cách xay nhuyễn với một vài muỗng cà phê sữa đặc có đường, đá vụn và trái cây tươi.",true
+D0398,vắt chanh,,true
+D0399,mía,"Cây trồng thuộc họ lúa, thân đặc có đốt, chứa chất đường, dùng để ăn, kéo mật hoặc làm đường.",true
+D0400,chanh đá,,true
+D0401,chanh nóng,,true
+D0402,chanh muối,,true
+D0403,trà đá,,true
+D0404,trà nóng,,true
+D0405,trà sữa,,true
+D0406,Socola,Một loại đồ ăn được làm từ quả của cây ca cao.,true
+D0409,một tiết học,,false
+D0410B,một tiếng,,false
+D0411,chung tay,,true
+D0412,rửa chân,,true
+D0413,rửa mặt,,true
+D0414,đánh răng,,false
+D0416B,tuần này,,false
+D0417B,tuần sau,,false
+D0418B,tuần trước,,false
+D0419,cuối tuần,,false
+D0420,cuối tháng,,false
+D0421,cuối năm,,false
+D0422,mục tiêu,Đích để nhắm vào.,true
+D0423B,sinh đôi,"Sinh ra trong cùng một lần, thành một đôi.",false
+D0424,đôi/cặp,"Tập hợp gồm hai vật cùng loại, hai cá thể tương ứng với nhau và làm thành một đơn vị về mặt chức năng, công dụng.",false
+D0425,Đảng,"Đảng Cộng sản Việt Nam, nói tắt.",true
+D0426,mô tả,"Dùng một phương tiện nào đó làm cho người khác có thể hình dung được cụ thể sự vật, sự việc hoặc thế giới nội tâm của con người.",false
+D0427,mũm mĩm,"Béo và tròn trĩnh, trông thích mắt.",true
+D0428,tóc dài,,true
+D0429B,tóc ngắn,,false
+D0430B,tổng kết/bế giảng,"Kết thúc một khoá học, một năm học.",false
+D0431,lốc xoáy,,true
+D0432B,sạch sẽ,,false
+D0433,nhắm mắt,Bắt đầu ngủ.,true
+D0434,sờ,Đặt và di động nhẹ bàn tay trên bề mặt của vật để nhận biết bằng xúc giác.,true
+D0435,cây nến,,true
+D0436,dịu dàng,"Tỏ ra dịu, có tác dụng gây cảm giác dễ chịu, tác động êm nhẹ đến các giác quan hoặc đến tinh thần.",false
+D0437B,đùa,"Làm hoặc nói điều gì để cho vui, không phải là thật.",false
+D0438,làm được,,false
+D0439,dòng sông,,true
+D0440,ăn đủ,,false
+D0441,ăn vừa,,false
+D0442,ăn ít,,false
+D0443,đồ uống,,true
+D0444,đồ ăn,"Các thức dùng để ăn, nói chung.",true
+D0445,trang điểm,"Làm cho đẹp lên bằng cách dùng son phấn, quần áo, đồ trang sức, v.v.",true
+D0446,đau mắt đỏ,,true
+D0447,cái vợt cá,,true
+D0448,vợt cầu lông,,true
+D0449,con vượn,,true
+D0450,thắp đèn,,true
+D0451,góp tiền,,true
+D0452B,họp nhóm,,false
+D0453,nhút nhát,"Hay rụt rè, sợ sệt.",true
+D0455,luộc rau,,true
+D0456,muối,"Tinh thể trắng, vị mặn, thường được tách từ nước biển, dùng để ăn.",true
+D0457,nước mắm,"Dung dịch mặn, có vị ngọt đậm, được chế biến từ cá muối, dùng để chấm hoặc nêm thức ăn.",true
+D0458,thoăn thoắt,"Cử động rất nhanh nhẹn, nhịp nhàng và liên tục của tay chân.",false
+D0459,nghênh nghênh,,false
+D0460,đua đòi,Bắt chước trong việc phô trương về hình thức để tỏ ra mình không thua kém ai.,false
+D0461,bình sữa,,true
+D0462,đòi,"Nói, báo cho người khác biết là phải trả cái thuộc quyền của mình.",false
+D0463,đòi hỏi,"Tỏ rõ yêu cầu, mong muốn ở người khác và muốn người ta phải đáp ứng, làm theo.",true
+D0464B,trẻ con/con nít,Chỉ những đứa trẻ nói chung có ý thân thiết.,false
+D0465,duy nhất,"Chỉ có một mà thôi, không có hai.",false
+D0466,cạnh tranh,"Tranh đua nhau để giành lấy lợi ích về phía mình, giữa những người, những tổ chức có cùng lĩnh vực hoạt động như nhau.",true
+D0467,hoa hậu,"Danh hiệu dành cho người con gái đạt giải nhất trong một cuộc thi người đẹp có quy mô lớn (một nước, một khu vực, hoặc toàn thế giới).",true
+D0468,cái neo,,true
+D0469,phóng viên,"Người làm báo chuyên đi lấy tin tức, tài liệu để viết bài.",true
+D0470B,nhà văn hóa,Nhà làm nơi tổ chức sinh hoạt câu lạc bộ cho quần chúng đông đảo.,false
+D0472,chõ xôi,"Nồi dùng để đồ xôi, gồm hai tầng, tầng dưới đựng nước, tầng trên đựng gạo có lỗ nhỏ ở đáy để hơi nước bốc lên làm chín gạo.",true
+D0473,cây cọ,"Cây bút lông để vẽ; cũng dùng để chỉ người vẽ tranh, hoạ sĩ (về mặt có một tính chất nào đó).",true
+D0475,phong toả,"Bao vây để cô lập, cắt đứt mọi liên hệ, liên lạc với bên ngoài.",true
+D0477,thung lũng,là một vùng đất có địa hình trũng hơn so với những vùng đất xung quanh.,true
+D0478,địa hình,"Bề mặt của một vùng, với sự phân bố các yếu tố như núi, đồi, đồng bằng,v.v.",true
+D0481,hoa giấy,"Cây leo, rậm lá, hoa mọc từng cụm ba cái, màu đỏ, trắng hay vàng, thường được trồng làm cảnh, làm thành giàn để lấy bóng mát.",true
+D0482,hoa dâm bụt,,true
+D0483,kết luận,Đưa ra ý cuối cùng được rút ra từ những sự kiện hay lập luận nhất định.,false
+D0484,internet,,false
+D0485,nhà vệ sinh,,true
+D0486,đi vệ sinh,,true
+D0488,hoa mai,,true
+D0524B,dấu huyền,,false
+D0525B,dấu sắc,,false
+D0526B,dấu hỏi,Dùng đặt ở cuối câu hỏi.,false
+D0527B,dấu ngã,,false
+D0528,dấu nặng,,true
+D0548B,nghìn,,false
+D0549B,nghìn,,false
+D0550B,nghìn,,false
+D0551B,triệu,,false
+D0552B,tỉ,,false
+D0600,ăn cóc,,false
+W00000,ác,,true
+W00001,ác cảm,"Có cảm giác không ưa, phần nào thấy ghét.",false
+W00002,ác độc,"Rát ác, thâm hiểm, thậm chí có phần thích thú trước những đau đớn gây ra cho người khác.",false
+W00003,ác mộng,"Giấc mơ dữ, thấy những điều không lành đáng sợ; cũng dùng để chỉ tai hoạ lớn đã trải qua, nghĩ đến còn thấy ghê sợ, tưởng như thực như hư.",true
+W00004B,ai,"Từ dùng để nói về người nào đó, không rõ. ",false
+W00007,an ninh,"Yên ổn về mặt chính trị, về trật tự xã hội. ",false
+W00010B,anh chị,,false
+W00011,anh chị em,"Những người còn trẻ, gồm cả nam lẫn nữ, có quan hệ ruột thịt hoặc gần gũi như ruột thịt.",true
+W00012B,anh dũng,Dũng cảm quên mình.,false
+W00013B,anh em,Những người cùng một thế hệ có quan hệ ruột thịt hoặc họ hàng với nhau.,false
+W00014B,anh họ,,false
+W00015,anh hùng,"Người có tài năng và dũng khí hơn hẳn người thường, làm nên những việc được người đời ca tụng.",true
+W00774,mực,,true
+W00775,nai,,true
+W00776,ngỗng,,true
+W00777B,người,,false
+W00778B,ngựa,,false
+W00779,nhím,,true
+W00781B,ong,,false
+W00782,ốc,,true
+W00783,quạ,,true
+W00784,rắn,,true
+W00785,rối,,true
+W00786,ruồi,,true
+W00787B,rùa,,false
+W00788,sâu,,true
+W00789,sò,,true
+W00790,sóc,,true
+W00791,sói,,true
+W00792,sông,,true
+W00793,số,,true
+W00794B,sư tử,,false
+W00795,tem,,true
+W00796,thỏ,,true
+W00797B,tôm,,false
+W00799,trăn,,true
+W00801,vẹt,,true
+W00802,vịt,,true
+W00803B,voi,,false
+W00804,cong,"Không thẳng, mà cũng không gãy gập.",true
+W00806,còng,"Khoá tay, chân bằng còng.",true
+W00807,cõng,"Mang trên lưng, thường bằng cách còng lưng xuống và quặt tay ra phía sau để đỡ.",true
+W00809,cô dâu,"Người con gái lấy chồng, trong hôm làm lễ cưới.",true
+W00811,cô đơn,"Chỉ có một mình, không sống cùng với người khác.",true
+W00812B,cô giáo,Người phụ nữ làm nghề dạy học.,false
+W00814,cổ,"Bộ phận của cơ thể, nối đầu với thân.",true
+W00817,cổ đại,Thời đại xưa nhất trong lịch sử.,true
+W00819,cổ kính,Cổ xưa và có vẻ trang nghiêm.,true
+W00820B,cố gắng,Bỏ công sức ra nhiều hơn mức bình thường để làm việc gì (nói khái quát).,false
+W00822,cổ tay,Chỗ nối bàn tay với cẳng tay.,true
+W00823,cổ truyền,"Từ xưa truyền lại, vốn có từ xưa.",false
+W00824,cổ vũ,Tác động đến tinh thần làm cho hăng hái hoạt động.,true
+W00825B,cổng trường,,false
+W00827,cố định,"Được giữ nguyên trạng thái, không di động, không biến đổi.",false
+W00832,cốc,"Đồ dùng để uống nước, uống rượu, v.v. thường làm bằng thuỷ tinh hoặc nhựa, có thành cao, lòng sâu.",true
+W00836,cốm,"Món ăn làm bằng thóc nếp non rang chín, giã sạch vỏ, màu xanh, hương vị thơm.",true
+W00837,côn trùng,"Động vật chân đốt, cơ thể chia thành ba phần, có một đôi râu, ba đôi chân, phần lớn có cánh.",true
+W00838,công bằng,"Theo đúng lẽ phải, không thiên vị.",true
+W00840,công cộng,Thuộc về mọi người hoặc để phục vụ chung cho mọi người trong xã hội.,false
+W00841,công cụ,"Đồ dùng để lao động, sản xuất.",true
+W00843,công nhận,"Nhận là đúng với sự thật, với lẽ phải hoặc là hợp lệ.",false
+W00844,công sức,"Công lao và sức lực bỏ ra, thường là nhiều, để làm việc gì (nói khái quát).",false
+W00846,công thức,"Những phương pháp, quy tắc, v.v. đã được định sẵn, cần và phải làm theo để làm một việc nào đó đạt kết quả mong muốn.",false
+W00848B,công trường,"Nơi tiến hành công việc xây dựng hoặc khai thác, có tập trung đông người và phương tiện.",false
+W00850B,công viên,"Vườn hoa công cộng, thường có các công trình phụ trợ khác, làm nơi giải trí cho mọi người.",false
+W00851,công việc,Việc phải bỏ công sức ra để làm.,false
+W00854,cổng,"Lối ra vào ở một khu vực đã được rào ngăn, thường có cửa để đóng, mở.",true
+W00857B,cộng,"Tính gộp vào, thêm vào.",false
+W00861,cột,"Vật làm bằng vật liệu cứng, chắc, thường có hình trụ tròn, hoặc vuông, dựng thẳng đứng và cố định tại một chỗ, dùng để chống đỡ, treo, mắc, v.v.",true
+W00862,cột đèn,,true
+W00863B,cột điện,,false
+W00865,cột nhà,,true
+W00867,cơ bắp,"Bắp thịt; cũng dùng để chỉ công việc, hoạt động thiên về sức mạnh chân tay.",true
+W00868B,cơ hội,"Hoàn cảnh thuận lợi gặp được để thực hiện điều mong muốn, dự định.",false
+W00870,cơ quan,"Đơn vị trong bộ máy nhà nước hoặc đoàn thể, làm những nhiệm vụ về hành chính, sự nghiệp.",true
+W00871,cơ sở,"Cái làm nền tảng cho những cái được xây dựng trên đó hoặc dựa trên đó mà tồn tại, phát triển.",false
+W00872,cơ thể,Tập hợp thống nhất của mọi bộ phận trong một sinh vật để duy trì sự sống.,true
+W00883,cởi mở,Bày tỏ tâm tình một cách dễ dàng và hồn nhiên.,false
+W00884,cơm,"Gạo đem nấu chín, ráo nước, dùng làm món chính trong bữa ăn hằng ngày.",true
+W00893,cụ thể,"Có hình thể, có tồn tại dưới dạng vật chất mà giác quan con người có thể nhận biết được; phân biệt với trừu tượng.",false
+W00894,cúc áo,,true
+W00895,cúi,Hạ thấp đầu hoặc thân mình xuống về phía trước.,true
+W00914,cục tẩy,,true
+W00915,cùi chỏ,Cùi tay.,true
+W00916,củi,"Thân, cành, gốc, rễ cây dùng làm chất đốt.",true
+W00918,cụm từ,Tập hợp các từ cùng bổ sung ý nghĩa cho nhau.,false
+W00922,cuộc đời,"Quá trình sống của một người, một cá thể sinh vật, nhìn một cách toàn bộ từ lúc sinh ra cho đến lúc chết.",false
+W00924,cuốn,Thu gọn vật có hình tấm lại thành hình trụ bằng cách uốn cong một đầu lại và lăn tròn nhiều vòng trên bản thân nó.,false
+W00925,cuộn giấy vệ sinh,,true
+W00929,cử chỉ điệu bộ,,false
+W00930,cử động,Tự làm cho một bộ phận nào đó của thân thể chuyển động.,false
+W00932,cưa,"Xẻ, cắt, làm cho đứt bằng cái cưa.",true
+W00935B,cửa hàng,Cơ sở kinh doanh thương nghiệp hoặc kinh doanh dịch vụ nhỏ.,false
+W00936,cửa khẩu,Chỗ dùng làm nơi ra vào một nước.,true
+W00937,cửa kính,,true
+W00939,cửa sổ,"Cửa ở lưng chừng tường, vách để lấy ánh sáng và làm thoáng khí.",true
+W00943B,cướp,Lấy cái quý giá của người khác bằng vũ lực hoặc thủ đoạn.,false
+W00947,cứu,Làm cho thoát khỏi mối đe doạ sự an toàn hoặc sự sống còn.,false
+W00951,dai,"Có khả năng giữ nguyên tính toàn khối khi bị tác động, khó làm cho đứt, cho rời ra từng mảnh.",false
+W00952,dài,"Có khoảng cách bao nhiêu đó từ đầu này đến đầu kia, theo chiều nằm ngang và thường là có kích thước lớn nhất (gọi là chiều dài) của vật.",false
+W00954,dài hơn,,true
+W00955,dài nhất,,true
+W00958,dải phân cách,"Phần được xây, được dựng lên hoặc được sơn kẻ để phân đường giao thông thành các làn đường riêng biệt.",true
+W00959,dàn bài,Trình tự sắp xếp các ý chính của bài để dựa vào đó mà nói hoặc viết.,true
+W00960,dàn nhạc,Tập thể nhạc công dùng nhiều nhạc khí để hoà tấu.,true
+W00963,danh bạ,"Sổ ghi tên người, tên tổ chức theo một nội dung nhất định.",true
+W00964,danh dự,"Sự coi trọng của dư luận xã hội, dựa trên giá trị tinh thần, đạo đức tốt đẹp.",false
+W00965,danh hiệu,"Tên gọi nêu lên phẩm chất tốt đẹp, cao quý, dành riêng cho cá nhân hay tập thể có nhiều thành tích xuất sắc.",false
+W00966,danh lam thắng cảnh,"Di tích nổi tiếng hoặc cảnh đẹp nổi tiếng, nói chung.",true
+W00967,danh mục,Bản ghi theo phân loại từng mục cụ thể.,true
+W00968,danh nhân,Người có danh tiếng và được xã hội công nhận.,true
+W00969,danh sách,"Bản ghi tên, bản kê tên.",true
+W00970,danh từ,"Từ chuyên biểu thị ý nghĩa sự vật, đối tượng (thường làm chủ ngữ trong câu).",false
+W00972,dán,"Làm cho dính vào nhau bằng chất kết dính như keo, hồ, v.v.",true
+W00973,dao,"Đồ dùng để cắt, gồm có lưỡi sắc và chuôi cầm.",true
+W00977,dãy số,,true
+W00979,dạy,"Truyền lại những kiến thức, kĩ năng một cách có phương pháp.",true
+W00980,dặn dò,"Dặn cẩn thận, với thái độ rất quan tâm.",false
+W00981,dắt,"Nắm giữ để dẫn đi, đưa đi cùng với mình.",true
+W00982,dân ca,"Bài hát lưu truyền trong dân gian, mang đặc trưng của từng vùng và thường không rõ tác giả.",true
+W00983,dân chài,,true
+W00985,gian lận,"Có hành vi dối trá, lừa lọc.",false
+W00987,dân số,"Số dân (trong một nước, một vùng).",false
+W00988B,dân tộc,"Tên gọi những cộng đồng người có chung một ngôn ngữ, một lãnh thổ và một truyền thống văn hoá.",false
+W00989B,dân tộc thiểu số,"Dân tộc chiếm số ít, so với dân tộc chiếm số đông nhất trong một nước có nhiều dân tộc.",false
+W00990,dẫn chương trình,"Giới thiệu và điều khiển một chương trình biểu diễn nghệ thuật, giao lưu văn hoá, trò chơi, v.v.",true
+W00991,dẫn chứng,"Dẫn thí dụ, bằng cớ để chứng minh cho điều nói ra, viết ra là đúng, là có cơ sở.",false
+W00992,dập,Tác động một cách liên tục và mạnh mẽ làm cho phải chịu đựng một sức đè nén nặng nề.,false
+W00997,dầu mỏ,"Dầu lấy từ mỏ lên, mùi hắc khó chịu, dùng để chế chất đốt, làm nguyên liệu cho công nghiệp hoá học.",true
+W01008,bắt buộc,"Khiến phải làm việc gì, vì không có cách nào khác.",false
+W01027,dễ thương,Dễ gây được tình cảm mến thương ở người khác.,false
+W01029,di chuyển,"Dời chỗ, chuyển đi nơi khác (thường nói về cái có quy mô lớn).",false
+W01032B,di truyền,"(Đặc tính của sinh vật) truyền lại cho thế hệ sau những điểm giống thế hệ trước, về cấu tạo cũng như về lối sống.",false
+W01033B,dịch vụ,"Công việc phục vụ trực tiếp cho những nhu cầu nhất định của số đông, có tổ chức và được trả công.",false
+W01035,kịch,"Nghệ thuật dùng sân khấu trình bày hành động và đối thoại của các nhân vật, để phản ánh những vấn đề, những xung đột trong đời sống xã hội.",false
+W01050,hăm dọa,"Doạ sẽ gây tai hoạ nếu không chịu nghe theo, làm theo.",false
+W01051,doanh nghiệp,Đơn vị hoạt động kinh doanh.,false
+W01053,doanh trại,Khu nhà riêng của đơn vị quân đội để ở và làm việc.,true
+W01058,dòng sông,,true
+W01061,dốt,"Kém về trí lực, chậm hiểu, chậm tiếp thu.",false
+W01062,du học,Đi học ở nước ngoài.,true
+W01068,dũng cảm,"Có dũng khí, không sợ gian khổ nguy hiểm.",true
+W01069,dụng cụ,"Vật do con người chế tạo ra để giúp làm tăng khả năng, hiệu lực hoặc phạm vi hoạt động của con người.",true
+W01070,duyên dáng,Có những nét có duyên (nói tổng quát).,true
+W01071,duyệt binh,"Kiểm tra đội ngũ lực lượng vũ trang một cách tượng trưng để biểu dương sức mạnh quân sự, bằng việc cho các binh chủng với hàng ngũ chỉnh tề diễu qua lễ đài trong các buổi lễ long trọng.",true
+W01075B,nhà nước,"Tổ chức, đứng đầu là chính phủ, quản lí công việc chung của một nước.",false
+W01076,dựng phim,Lựa chọn và tập hợp những cảnh đã quay được cho thành một bộ phim hoàn chỉnh.,true
+W01078,đá bóng,,true
+W01079,pháo đài,Công trình xây dựng vững chắc để đặt pháo lớn ở trong khu vực phòng thủ lâu dài.,true
+W01082B,đại diện,Thay mặt cho cá nhân hoặc tập thể (làm việc gì).,false
+W01092,đảm nhiệm,Nhận lấy công việc hay gánh vác một nhiệm vụ khó khăn.,false
+W01094,đám mây,,true
+W01095,đan,Làm cho vật hình sợi hoặc thanh mỏng luồn qua lại với nhau theo những trật tự nhất định để kết lại thành tấm.,true
+W01104,đàng ngoài,,false
+W01105,đàng trong,,false
+W01106,đáng quý,,false
+W01107,đánh,"Làm cho đau, cho tổn thương bằng tác động của một lực lên cơ thể.",true
+W01108,đánh bắt,Đánh và bắt các loại thuỷ sản (nói khái quát).,true
+W01110,đánh giá,Nhận định giá trị.,false
+W01112,đánh răng,,true
+W01113,đánh trống,,true
+W01115,đào tạo,"Làm cho trở thành người có năng lực, có khả năng làm việc theo những tiêu chuẩn nhất định.",false
+W01116,đảo,"Khoảng, vùng đất rộng có nước bao quanh ở sông, hồ, biển.",true
+W01122,đặc biệt,"Khác hẳn những trường hợp thông thường về tính chất, chức năng hoặc mức độ.",false
+W01124,đặc điểm,Những nét riêng biệt.,false
+W01128,đằng sau,,true
+W01129,đằng trước,,true
+W01142,đầu hàng,Chịu thua và chịu chấp nhận làm theo ý muốn của đối phương.,true
+W01143,đầu tàu,"Máy có sức kéo mạnh, chạy trên đường ray, dùng để kéo hoặc đẩy đoàn tàu.",true
+W01144,đầu tiên,"Lúc đầu (thời điểm sự việc xảy ra trước nhất, so với những sự việc tiếp sau đó).",false
+W01149,đầy,"Ở trạng thái không còn chứa thêm được nữa, thêm vào là tràn ra.",false
+W01154B,đèn báo giao thông,,false
+W01164,đeo kính,,true
+W01166,đèo,Chỗ thấp và dễ vượt qua nhất trên đường giao thông đi qua các ngọn núi.,true
+W01170,đẹp đẽ,,false
+W01173,để / đặt,Làm cho ở vào một vị trí nào đó.,false
+W01179,đề tài,"Đối tượng để nghiên cứu hoặc miêu tả (trong tác phẩm khoa học hoặc văn học, nghệ thuật).",false
+W01184,đếm,"Kể lần lượt tên các số, theo trật tự trong dãy số tự nhiên.",true
+W01190,đi,"(Người, động vật) tự di chuyển từ chỗ naỳ đến chỗ khác bằng những bước chân nhấc lên, đặt xuống liên tiếp.",false
+W01191,đi học,,true
+W01197,địa điểm,Nơi cụ thể tiến hành một hoạt động hoặc xảy ra một sự việc nào đó.,true
+W01204,tấm lòng,,false
+W01205B,điện,"Dạng năng lượng có thể biểu hiện bằng tác dụng nhiệt, cơ, hoá,v.v.",false
+W01208,điện thoại,Máy truyền tiếng nói từ nơi này đến nơi khác bằng đường dây hoặc bằng sóng vô tuyến điện.,true
+W01226,định vị,Xác định vị trí tồn tại của một vật thể theo những dấu hiệu xuất phát hay phản xạ từ bản thân nó.,true
+W01227,đo,Xác định độ lớn của một đại lượng bằng cách so sánh với một đại lượng cùng loại được chọn làm đơn vị.,true
+W01232,đoàn tụ,Sum họp lại với nhau sau một thời gian bị li tán.,true
+W01234,đoán,"Dựa trên một số dấu hiệu, đặc điểm đã thấy, đã biết mà tìm cách suy ra điều chủ yếu còn chưa rõ hoặc chưa xảy ra.",true
+W01242,đón tiếp,Đón và tiếp đãi một cách trang trọng.,true
+W01246,đóng góp,"Góp tiền của, công sức của mình vào công việc chung (nói khái quát).",true
+W01254,độc hại,Có khả năng làm hại sức khoẻ hoặc tinh thần.,false
+W01257,đối diện,Ở vị trí quay mặt vào nhau.,true
+W01273,đôi chân,,true
+W01274,đôi tay,,true
+W01277,đổi mới,"Thay đổi hoặc làm cho thay đổi tốt hơn, tiến bộ hơn so với trước, đáp ứng yêu cầu của sự phát triển.",false
+W01280,đối xử,"Thể hiện thái độ, quan hệ với người nào đó bằng những lời nói, hành động cụ thể.",false
+W01294B,đồng phục,"(Bộ quần áo) cùng một màu, cùng một chất liệu được may cùng một kiểu thống nhất cho những người trong một tổ chức, một ngành nghề nào đó.",false
+W01299,động cơ,Máy biến một dạng năng lượng nào đó thành cơ năng.,true
+W01302,động viên,"Tác động đến tinh thần làm cho phấn khởi, vươn lên mà tích cực hoạt động.",false
+W01304B,đợi,"Chờ ai hoặc cái gì mà biết hoặc tin là sẽ tới, sẽ có, sẽ xảy ra.",false
+W01305,đơn giản,"Không có nhiều thành phần hoặc nhiều mặt, không rắc rối.",false
+W01324,sa thải,"Cho nghỉ việc, không thuê, không sử dụng nữa.",false
+W01349,em dâu,,false
+W01350,em gái,"Em ruột, thuộc nữ giới, phân biệt với em họ, em dâu.",false
+W01351B,em rể,,false
+W01352B,em trai,"Em ruột, thuộc nam giới, phân biệt với em họ, em rể.",false
+W01353,em út,Người em sau cùng hoặc nhỏ tuổi nhất trong hàng các em trong nhà.,false
+W01392,gắn bó,"Có quan hệ hoặc làm cho có quan hệ về tinh thần, tình cảm khó tách rời.",false
+W01395,gặp gỡ,Gặp nhau giữa những người có quan hệ ít nhiều thân mật.,true
+W01397,gần gũi,"Gần nhau, về quan hệ tinh thần, tình cảm (nói khái quát).",false
+W01400,gật đầu,"Cúi đầu xuống rồi ngẩng lên ngay, thường để chào hỏi hay tỏ sự đồng ý.",true
+W01411,ghi chú,Ghi để nói rõ thêm (nói khái quát).,false
+W01412,ghi hình,"Ghi lại hình ảnh trên đĩa, trên băng, để phát lại.",true
+W01430B,giao thông,Việc đi lại từ nơi này đến nơi khác của người và phương tiện chuyên chở.,false
+W01432,giã,"Làm cho giập, nát hoặc tróc lớp ngoài bằng cách cho vào cối và dùng chày nện xuống liên tiếp.",false
+W01433B,giá trị,"Cái làm cho một vật có ích lợi, có ý nghĩa, là đáng quý về một mặt nào đó.",false
+W01453B,giao tiếp,"Trao đổi, tiếp xúc với nhau.",false
+W01456,giáo dục,"Hoạt động nhằm tác động một cách có hệ thống đến sự phát triển tinh thần, thể chất của một đối tượng nào đó, làm cho đối tượng ấy dần dần có được những phẩm chất và năng lực như yêu cầu đề ra.",false
+W01458,giáo sĩ,Người truyền đạo Công giáo từ chức linh mục trở lên.,true
+W01459,giàu có,"Giàu, có nhiều tiền của (nói khái quát).",false
+W01462,giấc ngủ,"Khoảng thời gian ngủ, về mặt trạng thái ngủ như thế nào, ngon hay không.",true
+W01464,giận dỗi,Có điều giận và biểu lộ ra bằng thái độ lạnh nhạt không bình thường để cho người ta biết.,true
+W01466,giật mình,"Giật nẩy người lên, do thần kinh bị tác động một cách đột ngột.",false
+W01470B,giấy,"Vật liệu được làm thành tờ để viết vẽ, in ấn hoặc gói bọc, lau chùi, v.v.",false
+W01479,giết,"Làm cho bị chết, một cách có chủ ý.",true
+W01485,giỏi,"Có trình độ cao, đáng được khâm phục, khen ngợi.",false
+W01490,giống nhau,,false
+W01491,giơ tay,,true
+W01494,giới thiệu,"Cho biết một vài điều cần thiết, như họ tên, nghề nghiệp, chức vụ, v.v. về một người nào đó để làm quen với nhau.",true
+W01497B,giúp đỡ,Giúp để làm giảm bớt khó khăn hoặc để thực hiện được một công việc nào đó.,false
+W01510,gói,"Tập hợp những gì được gói chung lại với nhau, làm thành một đơn vị.",true
+W01511,gọi,"Kêu tên, phát ra tiếng hoặc tín hiệu để người hay vật nghe mà đáp lại hoặc đi đến.",false
+W01513,góp ý,Góp ý kiến.,false
+W01518,gợi ý,"Gợi ra để tự suy nghĩ, tự có ý kiến hoặc tự giải quyết một việc nào đó.",false
+W01519,gửi,"Chuyển đến người khác, nơi khác qua khâu trung gian.",false
+W01525,gương mẫu,Làm gương cho mọi người noi theo.,false
+W01532,hài hước,"Vui đùa, gây cười.",true
+W01534,hải đảo,Khoảng đất lớn nổi lên giữa biển hoặc đại dương.,true
+W01537,hạn hán,"Hạn, nắng hạn (nói khái quát).",true
+W01554,hành động,Việc làm cụ thể của con người nhằm một mục đích nhất định.,false
+W01556,hành lang,"Lối đi chạy dài trong nhà, trước các dãy phòng.",true
+W01558,hành tinh,"Thiên thể không tự phát ra ánh sáng, quay xung quanh Mặt Trời hoặc một ngôi sao.",true
+W01559,hành vi,"Toàn bộ những phản ứng, cách cư xử biểu hiện ra ngoài của một người trong một hoàn cảnh cụ thể.",false
+W01560,hát ru,"Điệu hát dân gian êm ái, thiết tha, ru cho trẻ ngủ, đồng thời biểu lộ tình cảm, tâm sự một cách nhẹ nhàng.",true
+W01562,hạt,"Bộ phận nằm trong quả, do noãn cầu của bầu hoa biến thành, nảy mầm thì cho cây con.",true
+W01569,hăng hái,"Không nề hà, có lòng nhiệt tình và thái độ tích cực trong công việc.",true
+W01571,hắt hơi,"Bật mạnh hơi ra đằng mũi, đằng miệng thành tiếng, do màng mũi bị kích thích đột ngột.",true
+W01573,hậu quả,"Kết quả không hay, có ảnh hưởng về sau.",false
+W01579,héo,"(Cỏ cây, hoa lá) mềm rũ ra và tóp lại vì thiếu nước, vì nắng nóng.",true
+W01580,hét / la,"Phát ra những tiếng rất to, hết sức mình, từ trong cổ họng.",true
+W01582B,hệ thống,"Tập hợp nhiều yếu tố, đơn vị cùng loại hoặc cùng chức năng, có quan hệ hoặc liên hệ với nhau chặt chẽ, làm thành một thể thống nhất.",false
+W01583B,hi sinh,"Tự nguyện nhận về mình sự thiệt thòi, mất mát lớn lao nào đó, vì một cái gì cao đẹp.",false
+W01584B,hi vọng,Tin tưởng và mong chờ điều tốt đẹp đến.,false
+W01587,hiện đại,Thuộc về thời đại ngày nay.,false
+W01588,hiện nay,Thời gian hiện tại.,false
+W01591B,hiểu,"Nhận ra ý nghĩa, bản chất, lí lẽ của cái gì, bằng sự vận dụng trí tuệ.",false
+W01593,hiếu thảo,Có lòng kính yêu cha mẹ.,true
+W01599,hình,"Toàn thể nói chung những đường nét giới hạn của một vật trong không gian, giúp phân biệt được rõ vật đó với xung quanh.",false
+W01603,hình dáng,Hình của một vật làm thành vẻ riêng bên ngoài của nó.,false
+W01618,hình vẽ,"Tập hợp các đường nét, mảng màu theo những nguyên tắc hội hoạ nhất định trên mặt phẳng, phản ánh hình dạng một vật thể nào đó trong tự nhiên.",false
+W01619B,hoa,"Cơ quan sinh sản hữu tính của cây hạt kín, thường có màu sắc và hương thơm.",false
+W01634,hòa bình,"Tình trạng yên ổn, không có chiến tranh.",true
+W01637,hòa nhập,"Cùng tham gia, cùng hoà chung vào để không có sự tách biệt.",false
+W01638,họa sỹ,"Người chuyên vẽ tranh nghệ thuật, có trình độ và đã được mọi người công nhận.",true
+W01641,hoàn thành,Làm xong một cách đầy đủ.,false
+W01645,hoàng đế,"Vua của một nước lớn, thường được nhiều nước xung quanh thần phục.",true
+W01646,hoàng hôn,"Lúc mặt trời mới lặn, ánh sáng yếu ớt và mờ dần.",true
+W01649,Hoàng tử,Con trai của Vua.,true
+W01650,hoảng sợ,"Ở trạng thái mất tự chủ, đột ngột do sợ hãi trước sự đe doạ bất ngờ.",true
+W01651B,hoạt động,"Vận động, cử động, thường là nhằm một mục đích nào đó.",false
+W01655B,hoạt hình,Phim hoạt hình (nói tắt).,false
+W01656,học giỏi,,false
+W01660,hỏi han,Hỏi để biết (nói khái quát).,false
+W01661,hòn đá,,true
+W01665,học bổng,"Tiền trợ cấp ăn học mà nhà nước hay một tổ chức nào đó dành cho những học sinh, sinh viên đạt thành tích cao trong học tập.",false
+W01666,kém,,false
+W01668,học nhóm,,true
+W01669,học phí,Tiền học sinh đóng học cho nhà trường theo định kỳ.,false
+W01670,học tập,"Học và luyện tập để hiểu biết, để có kĩ năng, có tri thức.",false
+W01671,học trò,Học sinh.,false
+W01672B,hỏi,Nói ra điều mình muốn người ta cho mình biết với yêu cầu được trả lời.,false
+W01673B,hỏi thăm,"Hỏi để biết tình hình, tin tức hoặc để được chỉ dẫn điều cần biết.",false
+W01675B,hỏng,Ở tình trạng không thể dùng được nữa.,false
+W01676,họng,"Khoang rỗng trong cổ, ở phía sau miệng, thông với thực quản và khí quản.",true
+W01677B,họp,Tập trung lại một nơi để cùng nhau làm một việc gì.,false
+W01686,hồ nước,,true
+W01690B,hồi hộp,"Ở trong trạng thái lòng luôn bồi hồi, lo lắng không yên trước cái gì sắp đến mà mình đang hết sức quan tâm.",false
+W01692B,hối hận,Lấy làm tiếc và cảm thấy đau khổ day dứt khi nhận ra điều lầm lỗi của mình.,false
+W01693,hối lộ,"Đưa tiền của cho người có quyền hành để nhờ làm việc có lợi cho mình, bằng hành vi lạm dụng chức vụ, làm sai pháp luật.",false
+W01695B,hội nghị,"Cuộc họp được tổ chức với quy mô lớn, có nhiều người dự, để bàn bạc hoặc giải quyết một công việc có tính chất chung nào đó.",false
+W01696,hội thảo,"Họp rộng rãi để thảo luận, bày tỏ, trao đổi ý kiến về một vấn đề chung.",true
+W01698,hội trường,Phòng lớn dùng để làm nơi hội họp.,true
+W01700,hôn,"Áp môi hoặc mũi vào để tỏ lòng yêu thương, quý mến.",true
+W01702,hộp,"Đồ dùng có hình khối, kích thước nhỏ, làm bằng giấy, gỗ, nhựa hay kim loại, dùng để chứa đựng.",true
+W01703,hộp bút,,true
+W01704,hộp sữa,,true
+W01706,hơi nước,"Nước ở trạng thái khí, sinh ra trong quá trình bay hơi.",true
+W01707B,hợp đồng,"Sự thoả thuận, giao ước giữa hai hay nhiều bên quy định các quyền lợi, nghĩa vụ của các bên tham gia, thường được viết thành văn bản.",false
+W01708,hợp lí,"Đúng lẽ phải, phù hợp với logic.",false
+W01709,hợp tác,"Cùng chung sức giúp đỡ lẫn nhau trong một công việc, một lĩnh vực nào đó, nhằm một mục đích chung.",true
+W01710,huân chương,"Vật làm bằng kim loại, có cuống để có thể đeo trước ngực, dùng làm dấu hiệu cho phần thưởng cao quý do nhà nước đặt ra để tặng thưởng những người có công lao, thành tích đặc biệt xuất sắc (trong một lĩnh vực hoạt động nào đó).",true
+W01711,hung ác,Dữ tợn và tàn ác.,false
+W01712,hung thủ,Kẻ phạm tội giết người hoặc đánh người trọng thương.,false
+W01716,hút nước,,false
+W01717,hút thuốc lá,,true
+W01718,huy hiệu,"Vật làm bằng kim loại dùng làm dấu hiệu tượng trưng cho một tổ chức hoặc để kỉ niệm một phong trào, một sự kiện lịch sử hay một nhân vật nổi tiếng.",true
+W01719,huỷ diệt,"Diệt hoàn toàn, làm cho không còn tồn tại trên một phạm vi rộng.",true
+W01721B,huyện,"Đơn vị hành chính dưới tỉnh, gồm nhiều xã.",false
+W01724,hướng dẫn,"Chỉ bảo, dẫn dắt cho biết phương hướng và cách thức tiến hành một hoạt động nào đó.",false
+W01725,muối,,false
+W01727,ích lợi,"Điều có ích, có lợi (nói khái quát).",false
+W01728B,in,"Tạo ra nhiều bản bằng các phương pháp, công nghệ khác nhau.",false
+W01730,ít,Có số lượng nhỏ hoặc ở mức thấp.,false
+W01734,kẻ cắp,Kẻ chuyên đi ăn cắp.,true
+W01735,kèn,Nhạc khí tạo tiếng nhạc bằng cách dùng hơi thổi làm rung các dăm hoặc làm rung cột không khí trong các ống.,true
+W01737,kẻ thù,Kẻ có quan hệ thù địch.,false
+W01738B,kém,Ở trình độ hoặc khả năng thấp hơn so với cái trung bình.,false
+W01739,keo kiệt,"Hà tiện tới mức quá quắt, chỉ biết bo bo giữ của.",false
+W01740,kéo,"Dụng cụ dùng để cắt gồm có hai lưỡi thép chéo nhau, gắn với nhau bằng một đinh chốt.",true
+W01743B,kẹo,"Đồ ăn ở dạng viên hoặc thỏi, làm bằng đường, mật, thường có thêm các chất béo, chất thơm.",false
+W01744,kẹp,Giữ chặt lấy ở giữa bằng cách ép mạnh lại từ hai phía.,true
+W01746,kể chuyện,,true
+W01750,kết bạn,Gắn bó với nhau thành bạn thân.,false
+W01751,kết hợp,"Gắn với nhau để bổ sung, hỗ trợ cho nhau.",false
+W01754B,kết quả,"Cái đạt được, thu được trong một công việc hoặc một quá trình tiến triển của sự vật.",false
+W01755,kêu,"Phát ra âm thanh do có sự cọ xát, va chạm hoặc rung động.",false
+W01756,kêu gọi,"Lên tiếng yêu cầu, động viên mọi người làm việc gì (thường là việc quan trọng).",false
+W01757,khác,"Không có những nét chung, những nét tương tự nên có thể phân biệt được với nhau khi so sánh.",false
+W01758,khách,"Người từ nơi khác đến, trong quan hệ với chủ nhà, với người đón tiếp.",false
+W01759,khách mời,,false
+W01760,khách sạn,"Nhà xây thành nhiều phòng với mục đích cho khách thuê, có đủ tiện nghi phục vụ việc ăn ở của khách trọ.",true
+W01764,hoang mang,"Ở trạng thái luôn thấy bất ổn khiến cho lo lắng, dao động, không biết tin theo cái gì và nên xử trí ra sao.",true
+W01766,khai mạc,"Mở đầu, bắt đầu (hội nghị, cuộc biểu diễn, cuộc triển lãm, v.v.).",true
+W01767,khám bệnh,,true
+W01768,khám phá,"Tìm ra, phát hiện ra cái còn ẩn giấu, cái bí mật.",false
+W01770,kháng cự,Chống lại để tự vệ.,false
+W01771,kháng sinh,"Chất lấy từ nấm mốc, vi khuẩn thực vật, có tác dụng kháng sinh.",true
+W01774,khát nước,,false
+W01775,khát vọng,"Mong muốn những điều lớn lao, tốt đẹp với một sức thôi thúc mạnh mẽ.",false
+W01776,khắc phục,Vượt qua được những khó khăn trở ngại.,false
+W01777,khăn mặt,,true
+W01779,khăn quàng,"Khăn dệt hoặc đan bằng sợi to, mềm, dùng choàng vào đầu hay cổ để chống lạnh.",true
+W01780,khăn quàng đỏ,"Khăn màu đỏ, có hình tam giác, dùng để đội viên Đội thiếu niên tiền phong Hồ Chí Minh quàng bên ngoài cổ áo.",true
+W01783,khâm phục,"Đặc biệt kính trọng, do đánh giá rất cao về mặt nào đó.",false
+W01784,khâu vá,Khâu và vá đồ bằng vải (nói khái quát).,true
+W01785,khẩu hiệu,"Câu ngắn gọn mang nội dung tuyên truyền cổ động để tập hợp quần chúng, để tỏ quyết tâm hoặc để đấu tranh.",true
+W01786,khẩu trang,"Đồ dùng làm bằng vải, có nhiều lớp hoặc có lót lớp ngăn cách để đeo che miệng và mũi nhằm ngăn giữ bụi bặm, chất độc hoặc chống rét.",true
+W01787,khe cửa,,false
+W01788,khe núi,,true
+W01789,khen,Nói lên sự đánh giá tốt với ý vừa lòng.,false
+W01791,khen tặng,Khen và tỏ ý khích lệ.,true
+W01792,khéo,"Biết làm những động tác thích hợp trong lao động để tạo ra những sản phẩm đẹp, tinh tế.",false
+W01793,khép cửa,,true
+W01796,khiêm tốn,"Có ý thức và thái độ đúng mức trong việc đánh giá bản thân, không tự đề cao, không kiêu căng, tự phụ.",false
+W01800,khiêng,Nâng và chuyển vật nặng hoặc cồng kềnh bằng sức của hai hay nhiều người hợp lại.,true
+W01803B,khó khăn,"Khó, có nhiều trở ngại hoặc thiếu thốn (nói khái quát).",false
+W01804,khoa học,"Hệ thống tri thức tích luỹ trong quá trình lịch sử và được thực tiễn chứng minh, phản ánh những quy luật khách quan của thế giới bên ngoài cũng như của hoạt động tinh thần của con người, giúp con người có khả năng cải tạo thế giới hiện thực.",false
+W01806,khóa quần,,true
+W01807,khoác vai,,true
+W01808,khoan,Dụng cụ có mũi nhọn bằng kim loại để tạo lỗ bằng cách xoáy sâu dần.,true
+W01809,khoảng cách,Khoảng chia cách giữa hai vật.,false
+W01810,khoá,"Đồ dùng bằng kim loại để đóng chặt cửa, tủ, hòm, vv, không cho người khác mở.",true
+W01811,khóa cửa,,true
+W01813,khoác áo,Mang trang phục của một đơn vị hoặc tổ chức và trở thành người của đơn vị hoặc tổ chức đó.,false
+W01814,khoác tay,,true
+W01816,khoang tàu,"Khoảng không gian rộng trong lòng tàu thường dùng để chứa, chở.",true
+W01820,khoanh tay,,true
+W01821,khóc,"Chảy nước mắt do đau đớn, khó chịu hay xúc động mạnh.",true
+W01822,khoe,"Cố ý làm cho người ta thấy, biết cái tốt đẹp, cái hay của mình, thường là bằng lời nói.",false
+W01823,khoẻ mạnh,"Có sức khoẻ tốt, không ốm yếu, không bệnh tật.",true
+W01824B,khỏi bệnh,,false
+W01825,khói,Chất khí có màu trắng đục hoặc đen xám bốc lên từ vật đang cháy.,true
+W01826,khóm dứa,,true
+W01827,bụi tre,,true
+W01828,khô héo,Khô cạn nhựa sống và héo đi.,true
+W01829,khổ thơ,,true
+W01832,khối lượng,Đại lượng đặc trưng cho quán tính và tính hấp dẫn của một vật.,false
+W01833,không gian,Khoảng không bao trùm mọi vật xung quanh con người.,false
+W01834,không thẳng hàng,,false
+W01835,khổng lồ,"Có kích thước, quy mô, khối lượng lớn gấp nhiều lần so với bình thường.",false
+W01840B,không hiểu,,false
+W01841,không khí,"Hỗn hợp khí bao quanh Trái Đất, chủ yếu gồm nitrogen và oxygen, rất cần thiết cho sự sống của người và sinh vật.",false
+W01842,khổ,"Quá khó khăn, thiếu thốn về vật chất hoặc vất vả về thể xác hay bị giày vò, đau đớn về tinh thần.",false
+W01847,khớp xương,Bộ phận kết nối các xương trong cơ thể để tạo thành một hệ thống xương tổng thể.,false
+W01849,khu rừng,,true
+W01851,khu vườn,,true
+W01852,vực sâu,,true
+W01854,khúc khuỷu,Có nhiều đoạn gấp khúc ngắn nối nhau liên tiếp.,true
+W01856,khung cửa số,,true
+W01857,khung thành,"Khung hình chữ nhật đặt ở cuối sân bóng, làm mục tiêu để các cầu thủ đưa bóng lọt vào làm bàn.",true
+W01858,khuôn hình,Chi tiết lắp trong máy quay phim để định kích thước khác nhau cho các loại phim.,false
+W01859,khuy,"Vật nhỏ làm bằng nhựa, kim loại, thuỷ tinh, xương, vv, thường có hình tròn, dùng đính vào quần áo để cài.",true
+W01860,khuyên tai,"Đồ trang sức đeo ở tai, thường làm bằng vàng hay bạc, có hình vòng tròn nhỏ.",true
+W01861,kì diệu,"Có cái gì vừa rất lạ lùng như không cắt nghĩa nổi, vừa làm cho người ta phải ca ngợi, phải khâm phục.",false
+W01862,kì lạ,"Rất lạ, tới mức không thể ngờ được.",false
+W01866B,kỉ niệm,Cái hiện lại trong trí óc về những sự việc đáng ghi nhớ đã qua.,false
+W01867,kí hiệu,"Dấu hiệu vật chất đơn giản, do quan hệ tự nhiên hoặc do quy ước, được coi như thay cho một thực tế phức tạp hơn.",false
+W01869,ki-lô-mét,"Đơn vị đo độ dài, bằng một nghìn mét.",false
+W01871,kỉ luật,Hình thức phạt đối với người vi phạm kỉ luật.,false
+W01872B,kí tên,"Tự ghi tên mình bằng một kiểu riêng và không đổi, để xác nhận tính chính xác của một văn bản hoặc để nhận chịu trách nhiệm về một văn bản.",false
+W01876,kịch bản,Vở kịch ở dạng văn bản (được viết ra).,false
+W01878B,kiểm tra,"Xem xét tình hình thực tế để đánh giá, nhận xét.",false
+W01879,kiếm,"Binh khí có lưỡi dài, đầu nhọn, dùng để đâm.",true
+W01882,kiên quyết,"Tỏ ra hết sức cứng rắn, quyết làm bằng được điều đã định, dù khó khăn trở ngại đến mấy cũng không thay đổi.",false
+W01883,kiên trì,"Không thay đổi ý định, ý chí để làm việc gì đó đến cùng, mặc dù gặp khó khăn, trở lực.",false
+W01885,kiến thức,"Những điều hiểu biết có được do từng trải, hoặc do học tập (nói tổng quát).",false
+W01886,kiến trúc,"Xây dựng các công trình, thường là nhà cửa, theo những kiểu mẫu mang tính chất nghệ thuật.",true
+W01887,kiến trúc sư,Người tốt nghiệp đại học ngành kiến trúc.,true
+W01888,"kiêu",Tự cho mình là hơn người.,false
+W01890,kim,"Vật làm bằng một đoạn thép nhỏ, một đầu có mũi nhọn, một đầu có lỗ để xâu chỉ, dùng để khâu, may.",true
+W01897,kinh ngạc,"Hết sức ngạc nhiên, sửng sốt trước điều hoàn toàn không ngờ.",false
+W01898B,kinh nghiệm,"Điều hiểu biết có được do tiếp xúc với thực tế, do từng trải.",false
+W01900,kính,"Đồ dùng để đeo bảo vệ mắt hoặc để nhìn được rõ hơn, gồm một khung gọng có lắp hai miếng kính nhỏ.",true
+W01902,kính hiển vi,"Dụng cụ quang học gồm một hệ thống thấu kính hội tụ, dùng để tạo ảnh phóng đại của những vật rất nhỏ, không thể nhìn thấy bằng mắt thường.",true
+W01903,kính lão,Kính viễn thị dùng cho người có tuổi.,true
+W01904,kính lúp,"Dụng cụ quang học gồm có một thấu kính hội tụ, nhìn qua đó thấy được ảnh phóng to của vật nhỏ.",true
+W01906,kính trọng,"Coi trọng, do thừa nhận có giá trị cao.",true
+W01909,la bàn,Dụng cụ xác định phương hướng gồm có một kim nam châm luôn luôn chỉ phương bắc - nam (gọi là kim chỉ nam).,true
+W01910,la hét,Hét rất to (nói khái quát).,true
+W01911B,là gì?,,false
+W01912B,lá cây,"Bộ phận của cây, mọc ra ở cành hoặc thân và thường có hình dẹt, màu lục, giữ vai trò chủ yếu trong việc tạo ra chất hữu cơ nuôi cây.",false
+W01913,lá thư,,true
+W01915,lạc quan,"Có cách nhìn, thái độ tin tưởng ở tương lai tốt đẹp.",false
+W01920B,lái tàu hỏa,,false
+W01924,làm bài tập,,true
+W01925B,làm quen,Tìm cách để quen với người chưa quen biết.,false
+W01926,làm ruộng,"Làm những việc như cày, cấy v.v.. để tạo ra sản phẩm nông nghiệp.",true
+W01928,làm việc,Hoạt động liên tục nhằm đạt một kết quả có ích.,true
+W01930,lang thang,"Đến chỗ này rồi lại bỏ đi chỗ khác, không dừng lại ở một chỗ nào nhất định.",false
+W01932,làn sóng,Sóng xô nối tiếp nhau tạo thành từng lớp có bề mặt hình uốn lượn.,true
+W01939,làng xóm,"Làng và xóm, về mặt là khối dân cư ở nông thôn với đời sống riêng của nó (nói khái quát).",true
+W01942,lãnh đạo,"Đề ra chủ trương, đường lối và tổ chức thực hiện.",false
+W01943,thổ dân,"Cư dân sinh sống đã lâu đời ở một vùng hay một địa phương nào đó, thường ở tình trạng lạc hậu, trong quan hệ với người dân văn minh hơn từ nơi khác đến.",false
+W01944,lao phổi,"Bệnh lao gây hư phổi, ho nhiều và dễ lây.",false
+W01947,lão già,,true
+W01948,lau chùi,Lau và chùi (nói khái quát).,true
+W01949,lau khô,,false
+W01950,lau nhà,,true
+W01951,lắc đầu,"Đưa đầu qua lại vài cái tỏ ý không bằng lòng, không đồng ý.",false
+W01953,lăng Bác Hồ,,true
+W01955,lắng nghe,Tập trung sức nghe để thu nhận cho rõ âm thanh.,true
+W01956,lặn,Tự làm cho mình chìm hẳn xuống dưới mặt nước.,true
+W01957,lặng lẽ,"Im lặng, không lên tiếng, không có tiếng động, tiếng ồn.",false
+W01960,lắp ráp,Lắp các bộ phận rời của máy với nhau hoặc đặt các bộ phận máy vào đúng chỗ để có thể hoạt động được.,true
+W01962,lẫn lộn,"Lẫn vào với nhau, không còn phân biệt được nữa.",false
+W01964,lầu,Tầng trên của nhà.,true
+W01966,lây bệnh,,false
+W01967,lây nhiễm,Nhiễm bệnh do bị lây từ người khác.,false
+W01970,lấy,Đưa cái của mình hoặc cái đã sẵn có ở đâu đó để làm việc gì.,false
+W01973,leo trèo,Leo và trèo (nói khái quát).,true
+W01977,lễ bế giảng,,true
+W01978B,lễ hội,"Cuộc vui chung có tổ chức, có các hoạt động lễ nghi mang tính văn hoá truyền thống.",false
+W01982B,lễ hội hóa trang,,false
+W01983,lễ phép,"Thái độ được coi là đúng mực đối với người trên, tỏ ra có lòng kính trọng.",false
+W01984,lễ vật,Vật dùng để biếu tặng hay cúng tế.,false
+W01986,lên đường,Bắt đầu rời nơi đang ở để đi xa.,false
+W01987,lên ngôi,Lên làm vua.,false
+W01989,lên xe,,false
+W01991,lều trại,,true
+W01992,lí do,Điều làm căn cứ được dùng để giải thích một việc nào đó.,false
+W01998B,liên hoan,Cuộc vui chung nhân dịp gì có đông người cùng tham gia.,false
+W01999,liên kết,Kết lại với nhau từ nhiều thành phần hoặc tổ chức riêng rẽ.,false
+W02000B,liên lạc,Truyền tin cho nhau để giữ mối liên hệ.,false
+W02001B,liên quan,Có mối quan hệ nào đó với nhau.,false
+W02002,liên tục,Tiếp nối nhau thành một quá trình không bị gián đoạn.,false
+W02003,liền sau,,false
+W02004,liền trước,,false
+W02005,liệt (liệt tay chân),Ở trạng thái bị mất hẳn hoặc giảm khả năng hoạt động của một bộ phận nào đó của cơ thể.,true
+W02006,liều lĩnh,(Làm việc gì) bất chấp nguy hiểm hoặc hậu quả tai hại có thể xảy ra.,false
+W02008,liều mình,"Liều, không sợ thiệt đến thân mình, không sợ phải hi sinh tính mạng.",false
+W02010,linh hồn,Hồn người chết.,false
+W02011,lĩnh hội,Tiếp thu và hiểu được một cách thấu đáo.,false
+W02012B,lĩnh vực,"Phạm vi hoạt động, nghiên cứu phân biệt với các phạm vi hoạt động, nghiên cứu khác.",false
+W02016,lo sợ,Lo lắng và có phần sợ hãi.,true
+W02018,lò xo,"Vật thường bằng thép, được uốn thành nhiều vòng xoắn, có sức đàn hồi, dùng để giữ những vật khác (thường là những chi tiết máy) nào đó ở vị trí cần có.",true
+W02019,lọ hoa,,true
+W02020,lọ mực,,true
+W02021,loa,"Dụng cụ hình phễu, có tác dụng định hướng làm âm đi xa hơn và nghe rõ hơn.",true
+W02024B,loài vật,,false
+W02025,loạn thị,"(Mắt) không nhìn rõ được như nhau ở các hướng, do bị tật.",false
+W02026,lon bia,,false
+W02035,lỗi chính tả,,true
+W02036,lỗi lầm,"Lỗi, khuyết điểm tương đối lớn (nói khái quát).",false
+W02037,lối đi,,true
+W02039,lông,"Bộ phận thường có hình sợi, mọc ở ngoài da cầm thú hay da người, có tác dụng bảo vệ cơ thể.",false
+W02040,lông gà,,true
+W02041,lồng bàn,"Vật có hình thúng, thường đan bằng tre hay làm bằng nhựa, dùng để đậy thức ăn trên mâm, bàn.",true
+W02042,lồng chim,,true
+W02043,lồng tiếng,"Tạo tiếng nói cho nhân vật trong phim, sau khi phim đã quay xong phần cơ bản.",false
+W02046,lơ lửng,"Ở trạng thái di động nhẹ ở khoảng giữa lưng chừng, không dính bám vào đâu.",false
+W02047,lời giải,Cách tìm ra đáp số hoặc chứng minh phần kết luận của một bài toán.,false
+W02052,lớp,Lớp học (nói tắt).,true
+W02055,lớp phó,,false
+W02057,lớp trưởng,,false
+W02059,lũ quét,"Lũ rất mạnh, thường xuất hiện đột ngột ở những vùng rừng núi có sườn dốc đứng, có sức tàn phá trên một phạm vi rộng.",false
+W02060,lúa,"Cây lương thực, thân cỏ rỗng, hoa lưỡng tính, không có bao hoa, quả có vỏ trấu bao ngoài (gọi là hạt thóc).",true
+W02064B,luật chơi,Luật được quy định cụ thể hoặc được hiểu ngầm giữa đôi bên hoặc giữa những người trong cuộc.,false
+W02065,luật lệ,Pháp luật và những điều đã thành lệ mà mọi người trong xã hội phải tuân theo (nói khái quát).,false
+W02066B,lúc nào,"Thời điểm nào đó không muốn nói rõ ra, hoặc là bất kì thời điểm nào.",false
+W02067,lục địa,"Phần đất liền rộng lớn xung quanh có biển bao bọc, phân biệt với biển.",false
+W02068,lục giác,Đa giác có sáu cạnh.,false
+W02070,lùi bước,"Không tiếp tục tiến lên mà lùi lại, chịu thua, chịu khuất phục.",false
+W02071,lúng túng,"Không làm chủ được tình hình nên không biết hành động, xử trí như thế nào.",false
+W02073,lũy tre,Hàng cây tre rất dày để làm hàng rào bao quanh làng.,true
+W02074,luyện tập,Làm đi làm lại nhiều lần theo một nội dung để cho thành thạo (nói khái quát).,false
+W02076,lửa,Nhiệt và ánh sáng phát sinh đồng thời từ vật đang cháy.,true
+W02077,lược,"Đồ dùng để chải tóc, có nhiều răng đều nhau.",true
+W02078B,lười,"Ở trạng thái không thích, ngại làm việc, ít chịu cố gắng.",false
+W02079B,lười học,,false
+W02080,lưỡi,"Bộ phận mềm trong miệng, dùng để đón và nếm thức ăn, và ở người còn dùng để phát âm.",true
+W02081,lưỡi câu,"Móc nhỏ, đầu sắc nhọn, thường có ngạnh, dùng để móc mồi câu cá.",false
+W02083,lưới,"Đồ đan bằng các loại sợi, có nhiều hình dáng và công dụng khác nhau, thường dùng để ngăn chắn, để đánh bắt cá, chim, v.v.",true
+W02084,lượm,Cầm lên cái đã rơi xuống.,true
+W02090,lương thực,"Thức ăn có chất bột như gạo, ngô, khoai, sắn, v.v. (nói khái quát).",true
+W02091,lướt ván,Môn thể thao lướt trên mặt nước bằng tấm ván nhờ lực kéo của ca nô.,true
+W02096,cây thông,,true
+W02097,dự trữ,Trữ sẵn để dùng khi cần đến.,false
+W02098,lưu ý,"Để ý đến để xem xét, theo dõi hoặc giải quyết.",false
+W02099,lựu,"Cây nhỏ, lá mọc đối, hoa màu đỏ, quả chứa nhiều hạt mọng nước, ăn được, vỏ rễ dùng làm thuốc.",true
+W02100,lựu đạn,"Vũ khí có vỏ cứng trong chứa chất nổ hoặc chất hoá học và bộ phận gây nổ, thường ném bằng tay.",true
+W02104,ma,"Sự hiện hình của người chết, theo mê tín.",true
+W02106,ma quỷ,"Ma và quỷ, nói khái quát.",false
+W02107,ma sát,Tính cản trở sự chuyển động của các vật dọc theo bề mặt tiếp xúc của các vật đó.,false
+W02108,ma túy,Tên gọi chung chỉ những chất kích thích thần kinh có hiệu ứng gây ngủ.,false
+W02109,mã vạch,"Dãy các vạch và khoảng trống song song, xen kẽ, được sắp xếp theo một quy tắc mã hoá nhất định để hiện mã số (hoặc các dữ liệu gồm cả chữ và số) dưới dạng máy quét có thể đọc được (thường dùng dán trên hàng hoá, giúp có được những thông tin về một sản phẩm, như nguồn gốc, xuất xứ, giá tiền, v.v.).",true
+W02110,má (giống: mẹ),Mẹ (thường chỉ dùng để xưng gọi).,true
+W02112,mạch lạc,"Trật tự hợp lí giữa các ý, các phần trong nội dung diễn đạt.",false
+W02113,mạch máu,Ống dẫn máu trong cơ thể động vật.,true
+W02116,mái chèo,"Chèo dài, lắp vào cọc; phân biệt với mái dầm.",true
+W02117,mái hiên,Phần mái phía trên thềm hoặc hiên nhà.,true
+W02118,mái nhà,,true
+W02119,mái tóc,"Toàn bộ tóc trên đầu, nói chung.",true
+W02120B,màn,"Đồ dùng làm bằng vải dệt thưa đều, mắc trùm quanh giường để ngăn ruồi muỗi.",false
+W02125,mạng lưới,Hệ thống những đường đan nối vào nhau có một chức năng chung.,false
+W02129,mạnh bạo,"Không sợ, dám nghĩ dám làm những việc thấy là đáng làm, tuy biết đó là việc người ta thường e ngại.",false
+W02131,mạnh mẽ,"Có nhiều sức lực, tiềm lực (nói khái quát).",false
+W02132,màu cam,,true
+W02133B,màu đen,,false
+W02134,màu đỏ,,true
+W02137B,màu nâu,,false
+W02138,màu nhiệm,,false
+W02140B,màu trắng,,false
+W02142B,màu xanh da trời,,false
+W02143B,màu xanh lá cây,,false
+W02144,má,"Phần hai bên mặt, từ mũi và miệng đến tai và ở phía dưới mắt.",true
+W02145,máy ảnh,Dụng cụ dùng để chụp ảnh.,true
+W02146,máy bơm,"Máy chạy bằng động cơ (thường là động cơ điện), dùng để bơm nước hoặc chất lỏng từ nơi này đến nơi khác.",true
+W02147,máy chiếu,Máy chiếu hình (nói tắt).,true
+W02148B,máy in,"Máy dùng để in các văn bản, tài liệu, hình ảnh ra giấy.",false
+W02149,máy khâu,"Máy dùng để may đồ bằng vải, da.",true
+W02150,máy quay,"Máy dùng để thu hình ảnh chuyển động và âm thanh, có thể xem lại trên màn ảnh, màn hình nói chung.",true
+W02151,máy tính,"Máy tính cá nhân được thiết kế riêng theo dạng nhỏ gọn để mang đi theo người, có thể hoạt động trong một khoảng thời gian nhất định nhờ một pin điện mà không cần nguồn điện lưới, phân biệt với máy tính để bàn.",true
+W02152,máy tính bỏ túi,,true
+W02155,mắc áo,"Vật dùng để treo áo, mũ.",true
+W02156,mặc,Khoác quần áo vào để che thân mình.,true
+W02159,mặc kệ,"Không để ý đến, coi như chẳng ảnh hưởng đến việc mình làm.",false
+W02160,mặc quần áo,,true
+W02161,mắm,Thức ăn làm bằng tôm cá sống ướp muối và để lâu ngày cho ngấu.,true
+W02162,măng,"Mầm tre, vầu, v.v. mới mọc từ gốc lên, có thể dùng làm rau ăn.",true
+W02164B,mắng,"Dùng những lời nói nặng, to tiếng để nêu ra lỗi của người dưới.",false
+W02166,mặt,"Phần phía trước, từ trán đến cằm của người, hay phần phía trước của đầu con thú, nơi có các bộ phận như mắt, mũi, mồm.",false
+W02171,mặt đất,"Bề mặt của đất, trên đó người và các loài sinh vật đi lại, sinh sống.",true
+W02172,mặt vuông,,false
+W02173,mặt nạ,"Mặt giả, đeo để giấu mặt thật.",true
+W02175,mặt dài,,false
+W02177,mâm cơm,,true
+W02178B,mâm ngũ quả,,false
+W02180,mầm cây,,true
+W02181,mầm non,"Bậc đầu tiên trong hệ thống giáo dục, thực hiện việc nuôi dưỡng, chăm sóc, giáo dục trẻ dưới sáu tuổi (tuổi bắt đầu vào học lớp một).",true
+W02182,mất ngủ,"Ở trạng thái không sao ngủ được, thường do thần kinh bị căng thẳng quá hoặc do bị bệnh.",true
+W02183,mất trí,"Mất hết khả năng hoạt động trí óc, khả năng nhận thức; điên (lối nói kiêng tránh).",false
+W02187B,mật khẩu,Lời hỏi hoặc đáp ngắn gọn đã được quy ước làm mật hiệu để những người trong cùng một tổ chức nhận ra nhau.,false
+W02189,mật ong,"Chất lỏng, sánh, màu vàng óng, vị ngọt sắc, do ong hút mật làm ra, thường dùng để ăn hoặc làm thuốc.",true
+W02191,mẫu số,"Số viết dưới vạch ngang của phân số, chỉ đơn vị được chia ra bao nhiêu phần bằng nhau; phân biệt với tử số.",true
+W02193,mẫu số chung,Bội số chung của các mẫu số của các phân số đã cho.,true
+W02195,mây,"Đám hạt nước hoặc hạt băng nhỏ li ti do hơi nước trong khí quyển ngưng lại, lơ lửng trên bầu trời.",true
+W02197,mét,Đơn vị cơ bản đo độ dài.,false
+W02198,mét khối,"Đơn vị đo thể tích, bằng thể tích của một khối lập phương có cạnh là 1 mét.",false
+W02199,mét vuông,"Đơn vị đo diện tích, bằng diện tích của một hình vuông có cạnh là 1 mét.",false
+W02202,mê say,"Ham thích đặc biệt và bị cuốn hút liên tục vào công việc nào đó, đến mức như không còn thiết gì khác nữa.",false
+W02203,mê tín,"Tin một cách mù quáng vào thần thánh, ma quỷ, số mệnh, và những điều huyễn hoặc.",false
+W02204,mềm mại,Mềm và gợi cảm giác dễ chịu khi sờ đến.,false
+W02205,mênh mông,"Rất rộng lớn, đến mức như không có giới hạn.",false
+W02208,mi-li-mét,,false
+W02209,mĩ thuật,"Ngành nghệ thuật nghiên cứu các quy luật và phương pháp để thể hiện cái đẹp bằng đường nét, màu sắc, hình khối.",false
+W02211,miền Bắc Việt Nam,,false
+W02212,miền Nam Việt Nam,,false
+W02214,miêu tả,"Dùng một phương tiện nào đó làm cho người khác có thể hình dung được cụ thể sự vật, sự việc hoặc thế giới nội tâm của con người.",false
+W02215,minh hoạ,"Làm rõ thêm, sinh động thêm nội dung muốn trình bày, bằng hình vẽ hoặc những hình thức dễ thấy, dễ hiểu.",false
+W02217,khoan đã,,false
+W02218,móc áo,,true
+W02219,Mặt trời mọc,,true
+W02220,mõm,Miệng có dáng nhô ra ở một số loài thú.,true
+W02221B,muốn,"Cảm thấy có sự đòi hỏi, về tâm lí, tình cảm hay sinh lí, làm một việc gì hoặc có cái gì.",false
+W02222,Mặt trời lặn,,true
+W02223,móng chân,Phần rắn như sừng ở đầu ngón chân.,true
+W02225,móng tay,Phần rắn như sừng ở đầu ngón tay.,true
+W02226,móng vuốt,Móng nhọn và sắc của một số loài thú.,true
+W02227,mô hình,"Vật cùng hình dạng nhưng được làm thu nhỏ lại nhiều lần, mô phỏng cấu tạo và hoạt động của một vật khác để tiện trình bày, nghiên cứu.",true
+W02229,mồ côi,Bị mất cha và/hoặc mẹ khi còn bé dại.,false
+W02230,mồ côi cha mẹ,Bị mất cha và mẹ khi còn bé dại.,false
+W02231,mồ hôi,Chất nước bài tiết qua lỗ chân lông ở da.,true
+W02234,mộc nhĩ,"Nấm giống hình cái tai, màu nâu đen, thường mọc ở thân cây gỗ mục, dùng làm thức ăn.",true
+W02235,môi,Nếp cơ mềm làm thành cửa miệng.,true
+W02236,môi trường,"Nơi xảy ra một hiện tượng hoặc diễn ra một quá trình, trong quan hệ với hiện tượng, quá trình ấy.",false
+W02237,mỗi,"Từ chỉ một phần tử bất kì của một tập hợp cùng loại, được xét riêng lẻ, nhưng nhằm để qua đó nói chung cho mọi phần tử của tập hợp.",false
+W02238,Âm nhạc,,false
+W02239B,Đạo đức,,false
+W02240B,Giáo dục công dân,,false
+W02241,Giáo dục thể chất,,false
+W02242,Khoa học,,false
+W02243,Kĩ thuật,,false
+W02244B,Lịch sử,,false
+W02245,Mĩ thuật,,false
+W02246,Ngoại ngữ,,false
+W02247,Sinh học,,false
+W02248,Tiếng Việt,,false
+W02249,Tin học và Công nghệ,,false
+W02250,Toán,,false
+W02252,một cặp,,false
+W02253,một đôi,,false
+W02254,một mình,"Chỉ một cá nhân mình, không cùng với ai.",false
+W02255,mơ ngủ,Ở trạng thái đang mơ trong giấc ngủ.,false
+W02256,mơ ước,Mong muốn thiết tha điều tốt đẹp trong tương lai.,false
+W02257,mở,"Làm cho hoặc ở trạng thái không còn bị đóng kín, bịt kín, mà trong ngoài, bên này bên kia thông được với nhau.",false
+W02258,mở cửa,,true
+W02259,mở đầu,"Bắt đầu một quá trình, một sự kiện diễn ra liên tiếp nào đó.",false
+W02260,mở màn,(Buổi diễn trên sân khấu) bắt đầu.,false
+W02261,mở rộng,"Làm cho có phạm vi, quy mô lớn hơn trước.",false
+W02262,mớ rau,,true
+W02263,mời,,false
+W02265,mũ lưỡi trai,"Mũ làm bằng vải hoặc da, phía trước có lưỡi trai.",true
+W02266,mua bán,Mua và bán (nói khái quát).,true
+W02267,mua vé,,false
+W02269,mùa đông,,true
+W02270B,mùa hè,,false
+W02271,mùa thu,,true
+W02272B,mùa xuân,,false
+W02273,múa rối,"Loại hình nghệ thuật sân khấu biểu diễn bằng cách điều khiển các hình mẫu giống như người, vật.",true
+W02275,mũ,"Đồ dùng để đội trên đầu, úp chụp sát tóc, để che mưa, nắng, v.v.",true
+W02276,múa,"Làm những động tác mềm mại, nhịp nhàng nối tiếp nhau để biểu hiện tư tưởng, tình cảm hoặc để rèn luyện thân thể.",true
+W02277,múa lân,,true
+W02278,múa sạp,,true
+W02279,mục lục,"Bản ghi các đề mục với số trang tương ứng, theo trình tự trình bày trong sách, tạp chí (để ở đầu hoặc cuối sách, tạp chí).",false
+W02280,mui xe,,false
+W02281,muộn,Sau thời điểm quy định hay sau thời điểm thường lệ tương đối lâu.,true
+W02282,mưa phùn,"Mưa nhỏ nhưng dày hạt, có thể kéo dài nhiều ngày, thường có ở miền Bắc Việt Nam vào khoảng cuối mùa đông, đầu mùa xuân.",true
+W02283,mứt,,true
+W02289,nạn nhân,Người phải chịu hậu quả của một tai hoạ xã hội hay một chế độ bất công.,true
+W02290,"náo động, náo nhiệt","Xôn xao, ồn ào khắp cả lên.",false
+W02291,náo nức,"Hăm hở, phấn khởi.",true
+W02292B,nạp điện,,false
+W02294,năm ngoái,"Năm vừa qua, liền trước năm hiện tại.",false
+W02295,nằm,"Ngả thân mình trên một vật nào đó, thường để nghỉ.",false
+W02296,nắn nót,"Làm cẩn thận từng li, từng tí cho đẹp, cho chỉnh.",false
+W02297,năng khiếu,Tổng thể nói chung những phẩm chất sẵn có giúp con người có thể hoàn thành tốt một loại hoạt động ngay khi chưa được học tập và rèn luyện trong hoạt động đó.,false
+W02298,năng lực,"Khả năng, điều kiện chủ quan hoặc tự nhiên sẵn có để thực hiện một hoạt động nào đó.",false
+W02300,nặn,Tạo nên vật có hình khối bằng cách dùng lực bàn tay làm biến đổi hình dạng của vật liệu mềm dẻo.,true
+W02301,nặng hơn,,true
+W02302,nắp,"Bộ phần của một vật, dùng để đậy vật ấy.",true
+W02303,nấm,"Thực vật bậc thấp không có diệp lục, sống trên chất hữu cơ mục nát hoặc kí sinh trên các sinh vật, một số loài ăn được.",true
+W02305,nén,,false
+W02311,nét mặt,,false
+W02321,nếm,Ăn hay uống một chút để biết vị của đồ ăn thức uống.,true
+W02322,nền nhà,,true
+W02323,nến,"Vật để thắp sáng, hình trụ, làm bằng sáp, ở giữa có bấc.",true
+W02324,ngà voi,"Răng nanh hàm trên của voi, mọc chìa dài ra ngoài hai bên miệng.",true
+W02325,ngã ba,,true
+W02327B,ngày khai trường,,false
+W02329B,ngày tháng,"Ngày và tháng (nói khái quát), dùng để chỉ thời gian.",false
+W02330,ngã,"Chuyển đột ngột xuống vị trí thân sát trên mặt nền do bị mất thăng bằng, ngoài ý muốn.",true
+W02332,ngạc nhiên,"Rất lấy làm lạ, cảm thấy là hoàn toàn bất ngờ đối với mình.",true
+W02333,ngành nghề,Nghề nghiệp chuyên môn (nói khái quát).,false
+W02334,ngày đêm,"Ngày cũng như đêm; liên tục, không ngừng.",false
+W02336B,ngày nay,Thời bây giờ.,false
+W02338B,ngày sinh,Ngày ra đời của một người.,false
+W02339,ngày xưa,"Thời đã qua, cách thời nay rất lâu.",true
+W02340,ngăn cản,"Giữ lại, không cho tiếp tục hoạt động, phát triển (nói khái quát).",true
+W02342,ngăn chặn,"Chặn lại ngay từ đầu, không để cho gây tác hại.",true
+W02343,ngắn,"Có chiều dài dưới mức bình thường, hoặc không bằng so với những vật khác.",true
+W02344,ngắn nhất,,true
+W02345B,ngắt hoa,,false
+W02346,ngâm hạt,,true
+W02348,ngân hàng,"Tổ chức kinh tế hoạt động trong lĩnh vực kinh doanh và quản lí các nghiệp vụ về tiền tệ, tín dụng.",true
+W02349,ngẩng đầu,,true
+W02350,ngập lụt,Ngập do lũ lụt (nói khái quát).,true
+W02352,ngây thơ,"Không hiểu biết hoặc rất ít hiểu biết về đời, do còn non trẻ, ít kinh nghiệm.",true
+W02353,nghe,"Cảm nhận, nhận biết bằng cơ quan thính giác.",true
+W02354B,nghé,Trâu con.,false
+W02355,nghẹn ngào,"Ở trạng thái nghẹn lời, không nói được vì quá xúc động.",false
+W02356,nghệ sĩ,Người chuyên hoạt động (sáng tác hoặc biểu diễn) trong một bộ môn nghệ thuật.,true
+W02357B,nghệ thuật,"Hình thái ý thức xã hội đặc biệt, dùng hình tượng sinh động, cụ thể và gợi cảm để phản ánh hiện thực và truyền đạt tư tưởng, tình cảm.",false
+W02359B,nghi ngờ,"Nghi, không tin (nói khái quát).",false
+W02360B,nghỉ hè,"Nghỉ vào mùa hè, trong một thời gian nhất định, sau khi kết thúc một năm học.",false
+W02361B,nghỉ học,,false
+W02362,nghỉ hưu,,true
+W02363,nghỉ mát,,true
+W02364,nghỉ ngơi,Nghỉ để hồi phục sức khoẻ (nói khái quát).,true
+W02366,nghĩa đen,"Một từ, một câu bao giờ cũng thể hiện ra ngoài nghĩa ban đầu, nghĩa chính thì ta gọi đó là nghĩa gốc hay nghĩa đen của từ đó, câu đó.",false
+W02367,nghiên cứu,"Xem xét, tìm hiểu kĩ để nắm vững vấn đề, giải quyết vấn đề hay để rút ra những hiểu biết mới.",true
+W02368,nghĩ,"Vận dụng trí tuệ vào những gì đã nhận biết được, rút ra nhận thức mới để có ý kiến, sự phán đoán, thái độ.",true
+W02369,nghị lực,"Sức mạnh tinh thần tạo cho con người sự kiên quyết trong hành động, không lùi bước trước khó khăn, thử thách.",false
+W02370,nghĩa bóng,"Nghĩa của từ ngữ vốn chỉ một vật hữu sinh hoặc cụ thể, được dùng để gợi ý hiểu cái vô sinh hoặc trừu tượng.",false
+W02371,nghĩa trang,Nghĩa địa.,true
+W02373B,nghiêm khắc,"Rất nghiêm, không dễ dàng tha thứ hoặc bỏ qua một sai sót nào.",false
+W02374,nghiêm túc,"Có ý thức coi trọng đúng mức những yêu cầu đối với mình, biểu hiện ở thái độ, hành động.",false
+W02375,nghiến răng,,true
+W02378,ngoại hình,Hình dáng người.,false
+W02380,xâm hại tình dục,,false
+W02381,ngoan ngoãn,"Dễ bảo, sẵn sàng nghe và làm theo lời người trên.",false
+W02382,ngoắc tay,,true
+W02385,ngoằn ngoèo,Từ gợi tả dáng vẻ cong queo uốn lượn theo nhiều hướng khác nhau.,true
+W02387,ngói,"Vật liệu lợp nhà, thường ở dạng tấm nhỏ, chế tạo từ đất sét đã nung hay từ xi măng.",true
+W02388,ngon giấc,Ngủ say và yên giấc.,true
+W02390,ngon miệng,"(ăn) thấy ngon, biết ngon.",true
+W02391,ngõ,,true
+W02392,ngón chân,Phần cử động được ở phần đầu bàn chân.,true
+W02393,ngón tay,Phần cử động được ở phần đầu bàn tay.,true
+W02394B,ngọn cây,"Phần cuối của cây, đối lập với gốc, thường cũng là phần cao nhất và có hình nón.",false
+W02395B,ngô,"Cây lương thực, thân thẳng, quả có dạng hạt tụ lại thành bắp ở lưng chừng thân, hạt dùng để ăn.",false
+W02398,ngộ độc,Bị nhiễm chất độc; trúng độc.,true
+W02399,ngộ nghĩnh,"Có những nét hay hay, khác lạ, buồn cười một cách đáng yêu.",false
+W02400B,ngồi,Ở tư thế đít đặt trên mặt nền hoặc chân gập lại để đỡ toàn thân.,false
+W02401,ngôn ngữ,"Hệ thống những âm, những từ và những quy tắc kết hợp chúng mà những người trong cùng một cộng đồng dùng làm phương tiện để giao tiếp với nhau.",true
+W02402B,ngũ quả,Các thứ hoa quả (ngày trước vốn gồm năm thứ) được bày chung với nhau trong ngày Tết Nguyên Đán (nói tổng quát).,false
+W02403,nguệch ngoạc,"(nét viết hoặc vẽ) xiên xẹo, méo mó, do chưa thạo hoặc do vội vàng, cẩu thả.",true
+W02404,nguồn gốc,Nơi từ đó nảy sinh ra.,false
+W02405B,nguy hiểm,Có thể gây tai hại lớn cho con người.,false
+W02407B,nguyên nhân,"Hiện tượng làm nảy sinh ra hiện tượng khác, trong quan hệ với hiện tượng khác đó.",false
+W02418,nguyện vọng,Điều mong muốn.,false
+W02421,ngữ điệu,"Những biến đổi về độ cao của giọng nói, khi đọc, có liên quan đến cả một ngữ đoạn và có thể dùng để biểu thị một số ý nghĩa bổ sung.",false
+W02422,ngước nhìn,Đưa mắt nhìn lên cao.,true
+W02423,ngược đãi,Đối xử tàn nhẫn.,true
+W02424,ngược lại,Tổ hợp biểu thị điều sắp nêu ra (hoặc hàm ý muốn nói) có nội dung hoặc có quan hệ ngược lại với điều vừa nói đến.,false
+W02426,người bán hàng,,true
+W02428,người gửi,,true
+W02430B,người lái xe,,false
+W02431,người lạ,,false
+W02432,người máy,"Máy thường có hình dạng giống người, có thể thay cho con người làm một số việc lao động, thực hiện một số thao tác kĩ thuật phức tạp.",true
+W02433,người nhận,,true
+W02435B,người quen,,false
+W02437B,người xấu,,false
+W02438B,người xưa,"Người đời xưa, sống cách ngày nay đã lâu đời (nói khái quát; hàm ý tôn kính).",false
+W02439B,người yêu,"Người có quan hệ tình yêu với một người khác nào đó, trong quan hệ giữa hai người với nhau.",false
+W02440,ngưỡng mộ,Tôn kính và mếm phục.,false
+W02441,nhà bác học,,false
+W02443,nhà cửa,Nhà ở (nói khái quát).,true
+W02447,nhà sàn,"Nhà có sàn để ở, làm ở lưng chừng cột, cách mặt đất hay mặt nước một khoảng, thường thấy ở miền rừng núi hay trên các mặt hồ rộng.",true
+W02448,nhà tầng,,true
+W02449,nhà thơ,Người chuyên sáng tác thơ và đã có tác phẩm có giá trị được công nhận.,true
+W02450,nhà thờ,Nơi thờ chúa Jesus và để giáo dân đến lễ.,true
+W02453,nhà toán học,,true
+W02455B,nhà trường,Trường học.,false
+W02456,nhà tù,Nơi giam giữ những người phạm tội đã bị kết án.,true
+W02461B,nhãn vở,"Nhãn dán ngoài bìa sách, vở ghi tên trường, lớp, môn học và họ tên của học sinh.",false
+W02462,nhanh nhẹn,"Nhanh trong mọi cử chỉ, động tác.",false
+W02463,nhào lộn,Làm động tác lao lên nhào xuống nhiều vòng liên tiếp.,true
+W02464,nhát gan,"Thiếu can đảm, hay sợ sệt.",false
+W02465,nhảy cao,Nhảy bật cao để vượt qua một xà ngang.,true
+W02466,nhảy dù,Nhảy bằng dù từ trên máy bay xuống.,true
+W02467,nhảy múa,Làm những động tác nghệ thuật nhảy và múa (nói khái quát).,true
+W02468,nháy mắt,Ra hiệu bằng cách cử động mí mắt trong vài giây.,true
+W02469,nhạy cảm,"Có khả năng nhận biết nhanh và tinh bằng các giác quan, bằng cảm tính.",false
+W02470,nhắc nhở,Nhắc để cho chú ý (nói khái quát).,false
+W02471,nhăn mặt,,true
+W02472,nhặt rau,,true
+W02473B,nhân (Toán học),Làm phép toán về số mà ở trường hợp đơn giản nhất là cộng tắt một số (gọi là số bị nhân) với chính nó một số lần nào đó (số lần đó gọi là số nhân).,false
+W02476,nhân cách hoá,"Gán cho loài vật hoặc vật vô tri hình dáng, tính cách hoặc ngôn gữ của con người (một biện pháp tu từ trong văn học).",false
+W02477,nhân chứng,Người làm chứng.,false
+W02478,nhân dân,"Đông đảo những người dân, thuộc mọi tầng lớp, đang sống trong một khu vực nào đó (nói tổng quát).",false
+W02479B,nhân hậu,"Hiền và giàu lòng thương người, chỉ muốn đem lại những điều tốt lành cho người khác.",false
+W02481,nhân vật,"Đối tượng (thường là con người) được miêu tả, thể hiện trong tác phẩm văn học, nghệ thuật.",false
+W02483,nhận hàng,,true
+W02485,nhận,,false
+W02486,nhận thức,"Quá trình hoặc kết quả phản ánh và tái hiện hiện thực vào trong tư duy; quá trình con người nhận biết, hiểu biết thế giới khách quan, hoặc kết quả của quá trình đó.",false
+W02487,nhận xét,"Đưa ra ý kiến xét đoán, đánh giá về một đối tượng nào đó.",false
+W02488,nhấp nháy,"Có ánh sáng khi loé ra khi tắt, liên tiếp.",false
+W02493,nhẹ hơn,,true
+W02494,nhẹ nhàng,"Tỏ ra nhẹ, có vẻ nhẹ, không gây cảm giác gì nặng nề hoặc khó chịu.",false
+W02495,nhi đồng,Trẻ em thuộc lứa tuổi từ bốn - năm đến tám - chín.,true
+W02497B,nhiệt kế,Dụng cụ đo nhiệt độ.,false
+W02498,nhiều hơn,,false
+W02499,nhìn,Đưa mắt về một hướng nào đó để thấy.,false
+W02500,nhỏ,"Có kích thước, số lượng, phạm vi, quy mô hoặc giá trị, ý nghĩa không đán kể, hay kém hơn so với số lớn những cái khác cùng loại.",true
+W02502,nhỏ tuổi,Ít tuổi (thường nói về tuổi thiếu niên).,true
+W02503,nhóm,"Tập hợp gồm một số cá thể được hình thành theo những nguyên tắc, tiêu chí nhất định.",true
+W02504,nhọn,"(vật) có phần đầu nhỏ dần lại, dễ đâm thủng vật khác.",true
+W02505,nhọn hoắt,"Rất nhọn, đến mức gây cảm giác sợ.",true
+W02508,nhu cầu,"Điều đòi hỏi của đời sống, tự nhiên và xã hội.",false
+W02512,nhụy hoa,Bộ phận sinh sản của hoa.,true
+W02514,nhược điểm,"Chỗ kém, chỗ yếu.",false
+W02515,nhường nhịn,"Chịu nhận phần kém, phần thiệt về mình, để cho người khác được hưởng phần hơn trong quan hệ đối xử (nói khái quát).",false
+W02517,niềm vui,Trạng thái thấy thích thú của người đang gặp việc hợp nguyện vọng hoặc đang có điều làm cho hài lòng.,false
+W02520B,no,Ở trạng thái nhu cầu sinh lí về ăn uống được thoả mãn đầy đủ.,false
+W02521,nỏ,"Khí giới hình cái cung, có cán làm tay cầm và có lẫy, căng bật dây để bắn tên.",true
+W02522,nóc nhà,"Chỗ cao nhất của mái nhà, nơi tiếp giáp giữa các mặt mái.",true
+W02523,nói chuyện,"Nói với nhau một cách tự nhiên, về những chuyện bình thường trong giao tiếp.",true
+W02524,nói dối,"Nói sai sự thật một cách cố ý, nhằm che giấu điều gì.",true
+W02526,nói leo,Nói chen vào chuyện của người trên khi không được hỏi đến.,false
+W02527,nón,"Đồ dùng để đội đầu, che mưa nắng, thường lamg bằng lá nón và có hình một vòng tròn nhỏ dần lên đỉnh.",true
+W02528,nô lệ,"Người bị tước đoạt hết mọi quyền tự do, sống dưới một ách áp bức.",true
+W02529,nổ lốp xe,,true
+W02530,nổ mìn,Làm nổ khối thuốc nạp vào những khoảng trống.,true
+W02531,nổ súng,"Bắn (thường nói về sự bắt đầu, mở đầu cuộc chiến).",true
+W02532,nồi,"Đồ dùng bằng đất nung hay kim loại, lòng sâu, để đun nấu thức ăn.",true
+W02534,nồi cơm điện,,true
+W02535,nổi bật,Nổi lên rất rõ khiến dễ dàng nhận thấy ngay.,false
+W02536,nổi dậy,Nổi lên thành lực lượng đông đảo chống lại trật tự xã hội.,true
+W02537,nổi giận,"Cảm thấy rất giận và có những phản ứng mạnh mẽ, thành cơn, không kìm lại được.",true
+W02538,nổi nóng,"Tức giận không kìm được thài độ phản ứng gay gắt, thiếu suy nghĩ.",true
+W02539,nối tiếp,"Tiếp theo nhau, không để ngắt quãng.",false
+W02540B,nội dung,"Mặt bên trong của sự vật, cái được hình thức chứa đựng hoặc biểu hiện.",false
+W02541,nội quy,"Những điều quy định để bảo đảm trật tự và kỉ luật trong một tập thể, một cơ quan (nói tổng quát).",true
+W02542,nội tiếp,"(hình tròn, hình cầu) nằm trong một đa giác hoặc đa diện và tiếp xúc với mọi cạnh hoặc mọi mặt của đa giác hoặc đa diện đó.",false
+W02544,nông nghiệp,"Ngành sản xuất vật chất cơ bản của xã hội, cung cấp sản phẩm trồng trọt và sản phẩm chăn nuôi.",true
+W02546,nông thôn,Khu vực dân cư tập trung chủ yếu làm nghề nông; phân biệt với thành thị.,true
+W02548,nốt ruồi,Nốt màu đen hoặc sẫm nổi lên tự nhiên trên mặt da.,true
+W02549,nơ,"Vật trang điểm thường tết bằng vải, lụa, để cài vào tóc, vào áo, v.v.",true
+W02550,nơi chốn,,false
+W02551,núi lửa,"Núi hình chóp nón, có miệng ở đỉnh phun ra những chất nóng chảy từ lòng đất sâu.",true
+W02554,nước mắt,Nước từ tuyến lệ ở mắt tiết ra khi khóc hay khi mắt bị kích thích mạnh.,true
+W02557,óc,"Khối mềm màu trắng đục ở trong hộp sọ, là cơ sở của hoạt động thần kinh cấp cao.",true
+W02559,ô nhiễm,Nhiễm bẩn tới mức có thể gây độc hại.,true
+W02561,ô tô,"Xe thường có bốn bánh, chạy bằng động cơ trên đường bộ, để chở người hoặc chở hàng.",true
+W02564,ốc vít,,true
+W02565,ôm,"Vòng hai tay qua để giữ sát vào lòng, vào người.",true
+W02567,ốm đau,Có bệnh.,true
+W02569,ôn luyện,"Ôn lại, tập lại nhiều lần để nắm chắc, để cho thành thạo (nói khái quát).",false
+W02570,ôn tập,"Học và luyện lại những điều đã học để nhớ, để nắm chắc.",false
+W02571,ổn định,"Ở vào hay làm cho ở vào trạng thái không còn có những biến động, thay đổi đáng kể.",false
+W02572,ông già,Người đàn ông đã cao tuổi.,true
+W02575B,ông ngoại,,false
+W02576B,ông nội,,false
+W02577,ống nghe,"Dụng cụ y tế gồm có một ống dẫn âm, dùng để nghe tiếng động phát ra trong cơ thể.",true
+W02578,ống nhòm,Dụng cụ quang học dùng để quan sát những vật ở rất xa.,true
+W02579,ống nước,,true
+W02580B,ở ngoài,,false
+W02581,ở trong,,true
+W02584,pha cà phê,,true
+W02585,pha chế,Pha theo những tỉ lệ hoặc công thức nhất định.,true
+W02586,pha lê,"Thuỷ tinh trong suốt, đẹp và nặng hơn thuỷ tinh thường.",true
+W02587,phà,"Phương tiện vận chuyển lớn, có hình chữ nhật, lòng phẳng, dùng để chở xe cộ và người qua sông.",true
+W02589B,phá,"Làm cho tan vỡ, hư hỏng, cho không còn nữa.",false
+W02597B,phản bội,"Thay đổi hẳn thái độ, đứng về phía chống lại người hay cái mà nghĩa vụ bắt buộc mình phải trung thành, tôn trọng, bảo vệ.",false
+W02598,phản động,"Có tính chất chống lại cách mạng, chống lại sự tiến bộ.",false
+W02600,phản xạ,Phản ứng theo quy luật của cơ thể động vật với các kích thích bên ngoài và bên trong.,false
+W02602,phao,Vật thả nổi trên mặt nước để đỡ cho vật khác cùng nổi.,true
+W02605,pháo hoa,"Pháo khi bắn lên thì nổ trên không tạo thành những chùm tia sáng màu sắc rực rỡ, thường được bắn trong những đêm hội.",true
+W02606,pháo sáng,"Phương tiện chiếu sáng thả từ máy bay hoặc dùng pháo phóng lên, có dù giữ cho lơ lửng trên không trong một thời gian nhất định.",true
+W02608,phát biểu,"Nói lên, nêu lên ý kiến, quan niệm, tình cảm của mình về vấn đề gì đó.",true
+W02609,phát động,"Tuyên truyền, làm cho hiểu rõ ý nghĩa, mục đích của một việc làm để rồi cùng nhau bắt đầu tham gia một cách tự giác, hăng hái.",true
+W02610,phát hiện,"Tìm thấy, tìm ra cái chưa ai biết.",false
+W02614,phân công,Giao cho làm một phần việc nhất định nào đó.,false
+W02615,phân loại,Chia ra thành nhiều loại khác nhau.,true
+W02616,phân số,Số biểu thị một hay nhiều phần của một đơn vị được chia thành những phần bằng nhau và thường được viết dưới dạng a trên b.,true
+W02630B,phấn,"Chất trắng hoặc có nhuộm màu chế từ thạch cao, đá vôi đóng thành thỏi để viết hay vẽ.",false
+W02631,phấn đấu,"Cố gắng, bền bỉ thực hiện nhằm đạt tới mục đích cao đẹp đã đề ra.",false
+W02634,phấn trang điểm,,true
+W02635,phấp phới,Bay lật qua lật lại trước gió một cách nhẹ nhàng.,false
+W02637,tượng phật,"Người tu hành đã giác ngộ, có đức từ bi, quên mình để cứu độ chúng sinh, theo giáo lí đạo Phật.",true
+W02643,phê bình,"Chỉ ra một cách cụ thể những khuyết điểm, thiếu sót của ai đó để góp ý, chê trách giúp họ nhận ra và sửa chữa.",false
+W02645,phi công,Người lái máy bay.,true
+W02648,phi tiêu,"Vật hơi dài, có đầu sắc nhọn hình như mũi tên, dùng để ném, phóng (một loại khí giới thời xưa).",true
+W02649,phích nước,"Bình bằng kim loại hoặc thuỷ tinh có hai lớp vỏ, giữa là khoảng chân không cách nhiệt, giữ nguyên nhiệt độ trong nhiều giờ của vật đựng trong đó.",true
+W02651B,phiên dịch,Dịch một văn bản hay một lời phát biểu từ ngôn ngữ này sang ngôn ngữ khác.,false
+W02656B,phim hoạt hình,"Phim quay từng hình vẽ, hình cắt giấy, động tác của búp bê, con rối, v.v. và khi chiếu với tốc độ 24 hình/giây sẽ tạo được cảm giác các nhân vật đang hoạt động.",false
+W02657,phim tài liệu,"Phim chuyên ghi lại những hình ảnh, sự kiện có thật nhằm phản ánh hiện thực cuộc sống.",true
+W02658B,phim truyện,"Phim nghệ thuật có bố cục, dựa trên một câu chuyện hoặc trên cơ sở một tác phẩm văn học.",false
+W02660,phong bì,"Bao bằng giấy gấp lại chuyên dùng để đựng thư, thiếp, v.v.",true
+W02661,phong cách,"Cung cách sinh hoạt, làm việc, hoạt động, xử sự tạo nên cái riêng của một người hay một lớp người nào đó (nói tổng quát).",false
+W02662,phong kiến,Những người thuộc giai cấp thống trị trong chế độ phong kiến (nói tổng quát).,true
+W02665,phong trào,"Hoạt động chính trị, văn hoá, xã hội lôi cuốn được đông đảo quần chúng tham gia.",true
+W02666,phong tục,"Thói quen đã có từ lâu đời, đã ăn sâu vào đời sống xã hội, được mọi người công nhận và làm theo.",true
+W02667,phòng âm nhạc,,true
+W02668,phòng bệnh,Ngăn ngừa bệnh tật để giữ gìn và tăng cường sức khoẻ.,false
+W02670,phòng chức năng,,false
+W02672,phòng đa năng,,false
+W02675,phòng học tin học,,true
+W02677,phòng máy tính,,true
+W02678,phòng mĩ thuật,,true
+W02679,phòng thí nghiệm,"Phòng, cơ sở có những thiết bị cần thiết để tiến hành thí nghiệm khoa học, nghiên cứu khoa học.",true
+W02680,phòng thư viện,,true
+W02682,phòng y tế,,true
+W02685,phô tô,Chụp sao lại.,false
+W02686,phổ biến,"Thường thấy, thường gặp ở nhiều nơi, nhiều người.",false
+W02689,phố,"Đường ở thành phố, thị trấn, dọc hai bên có nhà cửa của dân cư sinh sống.",true
+W02690,phố cổ,,true
+W02691,phố cổ Hội an,,true
+W02693,phổi,Cơ quan hô hấp hình túi trong cơ thể của người và động vật bậc cao.,true
+W02696B,phở,"Món ăn gồm bánh phở thái nhỏ và thịt thái mỏng, chan nước dùng hoặc xào khô.",false
+W02697B,phở cuốn,,false
+W02698,phơi quần áo,,true
+W02699,phù hợp,"Hợp với nhau, ăn khớp với nhau.",false
+W02701,phủ nhận,"Không thừa nhận là đúng, là có thật.",false
+W02704,phụ huynh,"Cha mẹ hoặc người thay mặt, đại diện cho gia đình học sinh trong quan hệ với nhà trường.",true
+W02707,phục hồi,Khôi phục cái đã mất đi hoặc đã giảm sút đi.,false
+W02709,phục vụ,Làm việc nhằm giúp ích trực tiếp cho ai đó.,true
+W02712,phức tạp,"Có nhiều sự rắc rối khó hiểu, khó nắm bắt, khó giải quyết.",false
+W02713,phương hướng,Hướng được xác định (nói khái quát).,false
+W02714,phương pháp,"Cách thức nghiên cứu, nhìn nhận các hiện tượng của tự nhiên và đời sống xã hội.",false
+W02715,phương tiện,"Cái dùng để làm một việc gì, để đạt một mục đích nào đó.",false
+W02716B,phương tiện giao thông,,false
+W02721,quả,"Bộ phận của cây do bầu nhuỵ hoa phát triển thành, bên trong thường chứa hạt.",true
+W02722,bầu,,true
+W02724B,bưởi,,false
+W02725,cam,,true
+W02728,chanh,,true
+W02729,chôm chôm,,true
+W02730,chuối,,true
+W02731B,dưa hấu,,false
+W02732B,dừa,,false
+W02734,quả đất,"Hành tinh thuộc hệ Mặt trời, loài người sống trên đó.",true
+W02735,cầu,,true
+W02737B,đu đủ,,false
+W02739,gấc,,true
+W02740,quả hồng,,true
+W02741,quả hồng xiêm,,true
+W02742B,khế,,false
+W02744,lê,,true
+W02745,mít,,true
+W02746,mướp,,true
+W02747,na,,true
+W02748B,nhãn,,false
+W02749,nho,,true
+W02750,ổi,,true
+W02751,ớt,,true
+W02752,quất,,true
+W02753,quýt,,true
+W02754B,roi,,false
+W02755,sầu riêng,,true
+W02756,su su,,true
+W02757B,táo,,false
+W02758,thanh long,,true
+W02759,quả vải,,true
+W02760,xoài,,true
+W02762,quan điểm,"Cách nhìn nhận, suy nghĩ một sự vật, một vấn đề.",false
+W02763,quan hệ,"Trạng thái tác động lẫn nhau, ảnh hưởng lẫn nhau giữa các sự vật.",false
+W02765,quan tâm,"Để tâm, chú ý đến một cách thường xuyên.",false
+W02766,quan trọng,"Có ý nghĩa, tác dụng hoặc có ảnh hưởng lớn, đáng được coi trọng.",false
+W02771,quàng khăn,,true
+W02773,quảng cáo,"Trình bày, giới thiệu rộng rãi để cho nhiều người (thường là khách hàng) biết đến.",false
+W02779,quay phim,Cho camera hoạt động để thu hình ảnh vào phim.,true
+W02780,quà,"Vật để hoặc được tặng, biếu để tỏ lòng quan tâm, quý mến. Ví dụ: quà sinh nhật.",true
+W02784B,quân đội,"Là Lực lượng vũ trang tập trung có nhiệm vụ sẵn sàng chiến đấu bảo vệ độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của Tổ quốc; bảo vệ chế độ và những thành quả của cách mạng.",false
+W02786,quần âu,"Quần kiểu Âu, có cạp, ống may đứng, rộng vừa phải, trông gọn.",true
+W02787B,quần bò,"Quần kiểu Âu, may bằng vải bò, thường có kiểu dáng và đường nét nhất định.",false
+W02788,quần đùi,Quần ống ngắn đến nửa đùi.,true
+W02789,quần yếm,,true
+W02790B,quận,"Đơn vị hành chính ở thành phố, gồm nhiều phường, ngang với huyện ở nông thôn.",false
+W02794,quét dọn,"Quét và dọn cho sạch, cho gọn (nói khái quát).",true
+W02795,quét nhà,,true
+W02797B,quê,"Nơi gia đình, dòng họ mình đã qua nhiều đời làm ăn sinh sống.",false
+W02798,quên,"Không làm, không mang theo do không nhớ, không nghĩ đến.",true
+W02799,quốc ca,"Bài hát chính thức của một quốc gia, dùng khi có lễ nghi trọng thể.",false
+W02800,quốc gia,"Chỉ một nước hay đất nước, được cấu thành bởi ba yếu tố là lãnh thổ, dân cư, chủ quyền.",false
+W02801,quốc hội,"Cơ quan dân cử có quyền lực cao nhất trong một nước, đề ra pháp luật và quyết định các công việc lớn của nhà nước.",false
+W02802,quốc khánh,"Lễ chính thức lớn nhất của một nước, thường là kỉ niệm ngày thành lập nước.",false
+W02804,đề phòng,"Chuẩn bị trước các phương án để sẵn sàng đối phó, ngăn ngừa hoặc hạn chế những thiệt hại có thể xảy ra.",false
+W02805,quốc tế,Các nước trên thế giới trong quan hệ với nhau (nói tổng quát).,false
+W02808,quy định,"Định ra để phải theo, phải thực hiện trong công việc, trong hoạt động cụ thể.",false
+W02809,quy đồng mẫu số,Làm cho các mẫu số bằng nhau mà không thay đổi giá trị của các phân số.,false
+W02810,quy nạp,"(suy lí, suy luận) đi từ những hiện tượng, sự kiện riêng đến những kết luận chung.",false
+W02811,quy tắc,Những điều quy định đòi hỏi phải tuân theo trong một hoạt động chung nào đó (nói tổng quát).,false
+W02812,quý giá,Có giá trị lớn.,false
+W02813B,quyền lợi,"Quyền được hưởng những lợi ích nào đó về vật chất, tinh thần.",false
+W02814B,quyết định,"Có ý kiến dứt khoát về việc làm cụ thể nào đó, chọn một trong các khả năng, sau khi đã có sự cân nhắc.",false
+W02815,quỳ,Ở tư thế đầu gối gập xuống và đặt sát mặt nền để đỡ toàn thân.,true
+W02816,quý hiếm,Quý giá và hiếm có.,false
+W02818B,quyển vở,,false
+W02820B,quyết tâm,"Quyết và cố gắng thực hiện bằng được điều đã định, tuy biết là có nhiều khó khăn, trở ngại.",false
+W02825B,ra ngoài,,false
+W02828,rách,"Ở trạng thái không còn nguyên, có những chỗ bị tách, bị thủng ra.",true
+W02831,rạch,"Làm cho đứt thành đường trên bề mặt, bằng vật sắc.",false
+W02832,rào chắn,"Rào để ngăn, không cho vượt qua.",true
+W02833,rạp chiếu phim,,true
+W02835,rau,"Tên gọi chung các thứ cây, thường thuộc loại thân cỏ, dùng làm thức ăn cho người.",true
+W02836,rau bắp cải,,true
+W02837,rau cải,,true
+W02839,rau cải thảo,,true
+W02841,rau dền,"Tên gọi chung một số cây thân cỏ, lá đơn nguyên, mọc đối hay mọc cách, hoa tập hợp thành bông dài ở ngọn, thường trồng lấy ngọn non làm rau ăn.",true
+W02844,rau mùng tơi,,true
+W02845,rau ngót,"Cây nhỏ, lá nhỏ mọc cách, hình trứng dài, màu xanh sẫm, thường dùng để nấu canh.",true
+W02847B,rằm trung thu,,false
+W02848,răng,"Phần xương cứng, màu trắng, mọc trên hàm, dùng để cắn và nhai thức ăn.",true
+W02851,râu,"Lông cứng mọc ở cằm và phía trên môi trên, thường ở đàn ông hoặc ở một số loài động vật.",true
+W02852,rẽ phải,,false
+W02854,rèn luyện,Luyện tập một cách thường xuyên để đạt tới những phẩm chất hay trình độ ở một mức nào đó.,false
+W02855,reo hò,"Reo ầm lên, tỏ ý vui mừng hay thúc đẩy.",false
+W02856,rễ cây,"Bộ phận của cây, thường đâm sâu xuống đất, giữ cho cây đứng thẳng và hút chất dinh dưỡng nuôi cây.",true
+W02857,rễ chùm,"Bộ rễ cây gồm một cụm những rễ to gần bằng nhau, mọc từ các mắt chấm đất ở một số cây như lúa, tre, v.v.",true
+W02858,rễ cọc,"Bộ rễ cây có rễ cái to đâm thẳng xuống và nhiều rễ con nhỏ hơn, đâm nghiêng vào đất.",false
+W02860,riêng biệt,"Riêng một mình, không có quan hệ với những cái khác cùng loại.",false
+W02861,riêng tư,Riêng của cá nhân.,false
+W02863,rìu,"Dụng cụ dùng để đẽo, chặt, có cán cầm và một lưỡi sắc hình thang tra thẳng góc vào cán.",true
+W02864B,rõ ràng,"Rõ đến mức ai cũng có thể thấy, có thể nhận biết được một cách dễ dàng.",false
+W02865B,róc rách,Mô phỏng âm thanh của tiếng nước chảy nhẹ qua kẽ đá.,false
+W02866,rón rén,Gợi tả dáng điệu của động tác cố làm cho thật nhẹ nhàng vì sợ gây tiếng động hoặc điều gì thất thố.,false
+W02867,rong biển,,true
+W02868B,rong chơi,,false
+W02870,rổ,"Đồ dùng để đựng, thường đan bằng tre hay làm bằng nhựa, tròn và sâu lòng, có nhiều lỗ nhỏ và thưa.",true
+W02872,rộng lớn,Có diện tích hoặc phạm vi rất lớn (nói khái quát).,false
+W02873,rộng rãi,"Chỉ căn phòng rộng rãi; chỉ sự hào phóng, chi tiêu rộng rãi; chỉ việc đem đến cho nhiều người, nhiều nơi biết: công bố rộng rãi.",false
+W02874,rơi,Di chuyển xuống mặt đất một cách tự nhiên khi không có gì giữ lại ở vị trí trên cao.,false
+W02875,rơm,Phần trên của thân cây lúa đã gặt và đập hết hạt.,true
+W02876,ru ngủ,Làm mê muội tinh thần và tê liệt ý chí đấu tranh.,true
+W02877,rụng tóc,,true
+W02883,rút gọn,"Làm cho có hình thức ngắn gọn, đơn giản hơn.",false
+W02885,rửa bát,,true
+W02886,rửa chân,,true
+W02887,rửa mặt,,true
+W02888,rửa tay,,true
+W02892,rừng núi,Chỉ rừng và núi.,true
+W02893,rừng rậm,,true
+W02894,rừng thưa,,true
+W02895,rước đèn,,true
+W02897B,rưỡi,Một nửa của đơn vị.,false
+W02898B,rượu,"Chất lỏng, vị cay nồng, thường cất từ chất bột hoặc trái cây đã ủ men.",false
+W02900,sách,"Tập hợp nhiều tờ giấy có in chữ, hình thành một quyển.",true
+W02901,sách giáo khoa,"Là loại sách cung cấp kiến thức, được biên soạn với mục đích dạy và học tại trường học.",true
+W02902,sách toán,"Sách về các lĩnh vực của toán như logic của con số, cấu trúc, không gian và các ghép biến đổi.",true
+W02903,san hô,"Động vật ruột khoang sống ở vùng biển nhiệt đới, có bộ xương đá vôi dạng cánh hoa, nhiều màu sắc.",true
+W02906,san sẻ,"Chia bớt cho nhau để cùng hưởng, cùng chịu (nói khái quát).",false
+W02912,sản xuất,Là những hoạt động của con người nhằm tạo ra của cải vật chất nói chung.,false
+W02915,sáng chói,,false
+W02916,sáng kiến,"Ý kiến mới, giúp cho công việc tiến hành tốt hơn, thuận lợi hơn.",false
+W02918,sáng tạo,Tạo ra những giá trị mới về vật chất hoặc tinh thần.,false
+W02919B,sao,Tên gọi chung các thiên thể nhìn thấy như những điểm sáng lấp lánh trên bầu trời ban đêm.,false
+W02921,sao chép,Tạo ra một hoặc nhiều bản giống như bản gốc.,false
+W02922,đỏ thắm,,true
+W02923,sáo,"Nhạc khí thổi bằng hơi theo chiều ngang, hình ống nhỏ và dài, phần dưới có nhiều lỗ tròn.",true
+W02926,sau,"Ở phía đối lập với phía trước mặt, khi mắt nhìn thẳng không thể thấy được.",false
+W02927,say sưa,"Ở trạng thái bị tập trung, cuốn hút hoàn toàn vào một công việc hứng thú nào đó.",false
+W02931B,sắp xếp,Xếp theo một trật tự coi là hợp lí nhất.,false
+W02932B,sắt,"Kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần chính của gang và thép.",false
+W02934,sấm chớp,,true
+W02935,sấm sét,Sấm và sét (nói khái quát); thường dùng để ví những tác động mạnh khủng khiếp.,true
+W02936B,sân chơi,"Nơi diễn ra các hoạt động vui chơi, có tác dụng giải trí.",false
+W02937,sân khấu,Nơi biểu diễn trực tiếp các tiết mục nghệ thuật.,true
+W02938,sân nhà,"Khoảng đất trống, phẳng, là một phần phụ của nhà ở.",true
+W02939,sân thượng,Khoảng rộng trên mái bằng của nhà.,true
+W02940B,sân trường,,false
+W02941,sân vận động,,true
+W02943,sâu,Có khoảng cách bao nhiêu đó tính từ miệng hoặc bề mặt đến đáy.,true
+W02944,sâu bọ,"Động vật chân đốt, thân chia ba phần, có ba đôi chân, phần lớn có cánh.",true
+W02945,sâu răng,"Bệnh làm huỷ một hay nhiều lớp của răng, có khi làm thủng vào tới tuỷ, thường do vi trùng gây nên.",true
+W02946,sâu thẳm,,false
+W02947B,sĩ diện,Thể diện cá nhân.,false
+W02948,siêng năng,"Đức tính của con người, thể hiện sự cần cù, tự giác, miệt mài. làm việc thường xuyên, đều đặn.",false
+W02951,siêu thị,"Cửa hàng tự phục vụ lớn, bán thực phẩm và hàng bách hóa đủ loại.",true
+W02952,siêu tốc,"Có tốc độ rất cao, vượt xa tốc độ bình thường.",false
+W02953B,sinh đẻ,Sinh con (nói khái quát) Đồng nghĩa với sinh nở.,false
+W02954,sinh động,"Đầy sức sống với nhiều dạng, nhiều vẻ khác nhau.",false
+W02955,sinh hoạt,Những hoạt động thuộc về đời sống hằng ngày của một người hay một cộng đồng người (nói tổng quát).,false
+W02956B,sinh sản,"Đẻ, về mặt chức năng duy trì và phát triển nòi giống của sinh vật (nói khái quát).",false
+W02957,sinh sống,"Sống, về mặt tồn tại trên đời (nói khái quát).",false
+W02958,sinh tố,"Thức uống được chế biến từ các loại hoa quả tươi bằng cách xay nhuyễn với một vài muỗng cà phê sữa đặc có đường, đá vụn và trái cây tươi.",true
+W02960,sinh vật,"Các vật sống bao gồm động vật, thực vật và vi sinh vật, có trao đổi chất với môi trường, có sinh đẻ, lớn lên và chết đi.",false
+W02961,Sóc Trăng,,false
+W02962,soi,Chiếu ánh sáng vào làm cho thấy rõ.,true
+W02964,son môi,,true
+W02965,song song,Không cắt nhau hoặc không có một điểm nào chung.,true
+W02967,sóng biển,,true
+W02968,sóng thần,"Sóng biển rất to, cao đến hàng chục mét, do động đất ngầm dưới biển gây ra, có sức tàn phá rất lớn.",true
+W02970,sổ đầu bài,,true
+W02972,sổ điểm danh,,true
+W02974,sổ tay,"Sổ nhỏ, thường mang theo người, dùng để ghi chép những điều cần thiết.",true
+W03005,sông Hồng,,true
+W03008,sốt,"Tăng nhiệt độ cơ thể lên quá mức bình thường, do bị bệnh.",true
+W03010B,sơ đồ,"Hình vẽ quy ước, có tính chất sơ lược, nhằm mô tả một đặc trưng nào đó của sự vật hay một quá trình nào đó.",false
+W03011B,sơ mi,"Áo kiểu Âu, cổ đứng hoặc cổ bẻ, có tay.",false
+W03014,sợi,"Nguyên liệu dài và mảnh, dùng để dệt, thêu, v.v., làm từ bông, lông thú, v.v.",false
+W03015,sợi chỉ,,true
+W03016,sợi dây,,true
+W03017,sợi len,,true
+W03018,sơn ,"Tên gọi chung nhựa lấy từ cây sơn hoặc hoá chất dạng lỏng, dùng để chế biến chất liệu hội hoạ, hoặc để quét lên đồ vật cho bền, đẹp.",true
+W03021,súc miệng,,true
+W03023,sum họp,"Tụ họp tại một chỗ một cách vui vẻ, sau một thời gian phải sống xa nhau.",false
+W03024,suối,"Dòng nước tự nhiên ở miền đồi núi, chảy thường xuyên hoặc theo mùa, do nước mưa hoặc nước ngầm chảy ra ngoài mặt đất tạo nên.",true
+W03025B,suy nghĩ,"Vận dụng sự hoạt động của trí óc để tìm hiểu và giải quyết vấn đề, từ một số phán đoán và ý nghĩ này đi đến những phán đoán và ý nghĩ khác có chứa tri thức mới.",false
+W03031,sự thật,"Cái có thật, cái có trong thực tế.",false
+W03034,sửa chữa,"Sửa những chỗ hư hỏng, sai sót (nói khái quát).",true
+W03036B,sữa bò,,false
+W03037B,sữa bột,,false
+W03038B,sữa dê,,false
+W03039,sữa đặc,,true
+W03040B,sữa hộp,,false
+W03041,sữa rửa mặt,,true
+W03042B,sữa,"Chất dinh dưỡng màu trắng đục, tiết ra từ tuyến vú của người và động vật để nuôi con.",false
+W03043,sức khỏe,Sức mạnh về thân thể.,false
+W03046,sừng,Phần cứng mọc nhô ra ở đầu một số loài thú có guốc.,true
+W03047,sừng bò,,true
+W03048,sừng trâu,,true
+W03051,sườn,Các xương bao quanh lồng ngực từ cột sống đến vùng ức (nói tổng quát).,false
+W03054,tác dụng,Kết quả của tác động.,false
+W03055,tác động,Làm cho một đối tượng nào đó có những biến đổi nhất định.,false
+W03056,tác giả,"Người trực tiếp sáng tạo ra toàn bộ hoặc một phần tác phẩm văn học, nghệ thuật, khoa học nào đó.",false
+W03058,tác phẩm,"Sản phẩm trí tuệ do nhà văn hoá, nghệ thuật, khoa học trực tiếp sáng tạo ra dưới một hình thức nhất định.",false
+W03059,tách,"Làm cho rời hẳn ra, không còn gần hoặc gắn liền với nhau thành một khối nữa.",true
+W03061,tai,"Cơ quan ở hai bên đầu người hoặc động vật, dùng để nghe.",true
+W03062,tai nạn,"Việc rủi ro bất ngờ xảy ra, gây thiệt hại lớn cho con người.",false
+W03063,tài giỏi,Có tài và giỏi giang (nói khái quát).,false
+W03064,tài năng,"Năng lực xuất sắc, khả năng làm giỏi và có sáng tạo trong công việc.",false
+W03067,tài trợ,Giúp đỡ về mặt tài chính.,false
+W03070,tái phát,"(bệnh, vết thương cũ) phát lại sau một thời gian đã bớt, đã khỏi.",false
+W03071B,tái phạm,Phạm lại tội cũ hoặc sai lầm cũ.,false
+W03074,tam giác,Hình tạo nên do một đường gấp khúc khép kín có ba cạnh.,true
+W03075,tạm biệt,Chia tay nhau với hi vọng sẽ sớm được gặp lại; cũng dùng làm lời chào khi chia tay.,true
+W03077,tán thành,Đồng ý chủ trương hoặc hành vi (của người khác).,true
+W03081,tạo dáng,Tạo thành những hình dáng hoặc tư thế nào đó.,false
+W03084,tát,Đánh mạnh vào mặt bằng bàn tay đang mở.,true
+W03085B,tàu hoả,Xe có đầu máy kéo nhiều toa chạy trên đường ray.,false
+W03086,tàu ngầm,Tàu biển có thể chạy ngầm dưới mặt nước.,true
+W03087,tàu thuyền,Phương tiện vận tải đường thuỷ (nói khái quát). Như tàu bè.,true
+W03088,tàu thủy,"Phương tiện chuyên chở, hoạt động trên mặt nước bằng động cơ.",true
+W03089,taxi,"Ô tô con chở khách hoặc hàng hoá thuê, thường tính tiền cước phí theo số kilomet hiện trên đồng hồ điện tử.",true
+W03090,tay,"Bộ phận của cơ thể người, từ vai đến các ngón, dùng để cầm, nắm.",true
+W03095,tay phải,,true
+W03097,tay trái,,true
+W03099,tặc lưỡi,"Bật lưỡi kêu thành tiếng, biểu lộ ý không bằng lòng nhưng đành bỏ qua cho xong chuyện.",false
+W03100,tăm,"Que nhỏ và ngắn, thường bằng tre hay gỗ, dùng để xỉa răng.",true
+W03103,tâm thần,Bệnh tâm thần.,false
+W03105B,tấm vải,,false
+W03107,tấn công,"Tiến đánh một cách dữ dội, mãnh mẽ và thường trên diện rộng.",false
+W03110,tập hợp (Toán học),,false
+W03111,tập hợp rỗng,,false
+W03112,tập làm văn,,false
+W03115B,tập thể,Tập hợp những người có mối quan hệ gắn bó như cùng sinh hoạt hoặc cùng làm việc chung với nhau.,false
+W03116B,tập thể dục,Là tất cả những hoạt động của cơ thể nhằm nâng cao hoặc duy trì sự vừa vặn của cơ thể và sức khỏe nói chung.,false
+W03117,tập trung,Dồn vào một chỗ hoặc một điểm.,false
+W03118,tập viết,,true
+W03121,Tây Bắc,,false
+W03123,Tây Nguyên,,false
+W03124,Tây Ninh,,false
+W03129B,tên là gì?,,false
+W03130B,tên riêng,"Tên gọi của từng cá nhân, cá thể riêng rẽ, phân biệt với những cá nhân, cá thể khác cùng loại.",false
+W03131B,Tết Âm,"Tết Nguyên Đán, là dịp lễ đầu năm âm lịch quan trọng và có ý nghĩa bậc nhất ở Việt Nam, cùng với văn hóa Tết Âm lịch của các nước Đông Á.",false
+W03132B,Tết Dương,"Ngày lễ diễn ra vào ngày 01 tháng 01, ngày đầu tiên trong năm theo lịch dương.",false
+W03133B,Tết Thiếu nhi,,false
+W03134B,Tết Trung thu,,false
+W03135,tha,(con vật) mang đi bằng cách ngậm chặt ở miệng hoặc mỏ.,true
+W03138B,tha thứ,"Tha cho, bỏ qua cho, không trách cứ hoặc trừng phạt nữa.",false
+W03141,thác,"Chỗ dòng sông, dòng suối chảy vượt qua một vách đá cao nằm chắn ngang rồi đổ mạnh xuống.",true
+W03148B,thái độ,"Những biểu hiện của ý nghĩ, tình cảm được thể hiện ra bên ngoài qua nét mặt, cử chỉ, lời nói, hành động trước một đối tượng, một sự việc nào đó.",false
+W03153B,tham dự,(Trang trọng) dự một hoạt động cụ thể nào đó.,false
+W03154,tham khảo,"Tìm đọc thêm tài liệu, xem xét, nghe ngóng thêm ý kiến có liên quan để biết rõ hơn về vấn đề đang quan tâm.",false
+W03155,tham lam,"Muốn lấy hết, vơ hết về cho mình.",false
+W03156B,tham quan,"Đi xem tận nơi, tận mắt để mở rộng hiểu biết hoặc để học tập kinh nghiệm.",false
+W03160,thám tử,Chuyên điều tra các vụ việc mà người bình thường khó có thể làm được.,false
+W03163,thản nhiên,"Có dáng vẻ tự nhiên như thường, coi như không có gì xảy ra.",false
+W03164,thán phục,Cảm phục và khen ngợi.,false
+W03165,cầu thang,"Bộ phận gồm nhiều bậc, dùng để lên xuống các tầng nhà.",true
+W03167B,tháng,Khoảng thời gian bất kì bằng ba mươi ngày hoặc gần ba mươi ngày.,false
+W03171,thanh niên,"Người còn trẻ, đang ở độ tuổi trưởng thành.",true
+W03173,thành công,"Đạt được kết quả, mục đích như dự định.",false
+W03175,thành lập,"Chính thức lập nên, dựng nên (thường nói về một tổ chức quan trọng).",false
+W03175B,thành lập,"Chính thức lập nên, dựng nên (thường nói về một tổ chức quan trọng).",false
+W03180,thành thạo,"Rất thạo, do đã quen làm và đã có kinh nghiệm.",false
+W03181,thành thị,"Thành phố, thị xã nói chung, về mặt là nơi dân cư đông đúc, công nghiệp và thương nghiệp phát triển, sinh hoạt văn hoá phong phú; phân biệt với nông thôn.",true
+W03185,thành viên,"Người hoặc đơn vị với tư cách là thành phần của một tổ chức, một tập thể.",false
+W03191,tháo gỡ,"Tháo bỏ, phá bỏ đi cái ngăn cản, gây nguy hiểm.",false
+W03192,tháp,Công trình xây dựng có chiều cao lớn hơn nhiều so với chiều ngang (thường có nhiều tầng và phần trên đỉnh có hình chóp).,true
+W03196,thắc mắc,"Cảm thấy còn có điều chưa hiểu, chưa thông nên muốn được giải đáp.",false
+W03197B,thăm hỏi,Thăm và hỏi han tình hình nhằm tỏ sự quan tâm (nói khái quát).,false
+W03199,thăng bằng,"Thế của một vị trí tự giữ được không bị chao đảo, ngả nghiêng.",true
+W03202,thẳng tắp,"Thẳng thành một đường dài, đều đặn.",true
+W03203,thắng lợi,"Giành được phần thắng trong đấu tranh, hoặc đạt được kết quả tốt đẹp trong một hoạt động đòi hỏi nhiều nỗ lực.",false
+W03204B,thân cây,,false
+W03205,thân hình,"Hình dáng, thân thể con người (nói khái quát).",false
+W03207,thân thiết,Có quan hệ tình cảm gần gũi và gắn bó mật thiết với nhau.,false
+W03208,thân thiện,Có biểu hiện tỏ ra tử tế và có thiện cảm với nhau.,false
+W03214,thận,"Bộ phận cơ thể động vật, hình hạt đậu, màu nâu đỏ, nằm ở hai bên cột sống, có chức năng lọc nước tiểu.",true
+W03215,thấp hơn,,true
+W03216,thấp nhất,,true
+W03221,thật thà,"(tính người) tự bộc lộ mình một cách tự nhiên như vốn có, không giả dối, không giả tạo.",false
+W03222B,thầy cô,,false
+W03224B,thầy giáo,Người đàn ông làm nghề dạy học; cũng dùng để chỉ người làm nghề dạy học nói chung.,false
+W03228,theo dõi,"Chú ý quan sát (thường là kín đáo, bí mật) từng hoạt động, từng diễn biến để biết rõ hoặc để có sự ứng phó, xử lí kịp thời.",false
+W03229,theo đuổi,"Làm việc gì đó một cách kiên trì, bền bỉ nhằm mong đạt cho bằng được mục đích (thường là những việc làm tốt đẹp).",false
+W03230,thẻ,"Giấy chứng nhận một tư cách nào đó, thường có dạng nhỏ, gọn.",true
+W03233,thề,"Nói hoặc hứa một cách chắc chắn bằng cách lấy cái thiêng liêng, quý báu như danh dự, tính mạng, quỷ thần, v.v., để làm chứng, làm điều đảm bảo cho lời nói ấy.",true
+W03237,thế hệ,"Lớp người hoặc sinh vật cùng một lứa tuổi, phân biệt với lớp trước đã sinh ra mình và với lớp sau do mình (sẽ) sinh ra.",false
+W03238,tri kỉ,"Bạn thân, hiểu rõ lòng nhau.",false
+W03239B,thế nào?,Tổ hợp biểu thị có một điều muốn hỏi.,false
+W03240,thêm,Làm cho hoặc trở nên nhiều hơn lên một phần về số lượng hoặc mức độ.,false
+W03241,thềm,"Phần nền trước cửa hoặc chung quanh nhà, có mái che nhưng thường không có cột đỡ.",true
+W03243B,thi cử,"Thi vào hoặc ra trường hay để nhận một bằng cấp, học vị nào đó (nói khái quát).",false
+W03251B,thìa,"Đồ dùng thường làm bằng kim loại hoặc bằng nhựa, có cán cầm, dùng để múc thức ăn.",false
+W03252B,thích thú,"Có cảm giác bằng lòng, cảm thấy một đòi hỏi nào đó được thoả mãn.",false
+W03256,thiên nhiên,Tổng thể nói chung những gì tồn tại xung quanh con người mà không phải do con người tạo ra.,true
+W03265B,thiết kế,"Trình bày tài liệu kĩ thuật có bản tính toán, bản vẽ, một công trình xây dựng, sản phẩm.",false
+W03268,thiệt thòi,"Phải chịu điều thiệt, thường là lớn và do hoàn cảnh đưa lại (nói khái quát).",false
+W03269,thiếu nhi,"Trẻ em thuộc các lứa tuổi thiếu niên, nhi đồng.",true
+W03270,thiếu niên,"Trẻ em thuộc lứa tuổi từ mười đến khoảng mười bốn, mười lăm.",false
+W03272,thím,Vợ của chú (có thể dùng để xưng gọi).,false
+W03276,thoát hiểm,,false
+W03278,thóc / gạo,Hạt lúa còn nguyên cả vỏ trấu.,true
+W03281,thổi,Chúm miệng lại và làm cho luồng hơi bật mạnh từ trong miệng ra.,true
+W03282,thổi bóng,,true
+W03283,thổi kèn,,true
+W03285,thông báo,"Báo cho mọi người biết tình hình, tin tức bằng lời nói hoặc văn bản.",true
+W03286,thông cảm,"Hiểu thấu hoàn cảnh, khó khăn riêng và chia sẻ tâm tư, tình cảm.",false
+W03288B,thông minh,"Có năng lực trí tuệ tốt, hiểu nhanh, tiếp thu nhanh.",false
+W03289,thông qua,"(cơ quan hoặc người có thẩm quyền) đồng ý chấp thuận cho được thực hiện, sau khi đã xem xét, thảo luận.",false
+W03291,thông thường,"Thường có, thường thấy, không có gì lạ hoặc đặc biệt.",false
+W03292B,thông tin,Điều được truyền đi cho biết.,false
+W03294,thống nhất,"Hợp thành một khối có chung cơ cấu, tổ chức.",false
+W03297,tuổi thơ ấu,,true
+W03300,thở dài,"Thở ra một hơi dài khi có điều phiền muộn, bức bối ở trong lòng.",false
+W03305,thở,"Hít không khí vào lồng ngực, vào cơ thể rồi đưa trở ra qua mũi, miệng (điều kiện và biểu hiện của sự sống).",false
+W03308,thợ rèn,Thợ chuyên làm nghề rèn sắt thành dụng cụ.,true
+W03309,thợ thêu,,true
+W03314B,thơm,"Có mùi như mùi hương của hoa, dễ chịu, làm cho thích ngửi.",false
+W03316,thu mua,Mua gom với số lượng lớn theo hình thức tập trung của một tổ chức kinh tế nhất định.,false
+W03317,thu nhỏ,,false
+W03318,thu thập,"Tìm kiếm, góp nhặt và tập hợp lại.",false
+W03319,thù lao,Trả công (thường bằng tiền) để bù đắp lại công sức lao động đã bỏ ra.,false
+W03320B,thủ công,"Lao động sản xuất bằng tay với công cụ giản đơn, thô sơ.",false
+W03321B,thủ tướng,Người đứng đầu chính phủ ở một nước.,false
+W03323B,thú dữ,"Loài thú lớn, rất dữ, như hổ, báo, v.v., có thể làm hại con người; thường dùng để ví những kẻ hung dữ, độc ác.",false
+W03324B,thú y,"Ngành chuyên lo các việc về phòng, trị bệnh cũng như lai tạo giống, v.v. cho gia súc, gia cầm hoặc các loài động vật nói chung, và kiểm nghiệm các sản phẩm chăn nuôi.",false
+W03326,thuận lợi,Có nhiều yếu tố hoặc điều kiện dễ dàng (để thực hiện việc gì).,false
+W03327B,ngữ pháp,"Hệ thống những phương thức và quy tắc cấu tạo từ, cấu tạo câu trong một ngôn ngữ.",false
+W03328,thúc đẩy,"Kích thích, tạo điều kiện, động lực cho hoạt động, phát triển mạnh hơn theo một hướng nhất định nào đó, thường là hướng tốt.",false
+W03329B,thuê,"Dùng người hay vật nào đó trong một thời gian, với điều kiện trả một khoản tiền nhất định cho thời gian sử dụng đó.",false
+W03330,thùng,"Đồ đựng bằng kim loại hoặc bằng gỗ, có hình trụ hoặc hình hộp.",true
+W03331,thủng,Có chỗ bị rách hoặc bị chọc thành lỗ xuyên qua vật.,true
+W03334,thuốc bổ,"Thuốc có tác dụng tăng cường, bồi bổ thêm sức khoẻ cho cơ thể.",true
+W03335,thuốc lá,"Thuốc hút được chế biến từ cây thuốc lá, thường được quấn thành điếu.",true
+W03338,thuộc lòng,"Thuộc đến mức nhớ mãi trong trí óc, bất cứ lúc nào cũng có thể nhắc lại hoặc nhận ra ngay một cách dễ dàng và đầy đủ.",false
+W03339B,thuỷ điện,Điện do năng lượng của nước sinh ra.,false
+W03341,thuỷ thủ,Nhân viên làm việc trên tàu thuỷ.,true
+W03342,tinh trùng,"Tế bào sinh dục đực được hình thành trong tinh hoàn, có khả năng vận động.",true
+W03344,thủy chung,"Nói về tình cảm son sắt, không thay đổi qua thời gian.",false
+W03350,trưởng thành,"Phát triển đến mức hoàn chỉnh, đầy đủ về mọi mặt.",false
+W03351,thuyết phục,"Làm cho người ta thấy đúng, thấy hay mà tin theo, làm theo.",true
+W03352,thuyết trình,Trình bày rõ ràng một vấn đề trước nhiều người.,true
+W03354,thư giãn,"Làm cho cơ bắp, đầu óc được thả lỏng hoặc thảnh thơi hoàn toàn, tạo nên cảm giác thư thái và thoải mái cho cơ thể.",true
+W03355,mục đích,Cái vạch ra làm đích nhằm đạt cho được.,false
+W03357,thứ tự,"Sự sắp xếp lần lượt trên dưới, trước sau, một cách hợp lí, theo một nguyên tắc nhất định.",false
+W03359B,thừa,Có hoặc đạt số lượng trên mức cần thiết.,false
+W03364,thực hành,Làm để áp dụng lí thuyết vào thực tế (nói khái quát).,true
+W03365,thực hiện,Làm cho trở thành sự thật bằng những việc làm hoặc hành động cụ thể.,false
+W03366,thực phẩm,"Các thứ dùng để chế biến thành món ăn, như thịt, cá, trứng, v.v. (nói khái quát); phân biệt với lương thực.",true
+W03367,thực sự,"(phương ngữ) thật, có thật, với đầy đủ mức độ hoặc ý nghĩa.",false
+W03368,thực tế,"Tổng thể nói chung những gì đang tồn tại, đang diễn ra trong tự nhiên và trong xã hội, về mặt có quan hệ đến đời sống con người.",false
+W03369,thực vật,"Tên gọi chung các loài cây cỏ và những sinh vật bậc thấp khác có tính chất như cây cỏ, trong các tế bào cơ thể thường có màng bằng cellulos.",true
+W03373B,thương yêu,Có tình cảm gắn bó tha thiết và quan tâm chăm sóc hết lòng.,false
+W03379,tỉ mỉ,"Đầy đủ mọi khía cạnh, kĩ đến từng chi tiết nhỏ.",true
+W03388,tia số,,true
+W03392B,tiếc,"Cảm thấy day dứt, hụt hẫng trong lòng vì đã mất đi cái gì.",false
+W03393,tiệc,"Bữa ăn đặc biệt có nhiều món ngon và có đông người dự, nhân một dịp vui mừng.",true
+W03394,tiêm,Đưa thuốc nước vào cơ thể bằng ống bơm qua kim rỗng.,true
+W03405,tiến sĩ,"(Từ cũ) học vị của người đỗ khoa thi đình; Từ mới: là một học vị do trường đại học cấp cho nghiên cứu sinh sau đại học, công nhận luận án nghiên cứu của họ đã đáp ứng tiêu chuẩn bậc tiến sĩ, là hoàn toàn mới chưa từng có ai làm qua.",true
+W03407,tiện nghi,"Những trang bị, đồ dùng cần thiết cho sinh hoạt hằng ngày được thuận tiện, thoải mái (nói tổng quát).",false
+W03409B,tiếng Anh,,false
+W03414,tiếng nói,"Ngôn ngữ, về mặt là công cụ giao tiếp.",false
+W03416,tiếp nhận,"Đón nhận cái từ người khác, nơi khác chuyển đến.",false
+W03418,tiếp theo,Tiếp liền theo sau.,false
+W03419,tiếp thu,"Nhận về mình cái do người khác để lại, trao lại.",false
+W03421B,tiếp tục,"Giữ sự nối tiếp, sự liên tục trong hoạt động, không ngừng, không thôi.",false
+W03422B,tiết kiệm,"Sử dụng đúng mức, không phí phạm sức lực, của cải, thời gian.",false
+W03424,tiêu cực,"Có ý nghĩa, có tác dụng phủ định, làm trở ngại sự phát triển.",false
+W03425,tiêu diệt,Làm cho chết hoặc mất hẳn khả năng hoạt động (thường trên phạm vi rộng hoặc với số lượng lớn).,true
+W03426,tiêu hoá,(quá trình) biến thức ăn thành chất nuôi dưỡng cơ thể và thải chất bã ra ngoài.,false
+W03427,thụ phấn,(hiện tượng đầu nhuỵ hoa) tiếp nhận hạt phấn.,true
+W03430,tiểu học,"Cấp học đầu tiên trong bậc học giáo dục phổ thông, từ lớp một đến lớp năm.",true
+W03431,tim,"Bộ phận trung tâm của hệ tuần hoàn, có chức năng điều khiển việc vận chuyển máu trong cơ thể.",true
+W03433B,tìm hiểu,"Tìm, hỏi, xem xét để biết rõ, hiểu rõ.",false
+W03435,tin cậy,Tin tưởng tới mức hoàn toàn trông cậy vào.,false
+W03436,tin học,Khoa học nghiên cứu về thông tin và các quá trình xử lí thông tin tự động trên máy tính.,false
+W03437,tin nhắn,,false
+W03438,tin tức,Là một chủ đề có đủ sự liên quan đến công chúng hoặc khán giả đặc biệt để đảm bảo sự chú ý hoặc đưa tin của báo chí.,false
+W03447,tình cảm,"Sự yêu mến, gắn bó giữa người với người.",false
+W03448,tình cờ,"Không có chủ tâm, do ngẫu nhiên, vô tình gặp hoặc nhận biết được.",false
+W03449,tình huống,"Sự diễn biến của tình hình, về mặt cần phải đối phó.",false
+W03450B,thương yêu,Như yêu thương.,false
+W03451,tình yêu,"Tình cảm yêu mến làm cho gắn bó mật thiết và có trách nhiệm với người, với vật.",true
+W03452,tĩnh lặng,"Hoàn toàn yên ắng, dường như không có một tiếng động hoặc một hoạt động nào diễn ra.",false
+W03454,tính cách,"Đặc điểm riêng qua thái độ, cách cư xử của mỗi người.",false
+W03466,to lớn,To và lớn (nói khái quát).,true
+W03467B,tò mò,"Thích tìm tòi, dò hỏi để biết bất cứ điều gì nhằm thoả mãn sự hiếu kì hoặc vì lòng ham muốn nào đó, cho dù việc đó có quan hệ hay không quan hệ đến mình.",false
+W03472B,toà án,"Cơ quan nhà nước có nhiệm vụ xét xử các vụ phạm pháp, kiện tụng.",false
+W03476,toàn cầu,"Cả thế giới, trên phạm vi toàn thế giới.",true
+W03479,tóc xoăn,,true
+W03481,tóm lược,"Nêu lại những điểm chính, quan trọng nhất, bỏ qua các chi tiết, để có được cái nhìn tổng thể.",false
+W03482,tóm tắt,"Rút ngắn, thu gọn, chỉ nêu những điểm chính.",false
+W03486B,tô màu,,false
+W03488,tổ chim,,true
+W03491,tôn trọng,"Giữ gìn và tránh vi phạm, xúc phạm đến.",false
+W03492,tôn thờ,"Ngưỡng mộ, coi trọng đến mức cho là thiêng liêng đối với mình.",false
+W03495,tổ trưởng,Người đứng đầu điều hành công việc của một nhóm người.,false
+W03501,tôn trọng,Tỏ thái độ đánh giá cao và cho là không được vi phạm hoặc xúc phạm đến.,false
+W03505B,tổng thống,"Nguyên thủ quốc gia, cá nhân lãnh đạo cao nhất trong một quốc gia, cũng như thủ tướng quyền hành và phạm vi của họ phụ thuộc quy định đề ra từ tổ chức lập pháp cao nhất của quốc gia đó.",false
+W03507,tống tiền,Đe doạ hoặc hành hung để bắt phải nộp tiền.,true
+W03508B,tờ báo,,false
+W03509B,tờ giấy,,false
+W03512,tờ tiền,,true
+W03517,trại giam,Nơi giam giữ tù nhân.,true
+W03519,trang trí,"Sắp xếp, bố trí các vật có hình khối, đường nét, màu sắc khác nhau sao cho tạo ra một sự hài hoà, làm đẹp mắt một khoảng không gian nào đó.",true
+W03526,trả lời,Nói cho người nào đó biết điều người ấy hỏi hoặc yêu cầu.,false
+W03528,trách nhiệm,"Phần việc được giao, phải bảo đảm làm tròn, nếu kết quả không tốt thì phải gánh chịu phần hậu quả.",false
+W03531B,trái nghĩa,Từ có nghĩa trái ngược nhau.,false
+W03534,trạm xe buýt,"Nơi bố trí ở dọc đường giao thông, đón trả khách.",true
+W03535,trạm y tế,Cơ sở chữa bệnh nhỏ ở xã hoặc cơ quan.,true
+W03537,trang phục,"Gồm các loại áo quần và một số vật dụng khác đi đi kèm như mũ, giầy, tất, khăn quàng.",true
+W03542,tranh luận,Bàn cãi để tìm ra lẽ phải.,true
+W03543,tai nạn giao thông,,true
+W03545,trao tặng,Trao cho một cách trang trọng.,true
+W03550B,trăng,Vệ tinh tự nhiên duy nhất của Trái Đất và là vệ tinh tự nhiên lớn thứ năm trong Hệ Mặt Trời.,false
+W03552B,trắng muốt,"Trắng, mịn màng, tươi sáng.",false
+W03553,trắng tay,"(Khẩu ngữ) bị mất hết tất cả tiền bạc của cải, hoàn toàn không còn gì.",false
+W03554,trầm trồ,"Thốt ra lời khen ngợi với vẻ ngạc nhiên, thán phục.",false
+W03560,quạt trần,Quạt điện được thiết kế để treo trên trần nhà.,true
+W03562,trần nhà,,true
+W03568,tự,"Tự bản thân làm, không nhờ ai.",false
+W03571B,tre,"Cây thân cứng, rỗng ở các gióng, đặc ở mấu, mọc thành bụi, thường dùng để làm nhà và đan lát.",false
+W03573,trêu,"Dùng lời nói, cử chỉ làm cho bực tức, xấu hổ, nhằm đùa vui.",true
+W03576,trí khôn,Khả năng suy nghĩ và hiểu biết.,false
+W03578,trí thức,Người làm việc lao động trí óc.,false
+W03593,trình bày,Nói ra một cách rõ ràng và đầy đủ cho người khác (thường là cấp trên hoặc số đông) hiểu rõ.,true
+W03594,trình độ,"Mức độ về sự hiểu biết, về kĩ năng được xác định hoặc đánh giá theo tiêu chuẩn nhất định nào đó.",false
+W03599,trò chơi,"Hoạt động bày ra để vui chơi, giải trí.",false
+W03602B,trọc đầu,,false
+W03603,trói tay,,true
+W03606,trong sáng,"Trong và sáng, không một chút vẩn đục, không một vết mờ.",false
+W03607,tròn,"Có hình dáng, đường nét giống như hình tròn, đường tròn.",true
+W03612,trong suốt,Trong đến mức có thể nhìn xuyên qua.,true
+W03614,trọng tài,Người điều khiển và xác định thành tích của cuộc thi đấu trong một số môn thể thao.,true
+W03615,xe tải,Ô tô lớn để chở hàng.,true
+W03618,trộm cắp,"Lấy trộm, lấy cắp của cải.",true
+W03619B,trốn chạy,,false
+W03620B,trông chờ,Chờ đợi với nhiều hi vọng.,false
+W03621,trông coi,"Để ý nhìn ngó, coi sóc, giữ gìn cho yên ổn, cho mọi việc được bình thường.",true
+W03622B,trông nom,"Để ý đến, chăm sóc và giữ gìn cho mọi việc được tốt đẹp.",false
+W03624,trống,"Nhạc khí rỗng, thường có hình trụ, thân bằng gỗ hoặc kim loại có một hoặc hai mặt thường bịt da căng, dùng dùi hay tay để gõ thành tiếng.",true
+W03626,trộn,Đảo lộn lên cho thứ nọ lẫn vào thứ kia.,true
+W03629,trở thành,Thành ra là.,false
+W03632,trú mưa,Ở tạm một nơi khô ráo nào đó khi trời bất ngờ mưa.,true
+W03643,trung tâm,Nơi ở giữa của một vùng nào đó; thường là nơi dân cư tập trung đông đúc nhất.,false
+W03644,trung thành,"Trước sau một lòng một dạ, giữ trọn niềm tin, giữ trọn những tình cảm gắn bó, những điều đã cam kết đối với ai hay cái gì.",false
+W03645B,Trung Thu,"(thường viết hoa) rằm tháng tám; ngày tết của trẻ em, theo phong tục cổ truyền.",false
+W03646,trung ương,"Thuộc bộ phận chính, quan trọng nhất, có tác dụng chi phối các bộ phận xung quanh có liên quan.",false
+W03648,trúng thưởng,"Đạt được một danh hiệu, giải thưởng nào đó do kết quả một sự tuyển chọn trong số đông hoặc do may mắn.",true
+W03649B,trúng tuyển,"Thi đỗ, được tuyển.",false
+W03650,truyền dịch,,true
+W03653,truyền thông,"Đưa ra những thông tin để nhiều người biết đến hơn thông qua loa, truyền hình,..",false
+W03654,truyền thống,"Thói quen hình thành đã lâu đời trong lối sống và nếp nghĩ, được truyền lại từ thế hệ này sang thế hệ khác.",false
+W03657,trực nhật,"Làm nhiệm vụ theo dõi, đôn đốc việc thực hiện nội quy, giữ gìn trật tự, vệ sinh, v.v. của cơ quan, trường, lớp, v.v. trong một ngày.",true
+W03659B,trứng,"Khối hình bầu dục hoặc hình cầu do một số động vật cái đẻ ra, sau có thể nở thành con.",false
+W03663B,trường tiểu học,,false
+W03665,trực tiếp,"Có quan hệ thẳng với đối tượng tiếp xúc, không qua khâu trung gian.",false
+W03666,trưng bày,"Bày ở nơi trang trọng cho công chúng xem để tuyên truyền, giới thiệu.",true
+W03669B,trước,Phía những vị trí mà mắt nhìn thẳng có thể thấy được.,false
+W03672,trường hợp,"Việc xảy ra hoặc giả định xảy ra, nói về mặt tính chất cụ thể của nó, lần này khác những lần khác.",false
+W03673B,trường mầm non,,false
+W03676,trưởng nhóm,Người đứng đầu một nhóm người.,false
+W03685B,tuần,Khoảng thời gian nhất định.,false
+W03692,túm tóc,Nắm giữ chặt tóc trong tay.,true
+W03696,tung tăng,Di chuyển không ngừng từ chỗ nọ đến chỗ kia với những động tác biểu thị sự vui thích (thường nói về trẻ con hoặc con vật nhỏ).,false
+W03698,tuổi thơ,"Độ tuổi còn nhỏ, còn non dại.",true
+W03701,tuyên bố,Trịnh trọng và chính thức thông báo cho mọi người biết (thường là vấn đề có tầm quan trọng).,false
+W03702,tuyên ngôn,"Bản tuyên bố có tính chất cương lĩnh của một chính đảng, một tổ chức.",true
+W03708,tuyệt vọng,Mất hết mọi hi vọng.,false
+W03710,từ bỏ,"Bỏ đi không nhìn nhận, tự coi là không có quan hệ gì nữa.",false
+W03714B,từ trái nghĩa,Từ có nghĩa trái ngược nhau.,false
+W03717B,tự do,"Không bị cấm đoán, hạn chế vô lí trong hoạt động cụ thể nào đó.",false
+W03719B,tự lập,"Tự xây dựng lấy cuộc sống cho mình, không ỷ lại, nhờ vả người khác.",false
+W03720B,tự tin,Tin vào bản thân mình.,false
+W03722B,tự vệ,Tự bảo vệ mình chống lại mọi sự xâm phạm từ bên ngoài.,false
+W03725,tươi cười,"(vẻ mặt) Biểu hiện vui vẻ, phấn khởi.",true
+W03727B,tưới cây,"Làm cho thấm ướt đều bề mặt bằng cách đổ nước, phun nước trên bề mặt.",false
+W03728,nước tương (xì dầu),,true
+W03729,tương ứng,Có mối quan hệ phù hợp với nhau.,false
+W03730,tưởng,Tin và nghĩ chắc (điều thật ra không phải).,false
+W03732,tưởng tượng,Tạo ra trong tâm trí hình ảnh những cái không có ở trước mắt hoặc chưa hề có.,true
+W03732B,tưởng tượng,Tạo ra trong tâm trí hình ảnh những cái không có ở trước mắt hoặc chưa hề có.,false
+W03734,tượng,Hình người hay vật được tạc nên bằng một chất liệu rắn.,true
+W03742,ủng hộ,"Tỏ thái độ đồng tình bằng lời nói hoặc bằng hành động bênh vực, giúp đỡ.",true
+W03745,uốn,Làm cho một vật dài nào đó có hình dáng cong theo ý muốn.,true
+W03746,uốn cong,,true
+W03747,uốn dẻo,"Làm động tác uốn mình một cách mềm mại, khéo léo, trông đẹp mắt.",true
+W03748,uốn tóc,Làm cho tóc xoăn và giữ nếp theo một kiểu nhất định.,true
+W03750,ủy ban,"Là một cơ quan hành chính nhà nước, thực thi pháp luật tại các cấp tỉnh, huyện và xã.",false
+W037511,ủy ban nhân dân,"Cơ quan chấp hành có nhiệm vụ tổ chức thực hiện các nghị quyết của hội đồng nhân dân, quản lí công tác của nhà nước ở địa phương.",true
+W03751B,ủy quyền,Nhờ một người khác thay mặt giải quyết công việc.,false
+W03752,ức chế,Ngăn cản hoặc kìm hãm hoạt động.,false
+W03757,ưu điểm,"Điểm tốt, điểm hay.",false
+W03758B,ưu tiên,"Được chú ý trước nhất, trước những đối tượng khác, vì được coi trọng hơn.",false
+W03759,va chạm,Va vào nhau.,false
+W03761,va li,"Vật dùng để đựng hành lí, thường làm bằng vải hoặc da, hình hộp chữ nhật, có quai xách.",true
+W03762,vác,"Mang, chuyển (thường là vật nặng hoặc cồng kềnh) bằng cách đặt lên vai.",true
+W03767,vai,Phần cơ thể nối liền hai cánh tay (hoặc hai chân trước ở loài thú) với thân.,true
+W03768,vai trò,"Tác dụng, chức năng của ai hoặc cái gì trong sự hoạt động, sự phát triển chung của một tập thể, một tổ chức.",false
+W03778,vàng bạc,Vàng và bạc (nói khái quát); thường dùng để chỉ những thứ quý giá.,true
+W03780,vào,Ở trong khoảng thời gian xác định đại khái nào đó.,false
+W03781,vào lớp,,false
+W03782,vào mùa,,false
+W03784,vá xe,,true
+W03786,văn,"Hình thức ngôn ngữ được trau chuốt cho hay, đẹp.",false
+W03787,văn bản,"Bản viết hoặc in, mang nội dung nhất định, thường để lưu lại.",true
+W03793B,văn nghệ,"Các hoạt động biểu diễn nghệ thuật như ca, múa, nhạc, v.v. phục vụ vui chơi, giải trí.",false
+W03794,vắn tắt,"Ngắn gọn, chỉ gồm những điểm cơ bản nhất.",false
+W03795B,vắng,"Không có mặt, không xuất hiện ở một nơi nào đó như bình thường.",false
+W03796,vắng lặng,"Từ chỉ không gian im ắng, vắng vẻ và lạnh lẽo.",false
+W03797,vắt cam,,true
+W03799B,vấn đề,"Điều cần được xem xét, nghiên cứu, giải quyết.",false
+W03800,vận chuyển,"Mang chuyển đồ vật, hàng hoá đến một nơi khác tương đối xa, bằng phương tiện nào đó.",true
+W03801,vận động,"Thay đổi tư thế, vị trí của thân thể hay bộ phận cơ thể, về mặt có tác dụng giữ gìn và tăng cường sức khoẻ.",true
+W03806,vật,"Ôm, túm lấy nhau và dùng sức cố làm cho đối phương ngã xuống.",true
+W03809B,vật nuôi,"Chỉ gia súc, gia cầm nói chung.",false
+W03810,vây bắt,,false
+W03812,vẫy tay,,true
+W03814,vé,"Mảnh giấy nhỏ chứng nhận đã trả tiền cho một suất đi tàu xe, xem giải trí, v.v., thường chỉ dùng được một lần.",true
+W03819,vệ sinh cá nhân,,true
+W03821,vết thương,Chỗ bị thương trên cơ thể.,true
+W03825B,vì sao?,,false
+W03826,vĩ cầm,Violon.,true
+W03827,vĩ đại,"Có tầm cỡ và giá trị lớn lao, đáng khâm phục.",false
+W03828B,ví dụ,"Lấy tình huống, sự vật giả định để giải thích cho một định lý, hiện tượng, sự việc,..",false
+W03829,vị ngữ,"Thành phần chính yếu của một câu đơn, nói rõ hoạt động, tính chất, trạng thái của đối tượng được nêu ở chủ ngữ.",false
+W03832,vị trí,"Chỗ, nơi được xác định dành riêng cho người, vật hoặc việc nào đó.",false
+W03835,việc làm,Công việc được giao cho làm và được trả công.,false
+W03840,viện bảo tàng,"Cơ quan sưu tầm, cất giữ, trưng bày những tài liệu, hiện vật có giá trị, ý nghĩa lịch sử.",true
+W03841,viện nghiên cứu,,true
+W03848,vịnh,"Phần biển, đại dương hoặc hồ lớn ăn sâu vào đất liền.",true
+W03853,vòng đeo tay,,true
+W03855,vỏ,"Lớp mỏng bọc bên ngoài của cây, quả, củ..",true
+W03856,võ thuật,Thuật đánh võ.,true
+W03858,vòi nước,"Vòi có van khóa, mở, lắp ở ống nước hay bể nước.",true
+W03859,mái vòm,,true
+W03863,vòng tròn,"Vòng hình tròn, đường tròn.",true
+W03864,võng (cái võng),"Đồ dùng bện bằng sợi hoặc làm bằng vải dai, dày, hai đầu mắc lên cao, ở giữa chùng xuống, để nằm, ngồi, có thể đưa đi đưa lại.",true
+W03865,nhiều vô cùng,,false
+W03866,vô lí,"Không có lí, không hợp lẽ phải.",false
+W03868,vô tâm,"Không hay để ý, quan tâm cả đến những điều người khác thường chú ý.",false
+W03870,vô tư,Không hoặc ít lo nghĩ.,false
+W03871,vô ý,"Không để ý, do sơ suất.",false
+W03872,vô ý thức,"Không có chủ định, không nhận biết rõ việc (sai trái) mình đang làm.",false
+W03873,vồ,"Lao mình tới rất nhanh để tóm lấy, bắt lấy một cách bất ngờ.",true
+W03875,vỗ cánh,,true
+W03876,vỗ tay,"Đập hai lòng bàn tay vào nhau cho phát ra thành tiếng (thường liên tiếp, để tỏ ý hoan nghênh, tán thành).",true
+W03878,vội vã,"Tỏ ra rất vội, hết sức muốn tranh thủ thời gian đến mức tối đa để cho kịp.",false
+W03884,vớt,Lấy từ dưới nước lên.,true
+W03888B,vui chơi,Hoạt động giải trí một cách thích thú (nói khái quát).,false
+W03889B,vui mừng,Rất vui vì được như mong muốn (nói khái quát).,false
+W03890B,vui sướng,Vui vẻ và sung sướng.,false
+W03892,vui tính,Có tính luôn luôn vui vẻ.,false
+W03909,vuốt tóc,,true
+W03912,vững chắc,"Có khả năng chịu tác động mạnh từ bên ngoài mà vẫn giữ nguyên được trạng thái, tính chất, không bị phá huỷ, đổ vỡ.",false
+W03917,vườn thú,Vườn công cộng tập hợp nhiều loài động vật khác nhau để làm nơi tham quan và nghiên cứu.,true
+W03924,vượt trội,Vượt hẳn lên trên mức bình thường.,false
+W03925,xa cách,"Xa nhau hoàn toàn, tách biệt, không có sự gần gũi, hoà nhập.",false
+W03928,xa xôi,"Xa và đi lại cách trở về không gian, thời gian (nói khái quát).",false
+W03930B,xà phòng,"Chất dùng để giặt rửa, chế tạo bằng cách cho một chất kiềm tác dụng với một chất béo.",false
+W03931B,xà phòng giặt,,false
+W03933,xả rác,,true
+W03935B,xã hội,"Hình thức sinh hoạt chung có tổ chức của loài người ở một trình độ phát triển nhất định, được hình thành trong quá trình lịch sử, xây dựng trên cơ sở một phương thức sản xuất nhất định.",false
+W03936,xách túi,,true
+W03939,xã,"Đơn vị hành chính cơ sở ở nông thôn, bao gồm một số thôn.",false
+W03941,xác định,"Qua nghiên cứu, tìm tòi, biết được rõ ràng, chính xác.",false
+W03945B,cây xanh tươi,,false
+W03948,xăng,"Dầu nhẹ, dễ bay hơi, dễ bốc cháy, được cất từ dầu mỏ, than đá, dùng làm chất đốt cho các loại động cơ.",true
+W03953,xâm lược,"Xâm chiếm lãnh thổ, cướp đoạt chủ quyền và lãnh thổ của nước khác bằng vũ lực hoặc bằng các thủ đoạn chính trị, kinh tế.",true
+W03956B,xây,Gắn các loại vật liệu vào nhau bằng chất kết dính (thường là vữa) để làm thành một công trình hay một bộ phận công trình.,false
+W03958,xây nhà,,true
+W03959,xe đạp,"Xe người đi có hai hoặc ba bánh, tay lái nối với bánh trước, dùng sức người đạp cho quay bánh (hoặc hai bánh) sau.",true
+W03961,xe máy,"Xe người đi có hai bánh, chạy bằng động cơ.",true
+W03962B,xe cảnh sát,,false
+W03965,xe cứu thương,,true
+W03967B,xe khách,"(Khẩu ngữ) ô tô lớn chở hành khách trên các tuyến đường dài, thường là các đường liên tỉnh.",false
+W03973,xé rách,,true
+W03974,xem xét,"Tìm hiểu, quan sát kĩ để đánh giá, rút ra những nhận xét, kết luận cần thiết.",false
+W03975,xen,Làm cho ở vào vị trí giữa những cái khác.,false
+W03976,xẻng,"Dụng cụ gồm một lưỡi sắc mỏng và to bản, tra vào cán, dùng để xúc đất cát, vật liệu rời.",true
+W03978,xếp,"Đặt từng cái một theo đúng vị trí, hàng lối hoặc trật tự nhất định.",true
+W03979,xếp hàng,Đứng thành hàng theo thứ tự.,true
+W03990,xin lỗi,Xin được tha thứ vì đã biết lỗi.,true
+W03991,xinh,"Có hình dáng và những đường nét rất dễ coi, ưa nhìn (thường nói về trẻ em, phụ nữ trẻ).",false
+W03992,xinh xắn,Rất xinh (nói khái quát).,true
+W03993,xóa bảng,,true
+W03995,xoá bỏ,"Làm mất hẳn đi, khiến cho không còn tồn tại hoặc không còn tác dụng nữa.",false
+W03996,xoáy,Làm cho ăn sâu vào theo đường vòng tròn.,true
+W03999,xóm làng,"Làng và xóm, là khối dân cư ở nông thôn với đời sống riêng.",true
+W04000,xô,"Đồ dùng đựng nước, đáy nhỏ, miệng loe rộng có gắn quai xách, thường làm bằng kim loại hoặc bằng nhựa.",true
+W04001,xôi,Món ăn bằng gạo nếp được đồ chín.,true
+W04010B,xuất hiện,Hiện ra và nhìn thấy được.,false
+W04011,xuất khẩu,"Đưa hàng hoá hoặc vốn ra nước ngoài để buôn bán, kinh doanh; phân biệt với nhập khẩu.",true
+W04013,xúc xắc,"Khối hình lập phương nhỏ có sáu mặt, chấm số từ một đến sáu.",true
+W04014,xung đột,Đánh nhau giữa những lực lượng đối địch (nói khái quát).,false
+W04016,xung phong,"Tự nguyện nhận làm công việc, nhiệm vụ nào đó (thường là khó khăn).",true
+W04017,xung quanh nhà,,true
+W04019,xuống,Di chuyển đến một vị trí thấp hơn hay được coi là thấp hơn.,false
+W04025B,xưa,Thuộc về thời đã qua từ rất lâu rồi.,false
+W04028,xương rồng,"Cây cùng họ với thầu dầu, thân mềm ba cạnh, có chứa mủ trắng, lá thoái hoá thành gai, thường trồng làm hàng rào.",true
+W04034,y tế,"Ngành y học ứng dụng, chuyên việc phòng, chữa bệnh và bảo vệ sức khoẻ.",false
+W04035,ý chí,Khả năng tự xác định mục đích cho hành động và quyết tâm đạt cho được mục đích đó.,false
+W04038B,ý nghĩa,"Nội dung chứa đựng trong một hình thức biểu hiện bằng ngôn ngữ, văn tự hoặc bằng một kí hiệu nào đó.",false
+W04039,ý thức,Khả năng của con người phản ánh và tái hiện hiện thực vào trong tư duy.,false
+W04040,ý tưởng,"Điều nảy ra, nghĩ ra trong đầu, thường chưa được trọn vẹn.",false
+W04041,yếm,Phần vỏ cứng che bụng dưới lớp mai của một số loài vật.,true
+W04044,yên bình,Yên vui trong cảnh hòa bình.,false
+W04046,yên lòng,Ở trạng thái tâm lí không có điều gì phải lo lắng cả.,false
+W04048,yên tâm,"Ở trạng thái tâm lí yên ổn, không có gì phải băn khoăn, lo lắng cả.",false
+W04056B,tôi yêu bạn,,false
+W04057B,yêu cầu,"Nêu ra điều gì với người nào đó, tỏ ý muốn người ấy làm, biết rằng đó là việc thuộc nhiệm vụ, trách nhiệm hoặc quyền hạn, khả năng của người ấy.",false
+W04059B,yếu,"Có sức lực kém dưới mức bình thường, trái nghĩa với khỏe.",false
+W04063,hoan hô,"Tán thưởng bằng lời hoặc bằng cách vỗ tay, v.v.",false
+W04066B,môn Địa lý,,false
+W04068,con trai,,true
+W04069,đệm,"Đồ dùng làm bằng chất liệu mềm, xốp, dùng để lót vào chỗ nằm, ngồi cho êm.",true
+W00018B,anh rể,,false
+W00019B,anh ruột,,false
+W00024,sáng,Có ánh sáng toả ra khiến cho có thể nhìn thấy mọi vật.,true
+W00027,ảo thuật,"Nghệ thuật dùng những động tác nhanh nhẹn, khéo léo hoặc sử dụng những vật liệu, thiết bị đặc biệt khiến người xem cảm giác thấy những sự biến hoá kì lạ không lường được.",true
+W00028,áo,Đồ mặc che thân từ cổ trở xuống.,true
+W00032B,áo đồng phục,,false
+W00042,ăn uống,Ăn và uống (nói khái quát).,true
+W00045,âm thanh,âm (nói khái quát).,false
+W00050,ẩm ướt,"Ẩm, do thấm nhiều nước hoặc có chứa nhiều hơi nước (nói khái quát).",true
+W00051,ấm áp,Ấm và gây cảm giác dễ chịu (nói khái quát).,true
+W00057B,ân hận,"Băn khoăn, day dứt và tự trách mình đã để xảy ra việc không hay.",false
+W00061,ấn tượng,Nhận thức cảm tính xen lẫn với cảm xúc còn lưu giữ lại trong đầu óc.,false
+W00069,triệu phú,"Một cá nhân rất giàu, có bạc triệu.",true
+W00071,bài báo,,true
+W00075B,bài thơ,,false
+W00076,hệ bài tiết,,true
+W00081,bãi cát,,true
+W00082,bãi cỏ,,true
+W00083,bãi đỗ xe (ô tô),,true
+W00084,bãi tắm,"Bãi cát rộng, bằng phẳng ven biển hoặc ven sông, dùng làm nơi tắm mát và nghỉ ngơi.",true
+W00086B,ban đêm,Khoảng thời gian từ sau khi trời tối cho đến trước khi trời sáng; phân biệt với ban ngày.,false
+W00087,ban giám hiệu,"Tập thể những người lãnh đạo một trường học, đứng đầu là hiệu trưởng.",false
+W00089,ban ngày,Khoảng thời gian từ sau khi trời sáng đến trước khi trời tối; phân biệt với ban đêm.,true
+W00091,bàn bạc,"Bàn, trao đổi ý kiến (nói khái quát).",true
+W00094,bàn ghế,,true
+W00096,bàn phím (máy vi tính),"Thiết bị nhập dữ liệu của máy tính, thiết bị tập hợp các phím kí tự và phím điều khiển, được nối với máy tính để điều khiển hoặc nhập dữ liệu.",true
+W00097,bàn tay,"Phần cuối của tay, có các ngón tay, để cầm nắm, sờ mó, lao động; thường được coi là biểu tượng của sự lao động chân tay có tính sáng tạo của con người.",true
+W00099B,bản đồ Việt Nam,,false
+W00102,bản nhạc,Bản ghi bài hát hoặc bài đàn bằng kí hiệu âm nhạc.,true
+W00103,bản sao (chỉ người),,false
+W00104,bản thân,"Tự, chính cá nhân, hoặc sự việc được nói đến.",false
+W00107B,bán hàng,,false
+W00108,bán kính (hình tròn),Đoạn thẳng từ tâm đến một điểm trên đường tròn hoặc trên mặt cầu; nửa đường kính.,true
+W00110B,bạn,"Người quen biết và có quan hệ gần gũi, thân thiện với nhau .",false
+W00111B,bạn gái,,false
+W00112B,bạn trai,,false
+W00113,bảng học sinh,,true
+W00115B,bảng chia,,false
+W00116,bảng chỉ dẫn,,true
+W00118,bảng chữ cái ngón tay,,true
+W00119B,bảng cộng,,false
+W00120,bảng cửu chương,Bảng kê tất cả các tích số của hai số nguyên từ 2 lần 1 đến 9 lần 10.,true
+W00121B,bảng đen,"Bảng sơn màu đen, để viết phấn lên, thường dùng trong trường học.",false
+W00122,hãng máy bay,,false
+W00123B,bảng màu,Đồ dùng để đựng và pha màu khi vẽ.,false
+W00124B,bảng nhân,,false
+W00125,hãng xe máy,,false
+W00126B,bảng trừ,,false
+W00137B,bánh mì,"Bánh làm bằng bột mì ủ men nướng chín trong lò, dùng làm món ăn chính ở một số nước.",false
+W00145B,bao giờ?,"Khoảng thời gian nào đó chưa xác định, (thường dùng để hỏi).",false
+W00146,bao la,Rộng lớn đến mức như bao trùm lên tất cả.,false
+W00147,bao nhiêu?,Số lượng không rõ nhiều hay ít (thường dùng để hỏi).,false
+W00152,bảo đảm,"Tạo điều kiện để chắc chắn giữ gìn được, hoặc thực hiện được, hoặc có được những gì cần thiết.",false
+W00153,bảo hiểm,"Bảo đảm sự an toàn, phòng ngừa tai nạn.",false
+W00155,lưu,"Giữ lại, để lại lâu dài về sau, không mất đi hoặc không để mất đi.",false
+W00156,bảo tàng,"Nơi tàng trữ, bảo quản và trưng bày những tài liệu, hiện vật có ý nghĩa lịch sử.",false
+W00158,tồn tại,"Còn lại, chưa mất đi, chưa được giải quyết.",false
+W00159B,bảo vệ môi trường,,false
+W00160B,báo (con báo),"Thú dữ cùng họ với hổ nhưng nhỏ hơn, lông vàng có điểm nhiều chấm đen.",false
+W00161,báo cáo,Bản trình bày về một vấn đề nào đó.,false
+W00163,báo động,(Dùng tín hiệu hoặc hiệu lệnh) báo cho mọi người biết có việc nguy cấp đang xảy ra để sẵn sàng ứng phó.,false
+W00166,báo thù,"Trả được cả mối thù, bắt kẻ thù phải chịu sự trừng phạt.",false
+W00174,bay,Di chuyển ở trên không.,true
+W00175,xì hơi (đánh rắm),Để cho hơi trong ruột thoát ra qua hậu môn.,true
+W00184B,bắc nam,Phương bắc và phương nam; thường dùng (viết hoa) để nói về sự phân li xa cách giữa những người thân.,false
+W00186B,bắn bi,,false
+W00187,bắn súng,,true
+W00189,băng chuyền,"Băng hoặc dải chuyển động liên tục trên trục lăn, thường dùng để chuyển dịch hàng hoá, hành lí.",true
+W00190,băng dính,"Băng thường làm từ vải hoặc nilông, được phết lớp chất dính, dùng để làm kín hoặc để liên kết các vật lại với nhau.",true
+W00191,băng giá,Lạnh đến mức như xung quanh có băng giá.,true
+W00194,bằng,"Không hơn, không kém.",false
+W00195,bằng phẳng,"Có bề mặt không gồ ghề, không lồi lõm.",false
+W00196B,bắp ngô,"Bộ phận hình bắp được coi là quả của cây ngô, gồm một lõi xốp mang nhiều hạt bọc trong bẹ.",false
+W00197,bắt,"Nắm lấy, giữ lại, không để cho hoạt động tự do.",true
+W00199,bắt giữ,"Bắt và giữ lại, giam lại.",true
+W00200,bắt nạt,"Cậy quyền thế, sức mạnh mà doạ dẫm làm cho phải sợ.",false
+W00202,bắt tay,Nắm bàn tay người khác để chào hay để biểu lộ tình cảm.,true
+W00206,bất động,Ở trạng thái cơ thể không cử động.,false
+W00209,bật đèn,,true
+W00210,bật lửa,"Dụng cụ nhỏ, có bộ phận làm bật ra lửa để lấy lửa.",true
+W00212,bầu trời,"Khoảng không gian ta nhìn thấy được, như một hình vòm úp trên mặt đất.",true
+W00214B,bẫy chuột (hành động),,false
+W00216B,bẻ ngô,,false
+W00217,bé gái,,true
+W00220B,bé trai,,false
+W00225,béo,"(Cơ thể người, động vật) có nhiều mỡ.",true
+W00228,bê tông,"Vật liệu xây dựng chế tạo từ hỗn hợp xi măng, cát, đá và nước, đúc vào khuôn.",true
+W00230,bể bơi,"Bể lớn, được xây để chứa nước làm nơi bơi lội.",true
+W00236,bên cạnh,,false
+W00237,bên dưới,,true
+W00238,bên phải,,true
+W00239,bên trái,,true
+W00240,bên trên,,true
+W00241,bên trong,,true
+W00242,bến phà,,true
+W00243,bến tàu,"Nơi trong cảng có các công trình và thiết bị cho tàu thuỷ đỗ, hành khách lên xuống, xếp dỡ hàng hoá hoặc làm các việc phục vụ kĩ thuật cho tàu.",true
+W00248,bệnh nhân,"Người bệnh đang được điều trị, trong quan hệ với cơ sở điều trị và với thầy thuốc.",true
+W00255B,bìa vở,Tờ giấy dày hoặc vật hình tấm đóng ngoài quyển vở.,false
+W00260,biển đông,,false
+W00261,biển hiệu,"Biển đề tên cửa hàng hoặc cơ sở kinh doanh và một số thông tin riêng khác (như địa chỉ, số điện thoại) để tiện cho việc giao dịch, kinh doanh, quảng cáo nói chung.",false
+W00262B,biến đổi,Thay đổi hoặc làm cho thay đổi thành khác trước.,false
+W00263,biện pháp,Cách thức xử lí công việc hoặc giải quyết vấn đề.,false
+W00265,biểu đồ,"Hình vẽ biểu một khái niệm, quy luật hay quan hệ nào đó.",true
+W00270,biểu thị,"Tỏ ra cho thấy, cho biết (tư tưởng, tình cảm, thái độ) bằng lời nói hoặc việc làm.",false
+W00271,biểu thức,Kí hiệu hoặc tổ hợp kí hiệu toán học nối liền với nhau bằng các dấu phép toán.,true
+W00274B,bình an,"Ở tình trạng không gặp điều gì không hay xảy ra, làm ảnh hưởng đến sức khoẻ, đời sống.",false
+W00279,bình minh,"Khoảng thời gian trời hửng sáng, ngay trước lúc mặt trời vừa mới mọc.",true
+W00282,bình phương,Tích của một số hoặc một biểu thức với chính nó.,false
+W00286B,bình thường,"Không có gì khác thường, không có gì đặc biệt.",false
+W00288,bò,"(Người) di chuyển thân thể một cách chậm chạp, ở tư thế nằm sấp, bằng cử động đồng thời của cả tay và đầu gối.",true
+W00293,bỏ phiếu,Dùng phiếu để thể hiện sự lựa chọn hay thái độ của mình trong cuộc bầu cử hoặc biểu quyết.,true
+W00294,bỏ qua,"Bỏ bớt đi, không thực hiện đầy đủ theo quy trình.",false
+W00295,bỏ rơi,"Bỏ mặc, không quan tâm đến, coi như không còn có quan hệ.",false
+W00297,bó đũa,,false
+W00298,bó hoa,,true
+W00302,bom đạn,"Bom, đạn, vũ khí giết người (nói khái quát).",false
+W00303,bom nguyên tử,"Bom dùng nguyên lí phản ứng phân hạch của hạt nhân nguyên tử nặng, phóng ra năng lượng lớn, có sức sát thương và phá hoại mạnh gấp nhiều lần bom thông thường.",false
+W00304B,bón phân,,false
+W00305,bỏng,"Bị tổn thương ở da thịt do chịu tác động của lửa, nhiệt hoặc hoá chất, v.v.",true
+W00316,bổ ích,"Có ích, có tác dụng tốt.",false
+W00317,bổ ngữ,"Thành phần cú pháp bổ nghĩa cho động từ, tính từ.",false
+W00318,bổ trợ,"Giúp thêm, phụ thêm vào cho đủ, cho tốt hơn.",false
+W00320,bố trí,Sắp xếp theo một trật tự và đáp ứng một nhu cầu nhất định.,false
+W00322,bốc vác,Bốc xếp và mang vác để vận chuyển.,true
+W00325,bố,Cha (có thể dùng để xưng gọi).,false
+W00326B,bố dượng,"Chồng sau của mẹ, trong quan hệ với con của người chồng trước (không dùng để xưng gọi).",false
+W00327,bố mẹ,,false
+W00328B,bộ đội,Người trong quân đội (Việt Nam).,false
+W00329,bộ sách,,true
+W00330,bốc hơi,(Chất lỏng) chuyển thành hơi; chuyển sang trạng thái khí.,true
+W00331,bốc thăm,"Nhận, chọn thăm để quyết định ai được, ai không, ai trước, ai sau, v.v.",true
+W00332,bồi bàn,Người làm thuê chuyên phục vụ ở bàn ăn.,true
+W00333,bồi thường,Trả lại cho người khác cái có giá trị (thường bằng tiền) tương xứng với những thiệt hại mà mình đã gây ra.,false
+W00336B,bông hoa,,false
+W00340,bột giặt,Xà phòng giặt ở dạng bột.,true
+W00341B,bột màu,,false
+W00342B,bột ngọt,"Muối của một a-xít a-min, có dạng kết tinh màu trắng, dễ tan trong nước, thường cho vào thức ăn để tăng vị ngọt.",false
+W00344,bờ biển,,true
+W00347,bơi,Di chuyển trong nước hoặc trên mặt nước bằng cử động của thân thể.,true
+W00349,bơm (cái bơm),"Dụng cụ dùng để đưa chất lỏng, chất khí từ một nơi đến nơi khác, hoặc để nén khí, hút khí.",true
+W00353,bớt,"Làm cho hoặc trở nên ít đi một phần về số lượng, mức độ.",false
+W00357B,cỏ,"Cây thân mềm và thấp, thường mọc lan thành đám trên mặt đất, có nhiều loài khác nhau, dùng để làm thức ăn cho trâu, bò, ngựa, v.v.",false
+W00358,bụi đời,"Cảnh sống lang thang, vất vưởng, không nhà cửa, không nghề nghiệp.",true
+W00359B,bụi phấn,,false
+W00361,bùn,Đất nhão hoà lẫn trong nước.,true
+W00362,bụng,"Bộ phận cơ thể người hoặc động vật, chứa ruột, dạ dày, v.v.",true
+W00363,buộc dây,,true
+W00366,buổi chiều,,true
+W00367B,buổi đêm,,false
+W00368B,buổi sáng,,false
+W00369B,buổi tối,,false
+W00370B,buổi trưa,,false
+W00371,buôn làng,Xóm làng ở vùng dân tộc thiểu số miền Nam Việt Nam.,true
+W00372,buồn nôn,Ở trạng thái cảm thấy muốn nôn.,true
+W00374B,buông màn,,false
+W00377,buồng trứng,Bộ phận sản sinh ra trứng trong cơ thể phụ nữ hoặc động vật giống cái.,true
+W00378,búp bê,"Đồ chơi hình em bé, thường làm bằng nhựa, vải.",true
+W00380,bút,"Đồ dùng để viết, kẻ, vẽ thành nét.",true
+W00383B,bút màu,,false
+W00385,bữa cơm,,true
+W00386B,bức tranh,,false
+W00387,bức tường,,true
+W00388,bước,Đặt chân tới một chỗ khác để di chuyển thân thể theo.,false
+W00390B,bướng bỉnh,Bướng (nói khái quát).,false
+W00393,bưu tá,"Nhân viên bưu điện làm nhiệm vụ đưa thư từ, báo chí đến tay người nhận.",true
+W00395,ca,"Đồ dùng để uống nước, có quai, thành đứng, thường được làm bằng kim loại hoặc nhựa.",true
+W00398B,cá kho,,false
+W00400,các bạn,,true
+W00401,cãi nhau,,true
+W00402,cái bè,,true
+W00404B,cái gương,,false
+W00406,cái túi,,true
+W00407B,Cam-pu-chia (nước Cam-pu-chia),,false
+W00409,cảnh vật,Cảnh thiên nhiên và sự vật cụ thể bày ra trước mắt.,true
+W00410,cánh tay,Bộ phận của tay từ bả vai đến cổ tay.,true
+W00411,cạnh,Chỗ một mặt phẳng tiếp giáp với một mặt phẳng khác trong cùng một vật.,false
+W00415,cao (người),,true
+W00419,cao nguyên,"Vùng đất rộng lớn và cao, xung quanh có sườn dốc rõ rệt.",true
+W00420,cao quý,"Có giá trị lớn về mặt tinh thần, rất đáng quý trọng.",false
+W00421,cao tầng,Nhà có nhiều tầng.,true
+W00423,cao tốc,Có tốc độ cao.,true
+W00424,cát,"Đá vụn thành hạt nhỏ dưới 2 milimet, có thành phần chủ yếu là thạch anh và các khoáng vật khác.",true
+W00426,cày,"Nông cụ có lưỡi bằng sắt, gang, dùng sức kéo để lật, xới hoặc làm vỡ lớp đất trồng trọt.",true
+W00428,cặp sách,"Đồ dùng thường bằng da, vải nhựa, v.v., có các ngăn, dùng để đựng sách vở, đồ dùng học tập của học sinh.",true
+W00430,cắt nhau,,true
+W00432,cấp cứu,Cứu chữa gấp để thoát khỏi tình trạng nguy kịch.,true
+W00433,cấp dưỡng,Cung cấp (cho người già yếu hoặc tàn tật) những thứ cần thiết cho đời sống vật chất.,false
+W00434,giấu,"Cất vào nơi kín đáo, chắc chắn cho người khác không thể thấy, không thể tìm ra được.",false
+W00435,giữ,"Cất và giữ gìn cho nguyên vẹn, cho khỏi hư hỏng, trong một thời gian.",false
+W00436,tiếng khóc,,true
+W00437,tiếng nói,,false
+W00438,câu cá,,true
+W00439,câu chuyện,Sự việc hoặc chuyện được nói ra.,false
+W00442,câu đơn,,true
+W00443,câu ghép,,true
+W00444B,thơ,"Đơn vị cơ bản của lời thơ, do từ tạo thành, có một tiết tấu nhất định, thường viết bằng một dòng.",false
+W00446,cầu (cây cầu),"Công trình xây dựng bắc qua sông, suối, hồ, chỗ trũng, v.v. để tiện đi lại.",true
+W00447,cầu cứu,Xin được cứu giúp.,false
+W00451,cầu thủ,Người tập luyện hoặc thi đấu một môn bóng nào đó.,true
+W00454,cầu trượt,"Đồ chơi của trẻ em, gồm một đường máng dài có mặt phẳng nhẵn, có thành chắn hai bên, đặt dốc nghiêng để trượt từ trên xuống.",true
+W00456B,cây ăn quả,"Cây trồng lấy quả để ăn, như cam, chanh, dứa, xoài, v.v.",false
+W00457B,cây bàng,,false
+W00459B,cây cổ thụ,Cây to sống đã lâu năm.,false
+W00460,cây cối ,Cây (nói khái quát).,false
+W00462,cây đa,,true
+W00464,cây gỗ,"Cây có thân to, cho gỗ dùng để xây dựng nhà cửa, đóng đồ đạc, v.v.",true
+W00478,cây xanh,"Cây cỏ được trồng để bảo vệ môi trường, nói chung.",true
+W00481,cha,"Người đàn ông có con, trong quan hệ với con (có thể dùng để xưng gọi).",false
+W00482,cha mẹ,Cha và mẹ (nói khái quát) trong quan hệ với con.,false
+W00484B,chả cá,,false
+W00485,chai,"Đồ đựng bằng thuỷ tinh hoặc nhựa cổ nhỏ và dài, thường dùng để đựng chất lỏng.",true
+W00488,chàng trai,"Người đàn ông trẻ tuổi có vẻ đáng mến, đáng yêu.",true
+W00489,chào,"Tỏ thái độ kính trọng hoặc quan tâm đối với ai bằng lời nói hay cử chỉ, khi gặp nhau hoặc khi từ biệt.",true
+W00490,chào cờ,,true
+W00492,chào mừng,Vui mừng chào đón.,false
+W00493B,chảo,"Đồ dùng thường được làm bằng nhôm, gang, miệng rộng, lòng nông, có hai quai hoặc cán để cầm, dùng để xào, rán thức ăn.",false
+W00495B,cháu gái,,false
+W00496B,cháu ngoại,,false
+W00497B,cháu nội,,false
+W00498B,cháu trai,,false
+W00501,chạy,"Di chuyển thân thể bằng những bước nhanh, mạnh và liên tiếp.",true
+W00503,chạy chậm,,false
+W00504,chạy nhanh,,false
+W00508B,chăm sóc sức khỏe,,false
+W00510B,chăn nuôi,"Nuôi gia súc, gia cầm (nói khái quát).",false
+W00512,chặn,"Giữ hẳn lại, làm cho sự hoạt động theo một hướng nào đó phải ngừng hẳn.",false
+W00513B,chặt,Làm đứt ngang ra bằng cách dùng vật có lưỡi sắc giáng mạnh xuống.,false
+W00514,chặt chẽ,Gắn với nhau rất chặt (nói về cái trừu tượng).,false
+W00516B,châm cứu,Châm kim hay đốt nóng ở các huyệt trên da để chữa bệnh theo đông y (nói khái quát).,false
+W00519,chấm dứt,"Làm cho ngừng hẳn, thôi hẳn.",false
+W00520,chấm điểm,,false
+W00530,chất đốt,"Chất khi cháy toả ra nhiều nhiệt, dùng trong đời sống và công nghiệp, như để đun, chạy máy, v.v.",true
+W00531,chất độc,"Chất làm phá huỷ, ức chế hoặc làm chết cơ thể sống.",true
+W00534,chất hữu cơ,Tên gọi chung các hợp chất của các bon tạo nên cơ thể của động vật và thực vật; phân biệt với chất vô cơ.,false
+W00536,chất lỏng,"Chất ở trạng thái có thể chảy được, có thể tích nhất định và có hình dạng tuỳ thuộc vào vật chứa.",true
+W00537,chất lượng,"Cái tạo nên phẩm chất, giá trị của một sự vật, sự việc.",false
+W00538,chất rắn,"Chất ở trạng thái luôn luôn có hình dạng và thể tích nhất định, không tuỳ thuộc vào vật chứa.",true
+W00539,chất thải,"Rác và các vật bỏ đi sau một quá trình sử dụng, nói chung.",true
+W00545,chậu,"Đồ dùng thường làm bằng sành sứ, nhựa hoặc kim loại, miệng rộng, lòng nông, dùng để đựng nước, tắm giặt, hoặc để trồng cây, v.v.",true
+W00546,che chở,"Ngăn, che để bảo vệ, tránh sự xâm hại từ bên ngoài.",false
+W00559,tạo thành,,false
+W00563,chi tiết,"Điểm nhỏ, phần rất nhỏ trong nội dung sự việc hoặc hiện tượng.",false
+W00564,chỉ,"Làm cho người ta nhìn thấy, nhận ra cái gì, bằng cách hướng tay hoặc vật dùng làm hiệu về phía cái ấy.",false
+W00570B,chị,"Người phụ nữ cùng một thế hệ trong gia đình, trong họ, nhưng thuộc hàng hoặc vai trên, trong quan hệ với em của mình (có thể dùng để xưng gọi).",false
+W00571B,chị chồng,,false
+W00572,chị dâu,,false
+W00575B,chia,"Tách ra làm thành từng phần, từ một chỉnh thể.",false
+W00577,chia cắt,"Phân ra thành nhiều đoạn, nhiều phần tách biệt nhau, làm cho không còn nguyên vẹn nữa.",false
+W00578,chia đều,,false
+W00579,chia hết,,false
+W00580,chia phần,,false
+W00581,chia sẻ,Cùng chia với nhau để cùng hưởng hoặc cùng chịu.,false
+W00582,chia tay,"Rời nhau, mỗi người đi một nơi.",false
+W00583,chìa khóa,Vật bằng kim loại dùng tra vào ổ khoá để mở hoặc để khoá.,true
+W00584B,chiếc gối,,false
+W00585,chiếm đoạt,Chiếm lấy của người khác bằng vũ lực hoặc quyền thế.,false
+W00591,chiến thắng,"Giành được phần thắng trong chiến tranh, chiến đấu hoặc trong một cuộc thi đấu thể thao.",true
+W00594,chiều cao,,false
+W00595,chiều dài,,false
+W00596,chiều rộng,,false
+W00598,chiếu,"Đồ dệt bằng cói, nilôngv.v dùng trải ra để nằm, ngồi.",true
+W00599,chiếu phim,Chiếu hình ảnh thu được qua phim lên màn ảnh để xem.,true
+W00601,cá mập,"Động vật có vú ở biển, cỡ rất lớn, có loài dài tới hơn 30 mét, thân hình giống như con cá, có vây ngực, vây đuôi rõ ràng.",true
+W00602,chim,,true
+W00615,chỉnh sửa,"Chỉnh lại, sửa lại cho đúng, cho phù hợp (nói khái quát).",false
+W00616,chín,"(Quả, hạt hoặc hoa) ở vào giai đoạn phát triển đầy đủ nhất, thường có màu đỏ hoặc vàng, có hương thơm, vị ngọt,..",true
+W00617B,chính phủ,"Cơ quan hành pháp và hành chính cao nhất của một nước, thực hiện công việc quản lí nhà nước ở cấp trung ương.",false
+W00619,chính tả,Cách viết chữ được coi là chuẩn.,true
+W00620B,chính xác,"Hoàn toàn đúng, không sai chút nào.",false
+W00623,chó sói,"Chó rừng mõm nhọn, lông đuôi rậm, chuyên bắt thú khác để ăn thịt.",true
+W00629,chọn lựa,Chọn giữa nhiều cái cùng loại (nói khái quát).,false
+W00633B,chống đối,Chống lại một cách trực tiếp với thái độ quyết liệt hoặc đối địch (nói khái quát).,false
+W00638,luân phiên,Lần lượt thay phiên cho nhau.,false
+W00639B,chơi,Hoạt động giải trí hoặc nghỉ ngơi.,false
+W00641,chu vi,Độ dài của đường khép kín giới hạn một hình phẳng.,false
+W00642,chủ đề,Đề tài được chọn làm nội dung chủ yếu.,false
+W00644,chủ động,"Tự mình quyết định hành động, không bị chi phối bởi người khác hoặc hoàn cảnh bên ngoài.",false
+W00649B,chủ tịch,"Người đứng đầu một nước, một cơ quan làm việc theo chế độ hội đồng hoặc uỷ ban.",false
+W00653,thích nghi,Trở nên quen dần hoặc có những biến đổi cho phù hợp với môi trường hoặc hoàn cảnh mới.,false
+W00654,chú ý,Để hết tâm trí vào.,false
+W00655B,chùa,"Công trình được xây cất lên, lamg nơi thờ Phật, thường có nhà sư ở.",false
+W00662B,chuẩn bị,Làm cho có sẵn cái cần thiết để làm việc gì.,false
+W00663B,chúc mừng,Chúc nhân dịp vui mừng.,false
+W00664B,chúc tết,,false
+W00665B,chúc thọ,Chúc (người già) sống lâu.,false
+W00673,hoa,,true
+W00674,khế,,true
+W00676,nho,,true
+W00677,vải,,true
+W00678,chung kết,Vòng thi đấu (hoặc vòng thi) cuối cùng để chọn đội hay vận động viên vô địch (hoặc người chiếm giải nhất).,false
+W00687,chụp ảnh,Ghi lại nhanh hình ảnh bằng máy ảnh.,true
+W00689,chuyên biệt,"Chỉ riêng cho một loại, một thứ hoặc một yêu cầu nhất định.",false
+W00690,chuyên cần,"Rất chăm chỉ, siêng năng một cách đều đặn.",false
+W00691B,chuyên gia,"Người tinh thông một ngành chuyên môn khoa học, kĩ thuật.",false
+W00692,chuyền bóng,"Đưa chuyển bóng từng quãng ngắn từ người này, chỗ này sang người khác, chỗ khác.",true
+W00693,chim,,false
+W00697,chuyển động,Thay đổi vị trí theo thời gian .,false
+W00708B,chữa bài,,false
+W00709,chữa cháy,Dập tắt lửa của đám cháy để ngăn hoả hoạn.,true
+W00710,chức năng,"Hoạt động, tác dụng bình thường hoặc đặc trưng của một cơ quan, một hệ cơ quan nào đó trong cơ thể.",false
+W00712,chứng kiến,Trông thấy tận mắt (sự việc nào đó xảy ra).,false
+W00713,chương trình,"Toàn bộ những dự kiến hoạt động theo một trình tự nhất định và trong một thời gian nhất định, nêu vắn tắt.",false
+W00719,chứng minh,"Xác định có căn cứ là đúng hay sai, có hay không.",false
+W00721,co dãn,Co vào và dãn ra (nói khái quát).,false
+W00724,cỏ,"Cỏ thấp, có quả nhỏ và nhọn, hay bám vào quần áo.",true
+W00726,có ích,"Có tác dụng, đem lại điều có lợi, đem lại hiệu quả tốt .",false
+W00729,còi,"Dụng cụ bằng kim loại hay nhựa, phát ra tiếng cao và vang khi thổi hoặc bóp, ấn vào, dùng để báo hiệu.",true
+W00732,máy vi tính,Máy tính điện tử có bộ xử lí trung tâm là một bộ vi xử lí.,true
+W00734B,con bê,,false
+W00735B,con bò,,false
+W00736,con bướm,,true
+W00737B,con cá,,false
+W00738,con chim,,true
+W00739B,con chó,,false
+W00740,con chồn,,true
+W00741,con chuồn chuồn,,true
+W00742B,con chuột,,false
+W00745,con cò,,true
+W00746,con cóc,,true
+W00747B,con cọp,,false
+W00748,công,,true
+W00749,cua,,true
+W00750,cú mèo,,true
+W00751,cừu,,true
+W00752,con dâu,,false
+W00753,dê,,true
+W00754,dế,,true
+W00757,con đường,,true
+W00758B,ếch,,false
+W00759,gà,,true
+W00760,con gái,"Người thuộc giới nữ, còn ít tuổi, chưa có chồng.",true
+W00761,gấu,,true
+W00762,con ghẹ,,true
+W00763,gián,,true
+W00766,hươu,,true
+W00767,khỉ,,true
+W00768B,kiến,,false
+W00770B,lợn (con heo),,false
+W00771,lươn,,true
+W00772B,mèo,,false
+W00773B,muỗi,,false
